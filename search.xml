@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>hello,大家好，这是我在git上开通的博客</title>
+      <link href="/2017/09/22/hello-%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8git%E4%B8%8A%E5%BC%80%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+      <content type="html"><![CDATA[<p>这里采用了<a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>作为搭建工具</p><p></p><p>具体的演示内容就不在这进行多余的叙述，搭建的过程也是困难重重。</p><p>一开始就遇到一个问题，不论如何都是不对，后面根据知乎里面一个大神的解答，终于能够顺利发布版本进行更新。</p><blockquote><p>以下是那位大神的解答</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先清空 $ hexo clean</span><br><span class="line">然后在你建立的博客文件夹下删除.deploy_git</span><br><span class="line">$ git config --global core.autocrlf false</span><br><span class="line">重新导出：$ hexo g</span><br><span class="line">发布版本: $ hexo d</span><br></pre></td></tr></table></figure><p><em>这里的3，代表的意思是配置git的全局变量，关闭它的自动换行功能，当然了，针对其中的工作原理可以选择使用其他的配置方式，不一定要采用关闭的方式。</em></p><hr><p><strong>至于其他的初始化，如何进行配置等，这里不做详细指导</strong><br>各位可以通过百度或者谷歌就能找到答案；</p>]]></content>
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <content type="html"><![CDATA[<p>一开始就不够接近，只是雾里看花不知其轮廓，等我再次靠近了，看看究竟是什么样子，我再说说</p>]]></content>
+    </entry>
+    
+    <entry>
+      <title>走廊</title>
+      <link href="/gallery/index.html"/>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>标签云</title>
+      <link href="/tags/index.html"/>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>时间桥</title>
+      <link href="/timeline/index.html"/>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+  
+</search>

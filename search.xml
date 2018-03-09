@@ -3,6 +3,50 @@
   
     
     <entry>
+      <title>Oracle常用命令</title>
+      <link href="/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <content type="html"><![CDATA[<h3 id="Oracle表空间创建"><a href="#Oracle表空间创建" class="headerlink" title="Oracle表空间创建"></a>Oracle表空间创建</h3><ol><li><p>创建临时表空间</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">temporary</span> <span class="keyword">tablespace</span> YNMZCK_TEMP  </span><br><span class="line">tempfile <span class="string">'D:\Install_file\app\Administrator\oradata\orcl\YNMZCK_TEMP.dbf'</span> </span><br><span class="line"><span class="keyword">size</span> <span class="number">50</span>m  </span><br><span class="line"><span class="keyword">autoextend</span> <span class="keyword">on</span>  </span><br><span class="line"><span class="keyword">next</span> <span class="number">50</span>m <span class="keyword">maxsize</span> <span class="number">20480</span>m  </span><br><span class="line"><span class="keyword">extent</span> <span class="keyword">management</span> <span class="keyword">local</span>;</span><br></pre></td></tr></table></figure></li><li><p>创建数据表空间</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">tablespace</span> YNMZCK  </span><br><span class="line"><span class="keyword">logging</span>  </span><br><span class="line"><span class="keyword">datafile</span> <span class="string">'D:\Install_file\app\Administrator\oradata\orcl\YNMZCK.dbf'</span> </span><br><span class="line"><span class="keyword">size</span> <span class="number">50</span>m  </span><br><span class="line"><span class="keyword">autoextend</span> <span class="keyword">on</span>  </span><br><span class="line"><span class="keyword">next</span> <span class="number">50</span>m <span class="keyword">maxsize</span> <span class="number">20480</span>m  </span><br><span class="line"><span class="keyword">extent</span> <span class="keyword">management</span> <span class="keyword">local</span>;</span><br></pre></td></tr></table></figure></li><li><p>创建用户并指定表空间</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> YNMZCK <span class="keyword">identified</span> <span class="keyword">by</span> YNMZCK</span><br><span class="line"><span class="keyword">default</span> <span class="keyword">tablespace</span> YNMZCK  </span><br><span class="line"><span class="keyword">temporary</span> <span class="keyword">tablespace</span> YNMZCK_TEMP;</span><br></pre></td></tr></table></figure></li><li><p>给用户授予权限</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span>,dba <span class="keyword">to</span> YNMZCK;</span><br></pre></td></tr></table></figure></li></ol><h3 id="Oracle导入-导出dmp"><a href="#Oracle导入-导出dmp" class="headerlink" title="Oracle导入/导出dmp"></a>Oracle导入/导出dmp</h3><ol><li><p>导出命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exp YNMZCC/YNMZCC@orcl  file=d:\ynmzcc.dmp owner = YNMZCC</span><br></pre></td></tr></table></figure></li><li><p>导入命令</p></li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">imp username/password@SID file=XXX.dmp fromuser=XXX touser=XXX tables=(XXX,XXX)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      <categories>
+          
+          <category> Oracle </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Oracle </tag>
+            
+            <tag> note </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>MODBUS协议</title>
+      <link href="/2018/03/09/MODBUS%E5%8D%8F%E8%AE%AE/"/>
+      <content type="html"><![CDATA[<h4 id="情况介绍"><a href="#情况介绍" class="headerlink" title="情况介绍"></a>情况介绍</h4><p>最近公司项目有部分涉及到一个库位灯的通讯，因此我需要对该协议有个具体的了解；</p><p>在之前我并没有接触过这个协议甚至不明白这是啥，能用来做啥的。</p><p>我们首先对<strong>协议</strong>这个特定的词汇进行深入解读一下，避免一些语文差点的同学搞不清楚；</p><p>如果需要对这个汉语有更深入的了解，可以百度一下；</p><p>我们这里用自己的话说一下，其实就是方言，例如你说温州话，或者英语，而你也只能听懂这类话，我们因此把这种说温州话或者英语的标准称为协议。</p><p>上面我们说了一堆废话，那么从下面开始，我们进入正题；</p><p>我们需要与库位灯进行沟通，那么就需要一种方言——<em>协议</em>。</p><p>就让我们了解下什么是MODBUS协议；</p><h4 id="协议简介"><a href="#协议简介" class="headerlink" title="协议简介"></a>协议简介</h4><p><strong>Modbus 是一个请求/应答协议。</strong></p><p><strong>它已经成为一通用工业标准。有了它，不同厂商生产的控制设备可以连成工业网络，进行集中监控。</strong></p><p>MODBUS协议支持传统的RS-232、RS-422、RS-485和以太网设备。许多工业设备，包括PLC，DCS，智能仪表等都在使用Modbus协议作为他们之间的通讯标准。</p><p>MODBUS通讯协议，是1979年由美国Modicon 公司提出的，就是被称为PLC 之父的迪克·莫利先生创造的品牌。<strong>MODBUS是世界上第一个用于工业现场的总线协议</strong>，可以说，它的出现标志着工业现场从模拟量时代向通讯时代迈进。。</p><h4 id="如何定义"><a href="#如何定义" class="headerlink" title="如何定义"></a>如何定义</h4><p>既然是协议，那么它究竟如何定义，它的规范又是什么呢？</p><p>从程序的角度出发，快速定义：</p><h4 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h4><h5 id="仿真"><a href="#仿真" class="headerlink" title="仿真"></a>仿真</h5><p>安装modbus仿真工具<a href="http://www.modbustools.com/download.html" target="_blank" rel="noopener">Modbus Slave</a>, 用来模仿一台Modbus设备</p>]]></content>
+      
+      <categories>
+          
+          <category> MODBUS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MODBUS </tag>
+            
+            <tag> 通信协议 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>hello,大家好，这是我在git上开通的博客</title>
       <link href="/2017/09/22/hello-%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8git%E4%B8%8A%E5%BC%80%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
       <content type="html"><![CDATA[<p>这里采用了<a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>作为搭建工具</p><p>具体的演示内容就不在这进行多余的叙述，搭建的过程也是困难重重。</p><p>一开始就遇到一个问题，不论如何都是不对，后面根据知乎里面一个大神的解答，终于能够顺利发布版本进行更新。</p><blockquote><p>以下是那位大神的解答</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先清空 $ hexo clean</span><br><span class="line">然后在你建立的博客文件夹下删除.deploy_git</span><br><span class="line">$ git config --global core.autocrlf false</span><br><span class="line">重新导出：$ hexo g</span><br><span class="line">发布版本: $ hexo d</span><br></pre></td></tr></table></figure><p><em>这里的3，代表的意思是配置git的全局变量，关闭它的自动换行功能，当然了，针对其中的工作原理可以选择使用其他的配置方式，不一定要采用关闭的方式。</em></p><hr><p><strong>至于其他的初始化，如何进行配置等，这里不做详细指导</strong><br>各位可以通过百度或者谷歌就能找到答案；</p>]]></content>

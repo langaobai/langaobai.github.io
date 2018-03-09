@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/09/22/hello-%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8git%E4%B8%8A%E5%BC%80%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2018-03-09T03:29:32.998Z</lastmod>
+    <data>
+        <display>
+        <title>hello,大家好，这是我在git上开通的博客</title>
+        <pubTime>2017-09-22T15:29:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Node.js</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yoursite.com/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+</urlset>

@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/03/09/MODBUS%E5%8D%8F%E8%AE%AE/</loc>
+    <lastmod>2018-03-09T08:40:27.793Z</lastmod>
+    <data>
+        <display>
+        <title>MODBUS协议</title>
+        <pubTime>2018-03-09T06:34:00.000Z</pubTime>
+        
+        <tag>MODBUS</tag>
+         
+        <tag>通信协议</tag>
+         
+         
+           
+             
+              <breadCrumb title="MODBUS" url="http://yoursite.com/categories/MODBUS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2018-03-09T08:27:48.503Z</lastmod>
     <data>
@@ -19,28 +41,6 @@
            
              
               <breadCrumb title="Oracle" url="http://yoursite.com/categories/Oracle/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2018/03/09/MODBUS%E5%8D%8F%E8%AE%AE/</loc>
-    <lastmod>2018-03-09T08:27:33.745Z</lastmod>
-    <data>
-        <display>
-        <title>MODBUS协议</title>
-        <pubTime>2018-03-09T06:34:00.000Z</pubTime>
-        
-        <tag>MODBUS</tag>
-         
-        <tag>通信协议</tag>
-         
-         
-           
-             
-              <breadCrumb title="MODBUS" url="http://yoursite.com/categories/MODBUS/"/>
           
         </display>
     </data>

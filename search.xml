@@ -27,7 +27,7 @@
     <entry>
       <title>MODBUS协议</title>
       <link href="/2018/03/09/MODBUS%E5%8D%8F%E8%AE%AE/"/>
-      <content type="html"><![CDATA[<h4 id="情况介绍"><a href="#情况介绍" class="headerlink" title="情况介绍"></a>情况介绍</h4><p>最近公司项目有部分涉及到一个库位灯的通讯，因此我需要对该协议有个具体的了解；</p><p>在之前我并没有接触过这个协议甚至不明白这是啥，能用来做啥的。</p><p>我们首先对<strong>协议</strong>这个特定的词汇进行深入解读一下，避免一些语文差点的同学搞不清楚；</p><p>如果需要对这个汉语有更深入的了解，可以百度一下；</p><p>我们这里用自己的话说一下，其实就是方言，例如你说温州话，或者英语，而你也只能听懂这类话，我们因此把这种说温州话或者英语的标准称为协议。</p><p>上面我们说了一堆废话，那么从下面开始，我们进入正题；</p><p>我们需要与库位灯进行沟通，那么就需要一种方言——<em>协议</em>。</p><p>就让我们了解下什么是MODBUS协议；</p><h4 id="协议简介"><a href="#协议简介" class="headerlink" title="协议简介"></a>协议简介</h4><p><strong>Modbus 是一个请求/应答协议。</strong></p><p><strong>它已经成为一通用工业标准。有了它，不同厂商生产的控制设备可以连成工业网络，进行集中监控。</strong></p><p>MODBUS协议支持传统的RS-232、RS-422、RS-485和以太网设备。许多工业设备，包括PLC，DCS，智能仪表等都在使用Modbus协议作为他们之间的通讯标准。</p><p>MODBUS通讯协议，是1979年由美国Modicon 公司提出的，就是被称为PLC 之父的迪克·莫利先生创造的品牌。<strong>MODBUS是世界上第一个用于工业现场的总线协议</strong>，可以说，它的出现标志着工业现场从模拟量时代向通讯时代迈进。。</p><h4 id="如何定义"><a href="#如何定义" class="headerlink" title="如何定义"></a>如何定义</h4><p>既然是协议，那么它究竟如何定义，它的规范又是什么呢？</p><p>从程序的角度出发，快速定义：</p><h4 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h4><h5 id="仿真"><a href="#仿真" class="headerlink" title="仿真"></a>仿真</h5><p>安装modbus仿真工具<a href="http://www.modbustools.com/download.html" target="_blank" rel="noopener">Modbus Slave</a>, 用来模仿一台Modbus设备</p>]]></content>
+      <content type="html"><![CDATA[<h4 id="情况介绍"><a href="#情况介绍" class="headerlink" title="情况介绍"></a>情况介绍</h4><p>最近公司项目有部分涉及到一个库位灯的通讯，因此我需要对该协议有个具体的了解；</p><p>在之前我并没有接触过这个协议甚至不明白这是啥，能用来做啥的。</p><p>我们首先对<strong>协议</strong>这个特定的词汇进行深入解读一下，避免一些语文差点的同学搞不清楚；</p><p>如果需要对这个汉语有更深入的了解，可以百度一下；</p><p>我们这里用自己的话说一下，其实就是方言，例如你说温州话，或者英语，而你也只能听懂这类话，我们因此把这种说温州话或者英语的标准称为协议。</p><p>上面我们说了一堆废话，那么从下面开始，我们进入正题；</p><p>我们需要与库位灯进行沟通，那么就需要一种方言——<em>协议</em>。</p><p>就让我们了解下什么是MODBUS协议；</p><h4 id="协议简介"><a href="#协议简介" class="headerlink" title="协议简介"></a>协议简介</h4><p><strong>Modbus 是一个请求/应答协议。</strong></p><p><strong>它已经成为一通用工业标准。有了它，不同厂商生产的控制设备可以连成工业网络，进行集中监控。</strong></p><p>MODBUS协议支持传统的RS-232、RS-422、RS-485和以太网设备。许多工业设备，包括PLC，DCS，智能仪表等都在使用Modbus协议作为他们之间的通讯标准。</p><p>MODBUS通讯协议，是1979年由美国Modicon 公司提出的，就是被称为PLC 之父的迪克·莫利先生创造的品牌。<strong>MODBUS是世界上第一个用于工业现场的总线协议</strong>，可以说，它的出现标志着工业现场从模拟量时代向通讯时代迈进。。</p><h4 id="如何定义"><a href="#如何定义" class="headerlink" title="如何定义"></a>如何定义</h4><p>既然是协议，那么它究竟如何定义，它的规范又是什么呢？</p><p>从程序的角度出发，快速定义：</p><h4 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h4><h5 id="仿真"><a href="#仿真" class="headerlink" title="仿真"></a>仿真</h5><p>安装modbus仿真工具<a href="http://www.modbustools.com/download.html" target="_blank" rel="noopener">Modbus Slave</a>, 用来模仿一台Modbus设备</p><p>未完待续，一口气还真难写完，只能慢慢写了，如果看到的，没有下文，可以过几天再来看看</p>]]></content>
       
       <categories>
           
@@ -78,15 +78,15 @@
     </entry>
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <content type="html"><![CDATA[<p>一开始就不够接近，只是雾里看花不知其轮廓，等我再次靠近了，看看究竟是什么样子，我再说说</p>]]></content>
-    </entry>
-    
-    <entry>
       <title>走廊</title>
       <link href="/gallery/index.html"/>
       <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <content type="html"><![CDATA[<p>一开始就不够接近，只是雾里看花不知其轮廓，等我再次靠近了，看看究竟是什么样子，我再说说</p>]]></content>
     </entry>
     
     <entry>

@@ -34,6 +34,12 @@
     </entry>
     
     <entry>
+      <title>标签云</title>
+      <link href="/tags/index.html"/>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <content type="html"><![CDATA[<p>一开始就不够接近，只是雾里看花不知其轮廓，等我再次靠近了，看看究竟是什么样子，我再说说</p>]]></content>
@@ -42,12 +48,6 @@
     <entry>
       <title>走廊</title>
       <link href="/gallery/index.html"/>
-      <content type="html"><![CDATA[]]></content>
-    </entry>
-    
-    <entry>
-      <title>标签云</title>
-      <link href="/tags/index.html"/>
       <content type="html"><![CDATA[]]></content>
     </entry>
     

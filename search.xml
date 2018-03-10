@@ -3,9 +3,53 @@
   
     
     <entry>
+      <title>json与bson的区别</title>
+      <link href="/2018/03/10/json%E4%B8%8Ebson%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+      <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>bson是由10gen开发的一个数据格式，目前主要用于mongoDB中，是mongoDB的数据存储格式。bson基于json格式，选择json进行改造的原因主要是json的通用性及json的schemaless(无模式)的特性。</p><h3 id="bson主要方向"><a href="#bson主要方向" class="headerlink" title="bson主要方向"></a>bson主要方向</h3><h4 id="更快的遍历速度"><a href="#更快的遍历速度" class="headerlink" title="更快的遍历速度"></a>更快的遍历速度</h4><p>对json格式来说，太大的json结构会导致数据遍历非常慢。在json中，要跳过一个文档进行数据读取，需要对此文档进行扫描才行，需要进行麻烦的数据结构匹配，比如括号的匹配。 </p><p>而bson对json的一大改进就是，它会将json的每一个元素的长度存在元素的头部，这样你只需要读取到元素长度就能直接seek到指定的点上进行读取了。</p><h4 id="操作更简易"><a href="#操作更简易" class="headerlink" title="操作更简易"></a>操作更简易</h4><p>对json来说，数据存储是无类型的，比如你要修改基本一个值，从9到10，由于从一个字符变成了两个，所以可能其后面的所有内容都需要往后移一位才可以。 </p><p>而使用bson，你可以指定这个列为数字列，那么无论数字从9长到10还是100，我们都只是在存储数字的那一位上进行修改，不会导致数据总长变大。 </p><p>当然，在mongoDB中，如果数字从整形增大到长整型，还是会导致数据总长变大的。</p><h4 id="增加了额外的数据类型"><a href="#增加了额外的数据类型" class="headerlink" title="增加了额外的数据类型"></a>增加了额外的数据类型</h4><p>json是一个很方便的数据交换格式，但是其类型比较有限。 </p><p>bson在其基础上增加了“byte array”数据类型。这使得二进制的存储不再需要先base64转换后再存成json，大大减少了计算开销和数据大小。 </p><p>当然，在有的时候，bson相对json来说也并没有空间上的优势，比如对{“field”:7}，在json的存储上7只使用了一个字节，而如果用bson，那就是至少4个字节（32位）</p><p>目前在10gen的努力下，bson已经有了针对多种语言的编码解码包。并且都是<em>Apache2 license</em>下开源的。并且还在随着mongoDB进一步地发展。</p><h3 id="json与bson对比"><a href="#json与bson对比" class="headerlink" title="json与bson对比"></a>json与bson对比</h3><h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><p>json是像<strong>字符串存储</strong>的，bson是按<strong>结构存储</strong>的（像数组 或者说struct）</p><h4 id="存储空间"><a href="#存储空间" class="headerlink" title="存储空间"></a>存储空间</h4><p>bson&gt;json</p><h4 id="操作速度"><a href="#操作速度" class="headerlink" title="操作速度"></a>操作速度</h4><p>bson&gt;json。比如，遍历查找：json需要扫字符串，而bson可以直接定位</p><h4 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h4><p>json也要大动大移，bson就不需要。</p><p>在大多数情况下，JSON和BSON非常相似，但BSON可以提供额外的速度冲击。当然，两者都是应用程序存储和检索数据非常方便的方法。</p><blockquote><p>转自<a href="http://blog.csdn.net/xiaojin21cen/article/details/60953980" target="_blank" rel="noopener">张山的博客专栏</a></p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> 数据格式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BSON </tag>
+            
+            <tag> JSON </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>MongoDB</title>
+      <link href="/2018/03/10/MongoDB/"/>
+      <content type="html"><![CDATA[<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>最近学习到React-Native，需要学习一下Facebook推出的f8app例子；</p><blockquote><p>MongoDB介绍</p></blockquote><p>MongoDB 是一个基于分布式文件存储的数据库。由<strong>C++语言编写</strong>。<strong>旨在为WEB</strong>应用提供可扩展的高性能数据存储解决方案。</p><p>MongoDB <strong>是一个介于关系数据库和非关系数据库之间的产品</strong>，是非关系数据库当中功能最丰富，最像关系数据库的(<em>听着像小品界最会唱歌的小沈阳</em>)。他支持的数据结构非常松散，是类似json的bson(<strong>Binary Serialized Document Format</strong>)<strong>是一种二进制形式的存储格式</strong>，因此可以存储比较复杂的数据类型。</p><p>Mongo最大的特点是他支持的查询语言非常强大，<strong>其语法有点类似于面向对象的查询语言</strong>，几乎可以实现类似关系数据库单表查询的绝大部分功能，而且还支持对数据建立索引。</p><p>这里不得不说一下，其实他是NoSQL(NoSQL = Not Only SQL,意即“不仅仅是SQL”)数据库的一种。</p><p>扩展一下，HBase数据库也是NoSQL的一种。</p><blockquote><p>特点</p></blockquote><ol><li>支持RUBY，PYTHON，JAVA，C++，PHP，C#等多种语言。</li><li>文件存储格式为BSON（一种JSON的扩展）。<a href="http://blog.langaobai.top/2018/03/10/json与bson的区别/" target="_blank" rel="noopener">JSON与BSON</a></li><li>可通过网络访问。</li></ol><p>此处抄于百度词条，如果有错，不要找我…</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>而其中需要用到MongDB，我下载的是3.6版本的，需要下载的请点击<a href="https://www.mongodb.com/download-center#atlas" target="_blank" rel="noopener">MongoDB</a></p><p>一路点击<kbd>Next</kbd>就可以了，当然前提是你知道你要安装在什么地方。</p><p>直达最后，安装界面提示你，可能要花些时间，但是这个时间很说不准，万一卡了呢，那么你只能关闭了，不过不要担心，下次开机的时候，其实你已经安装好了，不行你就再装一遍。</p><h3 id="API学习"><a href="#API学习" class="headerlink" title="API学习"></a>API学习</h3><p>安装好以后，我们就该学习了，<a href="https://docs.mongodb.com/" target="_blank" rel="noopener">MongoDB API</a></p><p>未完待续</p>]]></content>
+      
+      <categories>
+          
+          <category> MongDB </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MongDB </tag>
+            
+            <tag> BSON </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Oracle常用命令</title>
       <link href="/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-      <content type="html"><![CDATA[<h3 id="Oracle表空间创建"><a href="#Oracle表空间创建" class="headerlink" title="Oracle表空间创建"></a>Oracle表空间创建</h3><ol><li><p>创建临时表空间</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">temporary</span> <span class="keyword">tablespace</span> YNMZCK_TEMP  </span><br><span class="line">tempfile <span class="string">'D:\Install_file\app\Administrator\oradata\orcl\YNMZCK_TEMP.dbf'</span> </span><br><span class="line"><span class="keyword">size</span> <span class="number">50</span>m  </span><br><span class="line"><span class="keyword">autoextend</span> <span class="keyword">on</span>  </span><br><span class="line"><span class="keyword">next</span> <span class="number">50</span>m <span class="keyword">maxsize</span> <span class="number">20480</span>m  </span><br><span class="line"><span class="keyword">extent</span> <span class="keyword">management</span> <span class="keyword">local</span>;</span><br></pre></td></tr></table></figure></li><li><p>创建数据表空间</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">tablespace</span> YNMZCK  </span><br><span class="line"><span class="keyword">logging</span>  </span><br><span class="line"><span class="keyword">datafile</span> <span class="string">'D:\Install_file\app\Administrator\oradata\orcl\YNMZCK.dbf'</span> </span><br><span class="line"><span class="keyword">size</span> <span class="number">50</span>m  </span><br><span class="line"><span class="keyword">autoextend</span> <span class="keyword">on</span>  </span><br><span class="line"><span class="keyword">next</span> <span class="number">50</span>m <span class="keyword">maxsize</span> <span class="number">20480</span>m  </span><br><span class="line"><span class="keyword">extent</span> <span class="keyword">management</span> <span class="keyword">local</span>;</span><br></pre></td></tr></table></figure></li><li><p>创建用户并指定表空间</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> YNMZCK <span class="keyword">identified</span> <span class="keyword">by</span> YNMZCK</span><br><span class="line"><span class="keyword">default</span> <span class="keyword">tablespace</span> YNMZCK  </span><br><span class="line"><span class="keyword">temporary</span> <span class="keyword">tablespace</span> YNMZCK_TEMP;</span><br></pre></td></tr></table></figure></li><li><p>给用户授予权限</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span>,dba <span class="keyword">to</span> YNMZCK;</span><br></pre></td></tr></table></figure></li></ol><h3 id="Oracle导入-导出dmp"><a href="#Oracle导入-导出dmp" class="headerlink" title="Oracle导入/导出dmp"></a>Oracle导入/导出dmp</h3><ol><li><p>导出命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exp YNMZCC/YNMZCC@orcl  file=d:\ynmzcc.dmp owner = YNMZCC</span><br></pre></td></tr></table></figure></li><li><p>导入命令</p></li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">imp username/password@SID file=XXX.dmp fromuser=XXX touser=XXX tables=(XXX,XXX)</span><br></pre></td></tr></table></figure>]]></content>
+      <content type="html"><![CDATA[<h3 id="Oracle表空间创建"><a href="#Oracle表空间创建" class="headerlink" title="Oracle表空间创建"></a>Oracle表空间创建</h3><ol><li>创建临时表空间<pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">temporary</span> <span class="token keyword">tablespace</span> YNMZCK_TEMP  tempfile <span class="token string">'D:\Install_file\app\Administrator\oradata\orcl\YNMZCK_TEMP.dbf'</span> size 50m  autoextend <span class="token keyword">on</span>  <span class="token keyword">next</span> 50m maxsize 20480m  extent management <span class="token keyword">local</span><span class="token punctuation">;</span></code></pre></li><li>创建数据表空间<pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">tablespace</span> YNMZCK  logging  datafile <span class="token string">'D:\Install_file\app\Administrator\oradata\orcl\YNMZCK.dbf'</span> size 50m  autoextend <span class="token keyword">on</span>  <span class="token keyword">next</span> 50m maxsize 20480m  extent management <span class="token keyword">local</span><span class="token punctuation">;</span></code></pre></li><li><p>创建用户并指定表空间</p><pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">user</span> YNMZCK identified <span class="token keyword">by</span> YNMZCK<span class="token keyword">default</span> <span class="token keyword">tablespace</span> YNMZCK  <span class="token keyword">temporary</span> <span class="token keyword">tablespace</span> YNMZCK_TEMP<span class="token punctuation">;</span></code></pre></li><li><p>给用户授予权限</p><pre class=" language-sql"><code class="language-sql"><span class="token keyword">grant</span> <span class="token keyword">connect</span><span class="token punctuation">,</span>resource<span class="token punctuation">,</span><span class="token number">dba</span> <span class="token keyword">to</span> YNMZCK<span class="token punctuation">;</span></code></pre></li></ol><h3 id="Oracle导入-导出dmp"><a href="#Oracle导入-导出dmp" class="headerlink" title="Oracle导入/导出dmp"></a>Oracle导入/导出dmp</h3><ol><li><p>导出命令</p><pre class=" language-bash"><code class="language-bash">exp YNMZCC/YNMZCC@orcl  file<span class="token operator">=</span>d:\ynmzcc.dmp owner <span class="token operator">=</span> YNMZCC</code></pre></li><li><p>导入命令</p><pre class=" language-bash"><code class="language-bash">imp username/password@SID file<span class="token operator">=</span>XXX.dmp fromuser<span class="token operator">=</span>XXX touser<span class="token operator">=</span>XXX tables<span class="token operator">=</span><span class="token punctuation">(</span>XXX,XXX<span class="token punctuation">)</span></code></pre></li></ol>]]></content>
       
       <categories>
           
@@ -27,7 +71,7 @@
     <entry>
       <title>MODBUS协议</title>
       <link href="/2018/03/09/MODBUS%E5%8D%8F%E8%AE%AE/"/>
-      <content type="html"><![CDATA[<h4 id="情况介绍"><a href="#情况介绍" class="headerlink" title="情况介绍"></a>情况介绍</h4><p>最近公司项目有部分涉及到一个库位灯的通讯，因此我需要对该协议有个具体的了解；</p><p>在之前我并没有接触过这个协议甚至不明白这是啥，能用来做啥的。</p><p>我们首先对<strong>协议</strong>这个特定的词汇进行深入解读一下，避免一些语文差点的同学搞不清楚；</p><p>如果需要对这个汉语有更深入的了解，可以百度一下；</p><p>我们这里用自己的话说一下，其实就是方言，例如你说温州话，或者英语，而你也只能听懂这类话，我们因此把这种说温州话或者英语的标准称为协议。</p><p>上面我们说了一堆废话，那么从下面开始，我们进入正题；</p><p>我们需要与库位灯进行沟通，那么就需要一种方言——<em>协议</em>。</p><p>就让我们了解下什么是MODBUS协议；</p><h4 id="协议简介"><a href="#协议简介" class="headerlink" title="协议简介"></a>协议简介</h4><p><strong>Modbus 是一个请求/应答协议。</strong></p><p><strong>它已经成为一通用工业标准。有了它，不同厂商生产的控制设备可以连成工业网络，进行集中监控。</strong></p><p>MODBUS协议支持传统的RS-232、RS-422、RS-485和以太网设备。许多工业设备，包括PLC，DCS，智能仪表等都在使用Modbus协议作为他们之间的通讯标准。</p><p>MODBUS通讯协议，是1979年由美国Modicon 公司提出的，就是被称为PLC 之父的迪克·莫利先生创造的品牌。<strong>MODBUS是世界上第一个用于工业现场的总线协议</strong>，可以说，它的出现标志着工业现场从模拟量时代向通讯时代迈进。。</p><h4 id="如何定义"><a href="#如何定义" class="headerlink" title="如何定义"></a>如何定义</h4><p>既然是协议，那么它究竟如何定义，它的规范又是什么呢？</p><p>从程序的角度出发，快速定义：</p><h4 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h4><h5 id="仿真"><a href="#仿真" class="headerlink" title="仿真"></a>仿真</h5><p>安装modbus仿真工具<a href="http://www.modbustools.com/download.html" target="_blank" rel="noopener">Modbus Slave</a>, 用来模仿一台Modbus设备</p><p>未完待续，一口气还真难写完，只能慢慢写了，如果看到的，没有下文，可以过几天再来看看</p>]]></content>
+      <content type="html"><![CDATA[<h4 id="情况介绍"><a href="#情况介绍" class="headerlink" title="情况介绍"></a>情况介绍</h4><p>最近公司项目有部分涉及到一个库位灯的通讯，因此我需要对该协议有个具体的了解；</p><p>在之前我并没有接触过这个协议甚至不明白这是啥，能用来做啥的。</p><p>我们首先对<strong>协议</strong>这个特定的词汇进行深入解读一下，避免一些语文差点的同学搞不清楚；</p><p>如果需要对这个汉语有更深入的了解，可以百度一下；</p><p>我们这里用自己的话说一下，其实就是方言，例如你说温州话，或者英语，而你也只能听懂这类话，我们因此把这种说温州话或者英语的标准称为协议。</p><p>上面我们说了一堆废话，那么从下面开始，我们进入正题；</p><p>我们需要与库位灯进行沟通，那么就需要一种方言——<em>协议</em>。</p><p>就让我们了解下什么是MODBUS协议；</p><h4 id="协议简介"><a href="#协议简介" class="headerlink" title="协议简介"></a>协议简介</h4><p><strong>Modbus 是一个请求/应答协议。</strong></p><p><strong>它已经成为一通用工业标准。有了它，不同厂商生产的控制设备可以连成工业网络，进行集中监控。</strong></p><p>MODBUS协议支持传统的RS-232、RS-422、RS-485和以太网设备。许多工业设备，包括PLC，DCS，智能仪表等都在使用Modbus协议作为他们之间的通讯标准。</p><p>MODBUS通讯协议，是1979年由美国Modicon 公司提出的，就是被称为PLC 之父的迪克·莫利先生创造的品牌。</p><p><strong>MODBUS是世界上第一个用于工业现场的总线协议</strong>，可以说，它的出现标志着工业现场从模拟量时代向通讯时代迈进。。</p><h4 id="如何定义"><a href="#如何定义" class="headerlink" title="如何定义"></a>如何定义</h4><p>既然是协议，那么它究竟如何定义，它的规范又是什么呢？</p><p>从程序的角度出发，快速定义：</p><h4 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h4><h5 id="仿真"><a href="#仿真" class="headerlink" title="仿真"></a>仿真</h5><p>安装modbus仿真工具<a href="http://www.modbustools.com/download.html" target="_blank" rel="noopener">Modbus Slave</a>, 用来模仿一台Modbus设备</p><p>未完待续，一口气还真难写完，只能慢慢写了，如果看到的，没有下文，可以过几天再来看看</p>]]></content>
       
       <categories>
           
@@ -48,8 +92,8 @@
     
     <entry>
       <title>hello,大家好，这是我在git上开通的博客</title>
-      <link href="/2017/09/22/hello-%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8git%E4%B8%8A%E5%BC%80%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-      <content type="html"><![CDATA[<p>这里采用了<a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>作为搭建工具</p><p>具体的演示内容就不在这进行多余的叙述，搭建的过程也是困难重重。</p><p>一开始就遇到一个问题，不论如何都是不对，后面根据知乎里面一个大神的解答，终于能够顺利发布版本进行更新。</p><blockquote><p>以下是那位大神的解答</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先清空 $ hexo clean</span><br><span class="line">然后在你建立的博客文件夹下删除.deploy_git</span><br><span class="line">$ git config --global core.autocrlf false</span><br><span class="line">重新导出：$ hexo g</span><br><span class="line">发布版本: $ hexo d</span><br></pre></td></tr></table></figure><p><em>这里的3，代表的意思是配置git的全局变量，关闭它的自动换行功能，当然了，针对其中的工作原理可以选择使用其他的配置方式，不一定要采用关闭的方式。</em></p><hr><p><strong>至于其他的初始化，如何进行配置等，这里不做详细指导</strong><br>各位可以通过百度或者谷歌就能找到答案；</p>]]></content>
+      <link href="/2016/09/22/hello-%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8git%E4%B8%8A%E5%BC%80%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+      <content type="html"><![CDATA[<p>这里采用了<a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>作为搭建工具</p><p>具体的演示内容就不在这进行多余的叙述，搭建的过程也是困难重重。</p><p>一开始就遇到一个问题，不论如何都是不对，后面根据知乎里面一个大神的解答，终于能够顺利发布版本进行更新。</p><blockquote><p>以下是那位大神的解答</p></blockquote><pre class=" language-bash"><code class="language-bash">首先清空 $ hexo clean然后在你建立的博客文件夹下删除.deploy_git$ <span class="token function">git</span> config --global core.autocrlf <span class="token boolean">false</span>重新导出：$ hexo g发布版本: $ hexo d</code></pre><p><em>这里的3，代表的意思是配置git的全局变量，关闭它的自动换行功能，当然了，针对其中的工作原理可以选择使用其他的配置方式，不一定要采用关闭的方式。</em></p><hr><p><strong>至于其他的初始化，如何进行配置等，这里不做详细指导</strong><br>各位可以通过百度或者谷歌就能找到答案；</p>]]></content>
       
       <categories>
           
@@ -78,15 +122,15 @@
     </entry>
     
     <entry>
-      <title>走廊</title>
-      <link href="/gallery/index.html"/>
-      <content type="html"><![CDATA[]]></content>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <content type="html"><![CDATA[<blockquote><p>蓝告白的博客，langaobai‘s blog’</p></blockquote><p>俗话说的好，<strong>好记性不如烂笔头</strong>，这是我的个人博客；</p><p>一直以来都没有好好记录和整理一下关于自己的东西；</p><p>原来建立博客的时候还是两年前的事情了，但直到最近才发现自己很多时候，<strong>没有记录，意味着自己没有好好沉淀属于自己的东西。</strong></p><p>博客会记录关于三个方面的东西，<strong>IT技术</strong>，<strong>书籍</strong>，<strong>电影</strong></p>]]></content>
     </entry>
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <content type="html"><![CDATA[<p>一开始就不够接近，只是雾里看花不知其轮廓，等我再次靠近了，看看究竟是什么样子，我再说说</p>]]></content>
+      <title>走廊</title>
+      <link href="/gallery/index.html"/>
+      <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>

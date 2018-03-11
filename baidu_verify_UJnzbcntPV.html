@@ -23,6 +23,8 @@
 
 
 
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
 
 
 
@@ -83,6 +85,13 @@
 
     
 
+    
+
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+
+    
+        <link rel="stylesheet" href="/css/appreciate.css">
+    
     
 
     <!-- Config CSS -->
@@ -214,7 +223,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="墨鸦">
-    <meta name="msapplication-starturl" content="http://yoursite.com/baidu_verify_UJnzbcntPV.html">
+    <meta name="msapplication-starturl" content="http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="墨鸦">
@@ -233,7 +242,7 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/baidu_verify_UJnzbcntPV.html">
+    <meta property="og:url" content="http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="墨鸦">
     <meta property="og:image" content="/img/favicon.png">
@@ -247,7 +256,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/baidu_verify_UJnzbcntPV.html" />
+        <link rel="canonical" href="http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -260,6 +269,15 @@
 
     <!-- Analytics -->
     
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?956dbb717858ec56aa5bed10a3b493b8';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
     
     
 
@@ -306,7 +324,7 @@
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
             <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
+    var randomNum = Math.floor(Math.random() * 22 + 1);
 
     $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
@@ -349,6 +367,18 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACXklEQVR42u3aQW6EMAwFUO5/6fYAI6i/HQIdPVaoUkLeLJL028fPVz8HHh4eHh4eHh7ey3hH+fkc9fl+9pezUWfzj9aGh4eHt4X3x1Z7iTlbUIWa/nDXa8PDw8PbzzvbcOvvvcVNDhI8PDy8/86rbPHXX+mNwsPDw3szr37xvZ659xU8PDy8t/GCf/hbG3qpfPVs1oKHh4dX5tWLTPvft9b38PDw8Aq8uKWpHEakY9Mj5PQreHh4eDfzess6u2TXI4M0dKj/EHh4eHg7eWmQ2mtpXdW0Gh8MeHh4eIt4venSo2J+va5Hw3h4eHh7ePOSVdpMMGk1CFoH8PDw8Lbw6kfFdctp/fI9iYnx8PDw9vPSi+88hpg3KDQ7I/Dw8PCW8ipX5Pq2npb/01LZqL6Hh4eHt4g3D1LXHhiT4AMPDw/vbl7leOgtJW1Q6H0RDw8P71lePWCdhw71q3zc1oCHh4d3M68envYaCNIjpxeU4OHh4T3FS6PYNHpIi21p2QwPDw9vDy+NHtKwtVcwS8tyeHh4eDt5lQG9qLceH0zmDzoj8PDw8G7gTabukdILdGnleHh4eA/x0oAgnbN3IC2IcfHw8PAW8dJANt3cKxfoZmiLh4eHt52XPvMYd8IuzYCHh4d3M6/XWtoLESqX43oTGB4eHt6zvMphMI8J0kJX78qOh4eHt5PXLNWHsPrxUD9m8PDw8N7PCwr5g1bUdBQeHh7em3mTYliv5PbAlRoPDw9vaRixdlmr2hHw8PDwdvJ6EUAvqK23GqTtVnh4eHh7eN/34OHh4eHh4eHhveD5BcCPWNw/GGTUAAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
 
     <!-- Tags (bookmark) -->
     
@@ -363,10 +393,21 @@
     
 
     
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://yoursite.com/baidu_verify_UJnzbcntPV.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html&pic=http://blog.langaobai.top/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -375,7 +416,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://yoursite.com/baidu_verify_UJnzbcntPV.html&via=LanGaoBai" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html&via=LanGaoBai" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -384,7 +425,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/baidu_verify_UJnzbcntPV.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -393,7 +434,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/baidu_verify_UJnzbcntPV.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -425,7 +466,48 @@
     
 </div>
 
+                
 
+                <!-- appreciate -->
+                
+                    <!-- appreciate page -->
+<div class="page-reward">
+    <a href="javascript:;" class="page-reward-btn tooltip-top">
+        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+                赞
+            </span>
+            <span class="tooltip-content">
+                <span class="tooltip-text">
+                    <span class="tooltip-inner">
+                        <p class="reward-p">
+                            <i class="fa fa-quote-left"></i>
+                            欢迎留言^.^
+                            <i class="fa fa-quote-right"></i>
+                        </p>
+                        <div class="reward-box">
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/Alipay.png">
+                                <span class="reward-type">支付宝</span>
+                            </div>
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/WeChatPay.png">
+                                <span class="reward-type">微信</span>
+                            </div>
+
+                        </div>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </a>
+</div>
+                
+
+
+                
                 
 
                 <!-- Post Comments -->
@@ -436,8 +518,8 @@
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/baidu_verify_UJnzbcntPV.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/baidu_verify_UJnzbcntPV.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://blog.langaobai.top/baidu_verify_UJnzbcntPV.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 <script type="text/ls-javascript" id="disqus-thread-script">
@@ -557,7 +639,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -575,7 +657,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -629,7 +711,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">5</span>
+                <span class="sidebar-badge">3</span>
             </a>
         </li>
         
@@ -826,6 +908,9 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

@@ -38,9 +38,9 @@
       <category term="数据格式" scheme="http://blog.langaobai.top/categories/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/"/>
     
     
-      <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
-    
       <category term="JSON" scheme="http://blog.langaobai.top/tags/JSON/"/>
+    
+      <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
     
   </entry>
   

@@ -16,9 +16,9 @@
       
         <tags>
             
-            <tag> BSON </tag>
-            
             <tag> JSON </tag>
+            
+            <tag> BSON </tag>
             
         </tags>
       
@@ -90,14 +90,14 @@
     </entry>
     
     <entry>
-      <title>标签云</title>
-      <link href="/blog/tags/index.html"/>
+      <title>时间桥</title>
+      <link href="/blog/timeline/index.html"/>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>时间桥</title>
-      <link href="/blog/timeline/index.html"/>
+      <title>标签云</title>
+      <link href="/blog/tags/index.html"/>
       <content type="html"><![CDATA[]]></content>
     </entry>
     

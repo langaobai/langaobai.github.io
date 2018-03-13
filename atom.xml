@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.langaobai.top/"/>
+  <link href="http://langaobai.coding.me/blog/"/>
   <updated>2018-03-10T11:13:53.918Z</updated>
-  <id>http://blog.langaobai.top/</id>
+  <id>http://langaobai.coding.me/blog/</id>
   
   <author>
     <name>LanGaoBai</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>json与bson的区别</title>
-    <link href="http://blog.langaobai.top/2018/03/10/json%E4%B8%8Ebson%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://blog.langaobai.top/2018/03/10/json与bson的区别/</id>
+    <link href="http://langaobai.coding.me/blog/2018/03/10/json%E4%B8%8Ebson%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://langaobai.coding.me/blog/2018/03/10/json与bson的区别/</id>
     <published>2018-03-10T10:56:00.000Z</published>
     <updated>2018-03-10T11:13:53.918Z</updated>
     
@@ -35,19 +35,19 @@
     
     </summary>
     
-      <category term="数据格式" scheme="http://blog.langaobai.top/categories/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/"/>
+      <category term="数据格式" scheme="http://langaobai.coding.me/blog/categories/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/"/>
     
     
-      <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
+      <category term="BSON" scheme="http://langaobai.coding.me/blog/tags/BSON/"/>
     
-      <category term="JSON" scheme="http://blog.langaobai.top/tags/JSON/"/>
+      <category term="JSON" scheme="http://langaobai.coding.me/blog/tags/JSON/"/>
     
   </entry>
   
   <entry>
     <title>Oracle常用命令</title>
-    <link href="http://blog.langaobai.top/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.langaobai.top/2018/03/09/Oracle常用命令/</id>
+    <link href="http://langaobai.coding.me/blog/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://langaobai.coding.me/blog/2018/03/09/Oracle常用命令/</id>
     <published>2018-03-09T08:02:00.000Z</published>
     <updated>2018-03-10T14:23:14.850Z</updated>
     
@@ -64,19 +64,19 @@
     
     </summary>
     
-      <category term="Oracle" scheme="http://blog.langaobai.top/categories/Oracle/"/>
+      <category term="Oracle" scheme="http://langaobai.coding.me/blog/categories/Oracle/"/>
     
     
-      <category term="Oracle" scheme="http://blog.langaobai.top/tags/Oracle/"/>
+      <category term="Oracle" scheme="http://langaobai.coding.me/blog/tags/Oracle/"/>
     
-      <category term="note" scheme="http://blog.langaobai.top/tags/note/"/>
+      <category term="note" scheme="http://langaobai.coding.me/blog/tags/note/"/>
     
   </entry>
   
   <entry>
     <title>hello,大家好，这是我在git上开通的博客</title>
-    <link href="http://blog.langaobai.top/2016/09/22/hello-%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8git%E4%B8%8A%E5%BC%80%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://blog.langaobai.top/2016/09/22/hello-大家好，这是我在git上开通的博客/</id>
+    <link href="http://langaobai.coding.me/blog/2016/09/22/hello-%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8git%E4%B8%8A%E5%BC%80%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://langaobai.coding.me/blog/2016/09/22/hello-大家好，这是我在git上开通的博客/</id>
     <published>2016-09-22T15:29:00.000Z</published>
     <updated>2018-03-10T14:20:08.196Z</updated>
     
@@ -92,12 +92,12 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://blog.langaobai.top/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://langaobai.coding.me/blog/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://blog.langaobai.top/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://langaobai.coding.me/blog/tags/Hexo/"/>
     
-      <category term="Node.js" scheme="http://blog.langaobai.top/tags/Node-js/"/>
+      <category term="Node.js" scheme="http://langaobai.coding.me/blog/tags/Node-js/"/>
     
   </entry>
   

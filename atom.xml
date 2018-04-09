@@ -49,7 +49,7 @@
     <link href="http://blog.langaobai.top/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://blog.langaobai.top/2018/03/09/Oracle常用命令/</id>
     <published>2018-03-09T08:02:00.000Z</published>
-    <updated>2018-03-22T09:13:54.052Z</updated>
+    <updated>2018-04-02T03:18:35.225Z</updated>
     
     <summary type="html">
     
@@ -70,6 +70,34 @@
       <category term="Oracle" scheme="http://blog.langaobai.top/tags/Oracle/"/>
     
       <category term="note" scheme="http://blog.langaobai.top/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MODBUS协议</title>
+    <link href="http://blog.langaobai.top/2018/03/09/MODBUS%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://blog.langaobai.top/2018/03/09/MODBUS协议/</id>
+    <published>2018-03-09T06:34:00.000Z</published>
+    <updated>2018-04-09T05:58:00.651Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;情况介绍&quot;&gt;&lt;a href=&quot;#情况介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="MODBUS" scheme="http://blog.langaobai.top/categories/MODBUS/"/>
+    
+    
+      <category term="MODBUS" scheme="http://blog.langaobai.top/tags/MODBUS/"/>
+    
+      <category term="通信协议" scheme="http://blog.langaobai.top/tags/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
     
   </entry>
   

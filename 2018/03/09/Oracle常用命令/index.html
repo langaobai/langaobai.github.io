@@ -253,7 +253,7 @@
 
     
         <meta property="article:published_time" content="Fri Mar 09 2018 16:02:00 GMT+0800">
-        <meta property="article:modified_time" content="Mon Apr 02 2018 11:18:35 GMT+0800">
+        <meta property="article:modified_time" content="Fri Apr 20 2018 17:14:28 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -276,7 +276,7 @@
     "mainEntityOfPage": "http://blog.langaobai.top/2018/03/09/Oracle常用命令/index.html",
     "headline": "Oracle常用命令",
     "datePublished": "Fri Mar 09 2018 16:02:00 GMT+0800",
-    "dateModified": "Mon Apr 02 2018 11:18:35 GMT+0800",
+    "dateModified": "Fri Apr 20 2018 17:14:28 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "LanGaoBai",
@@ -384,7 +384,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Oracle表空间创建"><span class="post-toc-number">1.</span> <span class="post-toc-text">Oracle表空间创建</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Oracle导入-导出dmp"><span class="post-toc-number">2.</span> <span class="post-toc-text">Oracle导入/导出dmp</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Oracle清空或者删除当前用户下所有的表"><span class="post-toc-number">3.</span> <span class="post-toc-text">Oracle清空或者删除当前用户下所有的表</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如何使用sql语句操作表中的字段"><span class="post-toc-number">4.</span> <span class="post-toc-text">如何使用sql语句操作表中的字段</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Oracle表空间创建"><span class="post-toc-number">1.</span> <span class="post-toc-text">Oracle表空间创建</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Oracle导入-导出dmp"><span class="post-toc-number">2.</span> <span class="post-toc-text">Oracle导入/导出dmp</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Oracle清空或者删除当前用户下所有的表"><span class="post-toc-number">3.</span> <span class="post-toc-text">Oracle清空或者删除当前用户下所有的表</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如何使用sql语句操作表中的字段"><span class="post-toc-number">4.</span> <span class="post-toc-text">如何使用sql语句操作表中的字段</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#删除表空间"><span class="post-toc-number">5.</span> <span class="post-toc-text">删除表空间</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#删除用户"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">删除用户</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#删除表空间-1"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">删除表空间</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -646,6 +646,10 @@ SPOOL logs<span class="token operator">/</span>create_procedure<span class="toke
 </ol>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">MODIFY</span> 要修改的字段 VARCHAR2（<span class="token number">12</span>）<span class="token punctuation">;</span><span class="token comment" spellcheck="true">-- 修改</span>
 <span class="token keyword">COMMENT</span> <span class="token keyword">ON</span> <span class="token keyword">COLUMN</span> 表名<span class="token punctuation">.</span>要修改的字段 <span class="token operator">IS</span> <span class="token string">'系统时间'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">-- 注释</span>
+</code></pre>
+<h3 id="删除表空间"><a href="#删除表空间" class="headerlink" title="删除表空间"></a>删除表空间</h3><h4 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h4><pre class=" language-sql"><code class="language-sql"><span class="token keyword">drop</span> <span class="token keyword">user</span> 用户名称 <span class="token keyword">cascade</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="删除表空间-1"><a href="#删除表空间-1" class="headerlink" title="删除表空间"></a>删除表空间</h4><pre class=" language-sql"><code class="language-sql"><span class="token keyword">drop</span> <span class="token keyword">tablespace</span> 表空间名称 including contents <span class="token operator">and</span> datafiles <span class="token keyword">cascade</span> <span class="token keyword">constraint</span><span class="token punctuation">;</span>
 </code></pre>
 
         

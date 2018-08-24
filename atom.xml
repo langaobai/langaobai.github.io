@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2018-05-06T10:31:57.572Z</updated>
+  <updated>2018-08-24T02:13:34.310Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些版本命名小常识</title>
+    <link href="http://blog.langaobai.top/2018/08/24/%E4%B8%80%E4%BA%9B%E7%89%88%E6%9C%AC%E5%91%BD%E5%90%8D%E5%B0%8F%E5%B8%B8%E8%AF%86/"/>
+    <id>http://blog.langaobai.top/2018/08/24/一些版本命名小常识/</id>
+    <published>2018-08-24T02:02:00.000Z</published>
+    <updated>2018-08-24T02:13:34.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h5 id=&quot;1-Alpha版-内部测试版&quot;&gt;&lt;a href=&quot;#1-Alpha版-内部测试版&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="版本管理" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="版本" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC/"/>
+    
+      <category term="小常识" scheme="http://blog.langaobai.top/tags/%E5%B0%8F%E5%B8%B8%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>版本管理——重新认识版本管理</title>

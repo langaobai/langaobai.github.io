@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2018-08-24T02:13:34.310Z</updated>
+  <updated>2018-08-29T02:01:33.596Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法</title>
+    <link href="http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95/"/>
+    <id>http://blog.langaobai.top/2018/08/26/算法/</id>
+    <published>2018-08-26T04:42:00.000Z</published>
+    <updated>2018-08-29T02:01:33.596Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;入门简介&quot;&gt;&lt;a href=&quot;#入门简介&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>一些版本命名小常识</title>
@@ -41,6 +67,40 @@
       <category term="版本" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC/"/>
     
       <category term="小常识" scheme="http://blog.langaobai.top/tags/%E5%B0%8F%E5%B8%B8%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于subversion的一些知识</title>
+    <link href="http://blog.langaobai.top/2018/05/31/%E5%85%B3%E4%BA%8Esubversion%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86/"/>
+    <id>http://blog.langaobai.top/2018/05/31/关于subversion的一些知识/</id>
+    <published>2018-05-31T05:53:00.000Z</published>
+    <updated>2018-08-29T02:02:29.633Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;前面，有一篇文章专门提到了，&lt;strong&gt;重新认识版本管理&lt;/strong&gt;，并提到的&lt;strong&gt;版本管理的重要性&lt;/strong&gt;；&lt;/p&gt;
+&lt;p&gt;作为一名程序员，少不了对自己的要求越来越严格，但是如何严谨的规范和约束自己，包括自己所在的团队呢？&lt;/p&gt;
+&lt;p&gt;在之
+        
+      
+    
+    </summary>
+    
+      <category term="版本管理" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="书籍" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/%E4%B9%A6%E7%B1%8D/"/>
+    
+    
+      <category term="SVN" scheme="http://blog.langaobai.top/tags/SVN/"/>
+    
+      <category term="版本管理" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="程序员必修三部曲" scheme="http://blog.langaobai.top/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E4%BF%AE%E4%B8%89%E9%83%A8%E6%9B%B2/"/>
     
   </entry>
   
@@ -127,6 +187,34 @@
       <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
     
       <category term="JSON" scheme="http://blog.langaobai.top/tags/JSON/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB</title>
+    <link href="http://blog.langaobai.top/2018/03/10/MongoDB/"/>
+    <id>http://blog.langaobai.top/2018/03/10/MongoDB/</id>
+    <published>2018-03-10T10:07:00.000Z</published>
+    <updated>2018-03-11T01:59:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="MongDB" scheme="http://blog.langaobai.top/categories/MongDB/"/>
+    
+    
+      <category term="MongDB" scheme="http://blog.langaobai.top/tags/MongDB/"/>
+    
+      <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
     
   </entry>
   

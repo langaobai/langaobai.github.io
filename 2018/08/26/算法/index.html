@@ -253,7 +253,7 @@
 
     
         <meta property="article:published_time" content="Sun Aug 26 2018 12:42:00 GMT+0800">
-        <meta property="article:modified_time" content="Wed Aug 29 2018 10:01:33 GMT+0800">
+        <meta property="article:modified_time" content="Wed Aug 29 2018 17:23:23 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -276,7 +276,7 @@
     "mainEntityOfPage": "http://blog.langaobai.top/2018/08/26/算法/index.html",
     "headline": "算法",
     "datePublished": "Sun Aug 26 2018 12:42:00 GMT+0800",
-    "dateModified": "Wed Aug 29 2018 10:01:33 GMT+0800",
+    "dateModified": "Wed Aug 29 2018 17:23:23 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "LanGaoBai",
@@ -573,8 +573,48 @@
 <p>冒泡排序的最坏时间复杂度为$$O({n^2})$$</p>
 <p>综上，因此冒泡排序总的平均时间复杂度为$$O({n^2})$$</p>
 <h4 id="算法稳定性"><a href="#算法稳定性" class="headerlink" title="算法稳定性"></a>算法稳定性</h4><p>冒泡排序就是把小的元素往前调或者把大的元素往后调。比较是相邻的两个元素比较，交换也发生在这两个元素之间。所以，如果两个元素相等，是不会再交换的；如果两个相等的元素没有相邻，那么即使通过前面的两两交换把两个相邻起来，这时候也不会交换，所以相同元素的前后顺序并没有改变，所以冒泡排序是一种稳定排序算法。</p>
-<h4 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java">
+<h4 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+    * @Title bubbleSort 
+    * @Description TODO(冒泡排序，第一种排序方式) 
+    * @param array
+    * @return
+    * @throws
+    */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">bubbleSort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token operator">-</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">int</span> temp <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    array<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> array<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/**
+    * @Title bubbleSort 
+    * @Description TODO(冒泡排序，第二种排序方式) 
+    * @param array
+    * @return
+    * @throws
+    */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">bubbleSort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token punctuation">(</span>array<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>j <span class="token operator">>=</span> i<span class="token punctuation">;</span>j<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">int</span> temp <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    array<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> array<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 </code></pre>
+<p>都是冒泡法排序，但是随着排序数组的数据量增大，后者的时间消耗会比第一种少很多；</p>
+<p>这里放在一起，是为了便于思考，方便对整个算法进行梳理；</p>
 <h3 id="快速排序法"><a href="#快速排序法" class="headerlink" title="快速排序法"></a>快速排序法</h3>
         
     

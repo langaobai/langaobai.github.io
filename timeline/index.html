@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="display: none;" lang="zh">
     <head>
-    <meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
@@ -219,7 +219,7 @@
 
     <!-- Import jQuery -->
     
-        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+        <script>lsloader.load("jq_js","https://cdn.bootcss.com/jquery/2.2.1/jquery.js", true)</script>
     
 
     <!-- WebAPP Icons -->
@@ -301,12 +301,12 @@
     <!-- Custom Head -->
     
 
-<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 
     
         <body id="scheme-Paradox" class="lazy">
-            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
                 
 
                 <!-- Main Container -->
@@ -753,13 +753,13 @@
                 		</div>
 
                 		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2018/08/26/算法之旅/">算法之旅</a></div>
+                    			<div class="md-timeline-title"><a href="/2018/08/26/算法之旅/">算法之旅-排序</a></div>
 					<div class="md-timeline-info">
 						<span class="md-timeline-info-span">分类:
 							<a class="category-link" href="/categories/算法/">算法</a>
 						</span>
 						<span class="md-timeline-info-span">标签:
-							<a class="tag-link" href="/tags/数据结构/">数据结构</a>, <a class="tag-link" href="/tags/算法/">算法</a>
+							<a class="tag-link" href="/tags/冒泡排序/">冒泡排序</a>, <a class="tag-link" href="/tags/堆排序/">堆排序</a>, <a class="tag-link" href="/tags/归并排序/">归并排序</a>, <a class="tag-link" href="/tags/快速排序/">快速排序</a>, <a class="tag-link" href="/tags/排序/">排序</a>, <a class="tag-link" href="/tags/插入排序/">插入排序</a>, <a class="tag-link" href="/tags/算法/">算法</a>, <a class="tag-link" href="/tags/选择排序/">选择排序</a>
 						</span>
 						
 					</div>
@@ -1453,6 +1453,21 @@ console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viose
 
                 </main>
             </div>
-        </body>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
     
 </html>

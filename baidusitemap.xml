@@ -5,15 +5,27 @@
     
   <url>
     <loc>http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85/</loc>
-    <lastmod>2018-09-02T14:25:54.871Z</lastmod>
+    <lastmod>2018-09-02T15:21:40.160Z</lastmod>
     <data>
         <display>
-        <title>算法之旅</title>
+        <title>算法之旅-排序</title>
         <pubTime>2018-08-26T04:42:00.000Z</pubTime>
         
         <tag>算法</tag>
          
-        <tag>数据结构</tag>
+        <tag>排序</tag>
+         
+        <tag>快速排序</tag>
+         
+        <tag>冒泡排序</tag>
+         
+        <tag>选择排序</tag>
+         
+        <tag>归并排序</tag>
+         
+        <tag>插入排序</tag>
+         
+        <tag>堆排序</tag>
          
          
            

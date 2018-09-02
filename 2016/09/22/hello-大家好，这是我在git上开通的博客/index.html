@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="display: none;" lang="zh">
     <head>
-    <meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
@@ -219,7 +219,7 @@
 
     <!-- Import jQuery -->
     
-        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+        <script>lsloader.load("jq_js","https://cdn.bootcss.com/jquery/2.2.1/jquery.js", true)</script>
     
 
     <!-- WebAPP Icons -->
@@ -334,12 +334,12 @@
     <!-- Custom Head -->
     
 
-<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 
     
         <body id="scheme-Paradox" class="lazy">
-            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
                 
 
                 <!-- Main Container -->
@@ -548,13 +548,13 @@
 <blockquote>
 <p>以下是那位大神的解答</p>
 </blockquote>
-<pre class=" language-bash"><code class="language-bash">首先清空 $ hexo clean
+<pre class=" language-lang-bash"><code class="language-lang-bash">首先清空 $ hexo clean
 然后在你建立的博客文件夹下删除.deploy_git
-$ <span class="token function">git</span> config --global core.autocrlf <span class="token boolean">false</span>
+$ git config --global core.autocrlf false
 重新导出：$ hexo g
 发布版本: $ hexo d
 </code></pre>
-<p><em>这里的3，代表的意思是配置git的全局变量，关闭它的自动换行功能，当然了，针对其中的工作原理可以选择使用其他的配置方式，不一定要采用关闭的方式。</em></p>
+<p>_这里的3，代表的意思是配置git的全局变量，关闭它的自动换行功能，当然了，针对其中的工作原理可以选择使用其他的配置方式，不一定要采用关闭的方式。_</p>
 <hr>
 <p><strong>至于其他的初始化，如何进行配置等，这里不做详细指导</strong><br>各位可以通过百度或者谷歌就能找到答案；</p>
 
@@ -1100,6 +1100,21 @@ console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viose
 
                 </main>
             </div>
-        </body>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
     
 </html>

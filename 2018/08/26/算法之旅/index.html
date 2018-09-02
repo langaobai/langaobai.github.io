@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="baidu-site-verification" content="UJnzbcntPV" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            算法之旅 | 
+        
+        墨鸦
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",算法,数据结构">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+
+    
+        <link rel="stylesheet" href="/css/appreciate.css">
+    
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="墨鸦">
+    <meta name="msapplication-starturl" content="http://blog.langaobai.top/2018/08/26/算法之旅/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="墨鸦">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="/atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://blog.langaobai.top/2018/08/26/算法之旅/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="算法之旅 | 墨鸦">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="算法"> <meta property="og:article:tag" content="数据结构"> 
+
+    
+        <meta property="article:published_time" content="Sun Aug 26 2018 12:42:00 GMT+0800">
+        <meta property="article:modified_time" content="Sun Sep 02 2018 22:25:54 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://blog.langaobai.top/2018/08/26/算法之旅/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://blog.langaobai.top/2018/08/26/算法之旅/index.html",
+    "headline": "算法之旅",
+    "datePublished": "Sun Aug 26 2018 12:42:00 GMT+0800",
+    "dateModified": "Sun Sep 02 2018 22:25:54 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "LanGaoBai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "吾日三省吾身"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "墨鸦",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",算法,数据结构",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?956dbb717858ec56aa5bed10a3b493b8';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!-- 百度资源推送 -->
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#入门简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">入门简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#排序算法"><span class="post-toc-number">2.</span> <span class="post-toc-text">排序算法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#时间复杂度和稳定性对比"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">时间复杂度和稳定性对比</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#冒泡排序法"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">冒泡排序法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#冒泡排序原理-冒泡排序百度百科"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">冒泡排序原理^冒泡排序百度百科</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#时间复杂度"><span class="post-toc-number">2.2.2.</span> <span class="post-toc-text">时间复杂度</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法稳定性"><span class="post-toc-number">2.2.3.</span> <span class="post-toc-text">算法稳定性</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法实现"><span class="post-toc-number">2.2.4.</span> <span class="post-toc-text">算法实现</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#快速排序法"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">快速排序法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法介绍-快速排序百度百科"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">算法介绍^快速排序百度百科</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法原理"><span class="post-toc-number">2.3.2.</span> <span class="post-toc-text">算法原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法实现-1"><span class="post-toc-number">2.3.3.</span> <span class="post-toc-text">算法实现</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#插入排序"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">插入排序</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法介绍-插入排序百度百科"><span class="post-toc-number">2.4.1.</span> <span class="post-toc-text">算法介绍^插入排序百度百科</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法原理-1"><span class="post-toc-number">2.4.2.</span> <span class="post-toc-text">算法原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法实现-2"><span class="post-toc-number">2.4.3.</span> <span class="post-toc-text">算法实现</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#归并排序-归并排序百度百科"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">归并排序^归并排序百度百科</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法介绍"><span class="post-toc-number">2.5.1.</span> <span class="post-toc-text">算法介绍</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法定义"><span class="post-toc-number">2.5.2.</span> <span class="post-toc-text">算法定义</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法性能"><span class="post-toc-number">2.5.3.</span> <span class="post-toc-text">算法性能</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法实现-3"><span class="post-toc-number">2.5.4.</span> <span class="post-toc-text">算法实现</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#选择排序-选择排序百度百科"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">选择排序^选择排序百度百科</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法介绍-1"><span class="post-toc-number">2.6.1.</span> <span class="post-toc-text">算法介绍</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法性能-1"><span class="post-toc-number">2.6.2.</span> <span class="post-toc-text">算法性能</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法实现-4"><span class="post-toc-number">2.6.3.</span> <span class="post-toc-text">算法实现</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#堆排序-堆排序百度百科"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">堆排序^堆排序百度百科</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#聚类算法"><span class="post-toc-number">3.</span> <span class="post-toc-text">聚类算法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#列表搜索算法"><span class="post-toc-number">4.</span> <span class="post-toc-text">列表搜索算法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#图标搜索算法"><span class="post-toc-number">5.</span> <span class="post-toc-text">图标搜索算法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数学类算法"><span class="post-toc-number">6.</span> <span class="post-toc-text">数学类算法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数据压缩算法"><span class="post-toc-number">7.</span> <span class="post-toc-text">数据压缩算法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安全算法"><span class="post-toc-number">8.</span> <span class="post-toc-text">安全算法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数据结构"><span class="post-toc-number">9.</span> <span class="post-toc-text">数据结构</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 22 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                算法之旅
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>LanGaoBai</strong>
+        <span>8月 26, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACXklEQVR42u3aQVIEIQwF0L7/pfUAOuNPAkhNPVZTOtI8Fk385Pn66PHg4eHh4eHh4eFdxnvi8eqvXs3zy4OD3y5YGx4eHt4R3h+v2vg7yePfU39uWXVteHh4eCd5r5b16jvJUZFsU/LzZG14eHh49/N61OQzHh4e3ufx8gXlBXd1W/Hw8PBu4CX/8FdD2F7R/G9ZCx4eHl7Myy+Zzn8+er+Hh4eHF/DKLU3x6ztpL3h/Sbag6QoPDw9vA2/t4+cXY/P14OHh4e3m5c0B1aAhP1ryVoNyjIuHh4e3gddrAsgbCPIjpHcJF517eHh4eEt51QX1rrLmR8WopMbDw8PbxqsWzVVwwuu1xuLh4eHdwJtHrnmgMJkZDw8P7x7e/IJ/bQleaFnAw8PD28zrNTytWtAk6i2k1Hh4eHhLeUlwMAlYe01X1fnx8PDw/ouXFNB5vJvMn8MKwS4eHh7eZl5vil7BXd2O5nUaHh4e3mbeJFSthhqTYHfUdIWHh4e3gdeLGJICenJU9I4oPDw8vN28JxiTl/UTj/cbl3zGw8PDO8mrRrpJeLHq0qtaxOPh4eGd5M0bpPKtqRbNo5QaDw8PbxtvUhDnBffkmIkCDjw8PLzNvOrIS+15QNycAQ8PD28zr/q6TwKLeZxRLffx8PDwzvOSw2DenlUtvpcdDHh4eHjbeKuu85MGrOr124KsBQ8PD+8CXt4EUKX2gl08PDy8+3mrAojkkCgEzXh4eHgHeUmgUI1xqy0CvY3Aw8PDO8+bRADzV3wSZBSaDPDw8PA28z5v4OHh4eHh4eHhXTC+ATH9m6d5abQaAAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/数据结构/">数据结构</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/算法/">算法</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=算法之旅&url=http://blog.langaobai.top/2018/08/26/算法之旅/index.html&pic=http://blog.langaobai.top/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=算法之旅&url=http://blog.langaobai.top/2018/08/26/算法之旅/index.html&via=LanGaoBai" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.langaobai.top/2018/08/26/算法之旅/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://blog.langaobai.top/2018/08/26/算法之旅/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="入门简介"><a href="#入门简介" class="headerlink" title="入门简介"></a>入门简介</h2><p>算法这门课程在大二大三的时候就已经系统的讲解过，但是由于当时没有深刻理解这门课程的重要性，所以学得不是很用心；</p>
+<p>但是多年以后才明白，如果说，编程的逻辑思维对于程序员来说是一门内力的话，那么算法相当于是精妙的招式了；</p>
+<p>因此在没有好招式之前，只能发挥出自身的一部分实力，只有不断的学习更好的算法，才能将自己的逻辑思维不断最优化的表现出来；</p>
+<p>那么接下来就让我们重新系统的认识一些算法，总结出属于自己的算法之道；</p>
+<p>金庸小说中，任何优秀的武功，都是以招式直接，飘逸灵动的武功最优；</p>
+<p>而古龙的描述更直接，没有多余的招式，直接杀敌才是最好的武功；</p>
+<p>而算法也是这样，只有最直接，最快速，消耗最少的算法才是最优的；</p>
+<p>因此算法的优劣就可以从这几个简单的方向进行思考，如何最快速，最少的消耗解决问题，就是一个算法核心竞争力；</p>
+<h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><p>虽然是个很简单的排序，但是条条大路通罗马，那么哪条路是最简单，最快速，而又最优的呢？</p>
+<p>这就是一个值得商榷的问题了？</p>
+<h3 id="时间复杂度和稳定性对比"><a href="#时间复杂度和稳定性对比" class="headerlink" title="时间复杂度和稳定性对比"></a>时间复杂度和稳定性对比</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">排序方法</th>
+<th style="text-align:center">最好时间</th>
+<th style="text-align:center">平均时间</th>
+<th style="text-align:center">最坏时间</th>
+<th style="text-align:center">铺助空间</th>
+<th style="text-align:center">稳定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">直接插入</td>
+<td style="text-align:center">$$O(n)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(1)$$</td>
+<td style="text-align:center">稳定</td>
+</tr>
+<tr>
+<td style="text-align:center">二分插入</td>
+<td style="text-align:center">$$O(n)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(1)$$</td>
+<td style="text-align:center">稳定</td>
+</tr>
+<tr>
+<td style="text-align:center">希尔</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">$$O(n^{1.25})$$</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">$$O(n)$$</td>
+<td style="text-align:center">不稳定</td>
+</tr>
+<tr>
+<td style="text-align:center">冒泡</td>
+<td style="text-align:center">$$O(n)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(1)$$</td>
+<td style="text-align:center">稳定</td>
+</tr>
+<tr>
+<td style="text-align:center">快速</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center">不稳定</td>
+</tr>
+<tr>
+<td style="text-align:center">直接选择</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(n^2)$$</td>
+<td style="text-align:center">$$O(1)$$</td>
+<td style="text-align:center">不稳定</td>
+</tr>
+<tr>
+<td style="text-align:center">堆</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">不稳定</td>
+</tr>
+<tr>
+<td style="text-align:center">归并</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center">$$O(nlgn)$$</td>
+<td style="text-align:center">$$O(n)$$</td>
+<td style="text-align:center">稳定</td>
+</tr>
+<tr>
+<td style="text-align:center">基数</td>
+<td style="text-align:center">$$O(d(rd+n))$$</td>
+<td style="text-align:center">$$O(d(rd+n))$$</td>
+<td style="text-align:center">$$O(d(rd+n))$$</td>
+<td style="text-align:center">$$O(rd+n)$$</td>
+<td style="text-align:center">稳定</td>
+</tr>
+</tbody>
+</table>
+<h3 id="冒泡排序法"><a href="#冒泡排序法" class="headerlink" title="冒泡排序法"></a>冒泡排序法</h3><h4 id="冒泡排序原理-冒泡排序百度百科"><a href="#冒泡排序原理-冒泡排序百度百科" class="headerlink" title="冒泡排序原理^冒泡排序百度百科"></a>冒泡排序原理<a href="https://baike.baidu.com/item/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/4602306?fr=aladdin" target="_blank" rel="noopener">^冒泡排序百度百科</a></h4><ol>
+<li>比较相邻的元素。如果第一个比第二个大，就交换他们两个。</li>
+<li>对每一对相邻元素做同样的工作，从开始第一对到结尾的最后一对。在这一点，最后的元素应该会是最大的数。</li>
+<li>针对所有的元素重复以上的步骤，除了最后一个。</li>
+<li>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li>
+</ol>
+<h4 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h4><p>若文件的初始状态是正序的，一趟扫描即可完成排序。所需的关键字比较次数$$C$$和记录移动次数$$M$$</p>
+<p>均达到最小值：$$C_{min}=n-1$$,$$M_{min}=0$$， 所以，冒泡排序最好的时间复杂度为$$O(n)$$。</p>
+<p>　　若初始文件是反序的，需要进行$$n - 1$$趟排序。每趟排序要进行$$n-i$$次关键字的比较(1≤i≤n-1)，且每次比较都必须移动记录三次来达到交换记录位置。在这种情况下，比较和移动次数均达到最大值：<br>$$<br>C_{max} = \frac{n(n-1)}{2} = O(n^2)\<br>M_{max} = \frac{3n(n-1)}{2} = O(n^2)<br>$$</p>
+<p>冒泡排序的最坏时间复杂度为$$O({n^2})$$</p>
+<p>综上，因此冒泡排序总的平均时间复杂度为$$O({n^2})$$</p>
+<h4 id="算法稳定性"><a href="#算法稳定性" class="headerlink" title="算法稳定性"></a>算法稳定性</h4><p>冒泡排序就是把小的元素往前调或者把大的元素往后调。比较是相邻的两个元素比较，交换也发生在这两个元素之间。所以，如果两个元素相等，是不会再交换的；如果两个相等的元素没有相邻，那么即使通过前面的两两交换把两个相邻起来，这时候也不会交换，所以相同元素的前后顺序并没有改变，所以冒泡排序是一种稳定排序算法。</p>
+<h4 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+    * @Title bubbleSort 
+    * @Description TODO(冒泡排序，第一种排序方式) 
+    * @param array
+    * @return
+    * @throws
+    */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">bubbleSort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token operator">-</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">int</span> temp <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    array<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> array<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/**
+    * @Title bubbleSort 
+    * @Description TODO(冒泡排序，第二种排序方式) 
+    * @param array
+    * @return
+    * @throws
+    */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">bubbleSort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token punctuation">(</span>array<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>j <span class="token operator">>=</span> i<span class="token punctuation">;</span>j<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">int</span> temp <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    array<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    array<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> array<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>都是冒泡法排序，但是随着排序数组的数据量增大，后者的时间消耗会比第一种少很多；</p>
+<p>这里放在一起，是为了便于思考，方便对整个算法进行梳理；</p>
+<h3 id="快速排序法"><a href="#快速排序法" class="headerlink" title="快速排序法"></a>快速排序法</h3><h4 id="算法介绍-快速排序百度百科"><a href="#算法介绍-快速排序百度百科" class="headerlink" title="算法介绍^快速排序百度百科"></a>算法介绍<a href="https://baike.baidu.com/item/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95" target="_blank" rel="noopener">^快速排序百度百科</a></h4><p>快速排序（Quicksort）是对冒泡排序的一种改进。</p>
+<p>快速排序由C. A. R. Hoare在1962年提出。它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以<strong>递归</strong>进行，以此达到整个数据变成有序<strong>序列</strong>。</p>
+<h4 id="算法原理"><a href="#算法原理" class="headerlink" title="算法原理"></a>算法原理</h4><p>设要排序的数组是A[0]……A[N-1]，首先任意选取一个数据（通常选用数组的第一个数）作为关键数据，然后将所有比它小的数都放到它前面，所有比它大的数都放到它后面，这个过程称为一趟快速排序。值得注意的是，<strong>快速排序不是一种稳定的排序算法</strong>，也就是说，<strong>多个相同的值的相对位置也许会在算法结束时产生变动</strong>。</p>
+<p>一趟快速排序的算法是：</p>
+<ol>
+<li>设置两个变量i、j，排序开始的时候：i=0，j=N-1；</li>
+<li>以第一个数组元素作为关键数据，赋值给key，即key=A[0]；</li>
+<li>从j开始向前搜索，即由后开始向前搜索(j–)，找到第一个小于key的值A[j]，将A[j]和A[i]互换；</li>
+<li>从i开始向后搜索，即由前开始向后搜索(i++)，找到第一个大于key的A[i]，将A[i]和A[j]互换；</li>
+<li>重复第3、4步，直到i=j； (3,4步中，没找到符合条件的值，即3中A[j]不小于key,4中A[i]不大于key的时候改变j、i的值，使得j=j-1，i=i+1，直至找到为止。找到符合条件的值，进行交换的时候i， j指针位置不变。另外，i==j这一过程一定正好是i+或j-完成的时候，此时令循环结束）。</li>
+</ol>
+<blockquote>
+<p>从需要排序的数里面随便找出一个，然后，把<strong>比这个数小的放在这个数左边，比这个数大的放在这个数右边，一样大的和这个数放在一起</strong>，最后，<strong>左右两边各自重复上述过程</strong>，直到左边或右边只剩下一个数（或零个数）无法继续为止。</p>
+</blockquote>
+<h4 id="算法实现-1"><a href="#算法实现-1" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+    * @Title partition 
+    * @Description TODO(
+    * 这里进行分区比较，将左侧大于右侧下标的数据进行交换，
+    * 然后当左侧下标小于右侧下标进行循环，
+    * 由右侧下标开始向左侧移动，当遇到右侧下标所属数值小于左侧的时候或者当右侧下标已经移动到左侧同一个下标的时候跳出循环，将右侧下标的值赋值给左侧下标值
+    * 左侧下标开始向右侧移动，当左侧下标所属值大于初始的左侧第一个值或者右侧下标已经等于左侧下标的时候跳出循环，将左侧下标的值赋值给右侧下标值
+    * 当left>=right 跳出循环
+    * 将left初始的key赋值给right；
+    * 最后返回right下标；
+    * ) 
+    * @param array 数组
+    * @param left 左侧的下标由0开始
+    * @param right 右侧下标由array.length-1 —— 0
+    * @return
+    * @throws
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">partition</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">,</span> <span class="token keyword">int</span> left<span class="token punctuation">,</span> <span class="token keyword">int</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// 三数取中</span>
+        <span class="token keyword">int</span> mid <span class="token operator">=</span> left <span class="token operator">+</span> <span class="token punctuation">(</span>right <span class="token operator">-</span> left<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">></span> array<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">swap</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">,</span> array<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">></span> array<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">swap</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">,</span> array<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> key <span class="token operator">=</span> array<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>left <span class="token operator">&lt;</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">>=</span> key <span class="token operator">&amp;&amp;</span> right <span class="token operator">></span> left<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                right<span class="token operator">--</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            array<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> key <span class="token operator">&amp;&amp;</span> right <span class="token operator">></span> left<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                left<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            array<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        array<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">=</span> key<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> right<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+    * @Title swap 
+    * @Description TODO(用于交换两个值) 
+    * @param a 交换的值a
+    * @param b 交换的值b
+    * @throws
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> temp <span class="token operator">=</span> a<span class="token punctuation">;</span>
+        a <span class="token operator">=</span> b<span class="token punctuation">;</span>
+        b <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+    * @Title sort 
+    * @Description TODO(
+    * 对数组进行排序
+    * 当左侧下标大于等于右侧下标的时候，结束排序
+    * 当左侧下标小于右侧下标的时候，进行分区排序，返回
+    * ) 
+    * @param array 需要排序的数组
+    * @param left 左侧下标
+    * @param right 右侧下标
+    * @throws
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">sort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">,</span> <span class="token keyword">int</span> left<span class="token punctuation">,</span> <span class="token keyword">int</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>left <span class="token operator">>=</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> index <span class="token operator">=</span> <span class="token function">partition</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> left<span class="token punctuation">,</span> right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">sort</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> left<span class="token punctuation">,</span> index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">sort</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><h4 id="算法介绍-插入排序百度百科"><a href="#算法介绍-插入排序百度百科" class="headerlink" title="算法介绍^插入排序百度百科"></a>算法介绍<a href="https://baike.baidu.com/item/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/7214992?fr=aladdin" target="_blank" rel="noopener">^插入排序百度百科</a></h4><p>有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数;</p>
+<p>但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法——插入排序法插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据;</p>
+<p>算法适用于<strong>少量数据的排序</strong>，时间复杂度为$$O(n^2)$$。是<strong>稳定的排序方法</strong>。</p>
+<p>插入算法把要排序的<strong>数组分成两部分</strong>：</p>
+<p>第一部分包含了这个数组的所有元素，但将最后一个元素除外（让数组多一个空间才有插入的位置）;</p>
+<p>而第二部分就只包含这一个元素（即待插入元素）。在第一部分排序完成后，再将这个最后元素插入到已排好序的第一部分中。</p>
+<blockquote>
+<p>插入排序的基本思想是：每步将一个待排序的记录，按其关键码值的大小插入前面已经排序的文件中适当位置上，直到全部插入完为止。</p>
+</blockquote>
+<h4 id="算法原理-1"><a href="#算法原理-1" class="headerlink" title="算法原理"></a>算法原理</h4><p>最简单的理解可以是这样的：</p>
+<p>假如数组<code>int a = {5,2,1,3,4}</code></p>
+<p>选定数组中的第一数据和第二个数据进行排序，排序完毕<code>a = {[2,5],1,3,4}</code></p>
+<p>这里我用‘[]’的意思就是表示数组a[0~1]是已经排序的了，这个过程也可以理解为将数组中的第二个数据与第一个比较后，插入了第一个数据的前面；</p>
+<p>接下来就将第三个与前面已经排序好的数据进行比较，不断交换位置；</p>
+<p><code>a = {[2,1,5],3,4}</code></p>
+<p><code>a = {[1,2,5],3,4}</code></p>
+<p>就是将第三个数据与前面排序完毕的数据不断<strong>比较</strong>，<strong>交换</strong>，然后找到合适的位置；</p>
+<p>剩下的数据不断重复第三个数据所做的事情，然后直到这个已经排序完毕的数组占据了数组的所有数据；</p>
+<p>来一更好理解的图</p>
+<p><code>初始： a = {5,2,1,3,4}</code></p>
+<p><code>一轮：a = {[2,5],1,3,4}</code><br><code>二轮：a = {[1,2,5],3,4}</code><br><code>三轮：a = {[1,2,3,5],4}</code><br><code>四轮：a = {[1,2,3,4,5]}</code></p>
+<h4 id="算法实现-2"><a href="#算法实现-2" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+    * @Title insertSort 
+    * @Description TODO(可以总结的话就是：不断的扩展数组中已经排定的序列长度，直到这个数组内部的序列达到了这个数组的最大值) 
+    * @param arr 需要排序的数组
+    * @return
+    * @throws
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">insertSort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> i<span class="token punctuation">;</span> j <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">;</span> j<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;</span> arr<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    arr <span class="token operator">=</span> Util<span class="token punctuation">.</span><span class="token function">swap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>j<span class="token punctuation">,</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="归并排序-归并排序百度百科"><a href="#归并排序-归并排序百度百科" class="headerlink" title="归并排序^归并排序百度百科"></a>归并排序<a href="https://baike.baidu.com/item/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F" target="_blank" rel="noopener">^归并排序百度百科</a></h3><h4 id="算法介绍"><a href="#算法介绍" class="headerlink" title="算法介绍"></a>算法介绍</h4><p>归并排序（MERGE-SORT）是建立在归并操作上的一种有效的排序算法;</p>
+<p>该算法是采用<strong>分治法（Divide and Conquer）的一个非常典型的应用</strong>。</p>
+<p>将已有序的子序列合并，得到完全有序的序列；</p>
+<p>即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为<strong>二路归并</strong>。</p>
+<p>分治法将问题<strong>分(divide)</strong>成一些小的问题然后递归求解，而<strong>治(conquer)</strong>的阶段则将分的阶段得到的各答案”修补”在一起，即分而治之</p>
+<p><img src="\img\articlePicture\MergeSortDivideAndConquer.png" alt="分治"></p>
+<h4 id="算法定义"><a href="#算法定义" class="headerlink" title="算法定义"></a>算法定义</h4><p>所谓归并排序是指将两个或两个以上有序的数列（或有序表），合并成一个仍然有序的数列（或有序表）。这样的排序方法经常用于多个有序的数据文件归并成一个有序的数据文件。归并排序的算法比较简单。</p>
+<p>基本思想方法：</p>
+<p>（1）假设已经有两个有序数列，分别存放在两个数组s，r中；并设i，j分别为指向数组的第一个单元的下标；s有n个元素，r有m个元素。</p>
+<p>（2）再另设一个数组a，k指向该数组的第一个单元下标。</p>
+<p>（3）算法分析（过程）：</p>
+<h4 id="算法性能"><a href="#算法性能" class="headerlink" title="算法性能"></a>算法性能</h4><p>时间复杂度为O(nlog n) 这是该算法中最好、最坏和平均的时间性能。</p>
+<p>空间复杂度为 O(n)</p>
+<p>比较操作的次数介于(nlogn) / 2和nlogn - n + 1。</p>
+<p>赋值操作的次数是(2nlogn)。归并算法的空间复杂度为：0 (n)</p>
+<p>归并排序比较占用内存，但却是一种<strong>效率高且稳定的算法</strong>。</p>
+<h4 id="算法实现-3"><a href="#算法实现-3" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">sort</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>arr<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>temp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//在排序前，先建好一个长度等于原数组长度的临时数组，避免递归中频繁开辟空间</span>
+        <span class="token function">sort</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>arr<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">sort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr<span class="token punctuation">,</span><span class="token keyword">int</span> left<span class="token punctuation">,</span><span class="token keyword">int</span> right<span class="token punctuation">,</span><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>temp<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>left<span class="token operator">&lt;</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">int</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>left<span class="token operator">+</span>right<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+            <span class="token function">sort</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>left<span class="token punctuation">,</span>mid<span class="token punctuation">,</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//左边归并排序，使得左子序列有序</span>
+            <span class="token function">sort</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>right<span class="token punctuation">,</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//右边归并排序，使得右子序列有序</span>
+            <span class="token function">merge</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>left<span class="token punctuation">,</span>mid<span class="token punctuation">,</span>right<span class="token punctuation">,</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//将两个有序子数组合并操作</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr<span class="token punctuation">,</span><span class="token keyword">int</span> left<span class="token punctuation">,</span><span class="token keyword">int</span> mid<span class="token punctuation">,</span><span class="token keyword">int</span> right<span class="token punctuation">,</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> temp<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">int</span> i <span class="token operator">=</span> left<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//左序列指针</span>
+        <span class="token keyword">int</span> j <span class="token operator">=</span> mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//右序列指针</span>
+        <span class="token keyword">int</span> t <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//临时数组指针</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>i<span class="token operator">&lt;=</span>mid <span class="token operator">&amp;&amp;</span> j<span class="token operator">&lt;=</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;=</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                temp<span class="token punctuation">[</span>t<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+                temp<span class="token punctuation">[</span>t<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>i<span class="token operator">&lt;=</span>mid<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//将左边剩余元素填充进temp中</span>
+            temp<span class="token punctuation">[</span>t<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>j<span class="token operator">&lt;=</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//将右序列剩余元素填充进temp中</span>
+            temp<span class="token punctuation">[</span>t<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        t <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//将temp中的元素全部拷贝到原数组中</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>left <span class="token operator">&lt;=</span> right<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            arr<span class="token punctuation">[</span>left<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">[</span>t<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="选择排序-选择排序百度百科"><a href="#选择排序-选择排序百度百科" class="headerlink" title="选择排序^选择排序百度百科"></a>选择排序<a href="https://baike.baidu.com/item/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F" target="_blank" rel="noopener">^选择排序百度百科</a></h3><h4 id="算法介绍-1"><a href="#算法介绍-1" class="headerlink" title="算法介绍"></a>算法介绍</h4><p>选择排序（Selection sort）是一种简单直观的排序算法。</p>
+<p>它的工作原理是每一次从待排序的数据元素中<strong>选出最小（或最大）</strong>的一个元素，<strong>存放在序列的起始位置</strong>，直到全部待排序的数据元素排完。</p>
+<p> 选择排序是<strong>不稳定的排序方法</strong>。</p>
+<h4 id="算法性能-1"><a href="#算法性能-1" class="headerlink" title="算法性能"></a>算法性能</h4><p>选择排序的交换操作介于 <code>0</code>和 <code>(n-1)</code> 次之间。选择排序的比较操作为 <code>n(n - 1）/2</code> 次之间。</p>
+<p>选择排序的赋值操作介于 <code>0</code> 和 <code>3 (n - 1）</code> 次之间。</p>
+<p>比较次数<code>O(n^2）</code>，比较次数与关键字的初始状态无关，总的比较次数<code>N=(n-1）+(n-2）+...+1=n*(n-1）/2</code>。</p>
+<p>交换次数<code>O(n）</code>，最好情况是，已经有序，交换0次；</p>
+<p>最坏情况交换n-1次，逆序交换n/2次。<strong>交换次数比冒泡排序少多了</strong>，由于<strong>交换所需CPU时间比比较所需的CPU时间多</strong>，n值较小时，<strong>选择排序比冒泡排序快</strong>。</p>
+<p>选择排序是给每个位置选择当前元素最小的;</p>
+<p>比如给第一个位置选择最小的，在剩余元素里面给第二个元素选择第二小的，依次类推，直到第<code>n-1</code>个元素，第n个元素不用选择了，因为只剩下它一个最大的元素了。</p>
+<p>那么，在一趟选择，如果一个元素比当前元素小，而该小的元素又出现在一个和当前元素相等的元素后面，那么交换后稳定性就被破坏了。</p>
+<p>比较拗口，举个例子，序列<code>5 8 5 2 9</code>，我们知道第一遍选择第1个元素5会和2交换，那么原序列中<strong>两个5的相对前后顺序就被破坏了</strong>，<strong>所以选择排序是一个不稳定的排序算法</strong>。</p>
+<h4 id="算法实现-4"><a href="#算法实现-4" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java">    <span class="token comment" spellcheck="true">/**
+    * @Title selectionSort 
+    * @Description TODO
+    * 选择排序
+    * 选择无需区中的最小数不断存储在最前面，循环这个过程，直到数组完成所有排序
+    * @param arr
+    * @throws
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">selectionSort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> minIndex <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            minIndex <span class="token operator">=</span> i<span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 无序区的最小数据数组下标</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">// 在无序区中找到最小数据并保存其数组下标</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;</span> arr<span class="token punctuation">[</span>minIndex<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    minIndex <span class="token operator">=</span> j<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token comment" spellcheck="true">// 将最小元素放到本次循环的前端</span>
+            Util<span class="token punctuation">.</span><span class="token function">swap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> minIndex<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="堆排序-堆排序百度百科"><a href="#堆排序-堆排序百度百科" class="headerlink" title="堆排序^堆排序百度百科"></a>堆排序<a href="https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F" target="_blank" rel="noopener">^堆排序百度百科</a></h3><h2 id="聚类算法"><a href="#聚类算法" class="headerlink" title="聚类算法"></a>聚类算法</h2><h2 id="列表搜索算法"><a href="#列表搜索算法" class="headerlink" title="列表搜索算法"></a>列表搜索算法</h2><h2 id="图标搜索算法"><a href="#图标搜索算法" class="headerlink" title="图标搜索算法"></a>图标搜索算法</h2><h2 id="数学类算法"><a href="#数学类算法" class="headerlink" title="数学类算法"></a>数学类算法</h2><h2 id="数据压缩算法"><a href="#数据压缩算法" class="headerlink" title="数据压缩算法"></a>数据压缩算法</h2><h2 id="安全算法"><a href="#安全算法" class="headerlink" title="安全算法"></a>安全算法</h2><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2>
+        
+    
+
+    
+</div>
+
+                
+
+                <!-- appreciate -->
+                
+                    <!-- appreciate page -->
+<div class="page-reward">
+    <a href="javascript:;" class="page-reward-btn tooltip-top">
+        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+                赞
+            </span>
+            <span class="tooltip-content">
+                <span class="tooltip-text">
+                    <span class="tooltip-inner">
+                        <p class="reward-p">
+                            <i class="fa fa-quote-left"></i>
+                            欢迎留言^.^
+                            <i class="fa fa-quote-right"></i>
+                        </p>
+                        <div class="reward-box">
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/Alipay.png">
+                                <span class="reward-type">支付宝</span>
+                            </div>
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/WeChatPay.png">
+                                <span class="reward-type">微信</span>
+                            </div>
+
+                        </div>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </a>
+</div>
+                
+
+
+                
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://blog.langaobai.top/2018/08/26/算法之旅/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://blog.langaobai.top/2018/08/26/算法之旅/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//langaobai.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/08/30/你知道或不知道的单元测试/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/08/24/一些版本命名小常识/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="LanGaoBai's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        langaobai@Gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: langaobai@gmail.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/gallery" title="走廊">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                走廊
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="时间桥">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时间桥
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">cloud</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">12</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+    <a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+             sidebar.about_theme
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+    </a>
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/langaobai" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>墨鸦
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//langaobai.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

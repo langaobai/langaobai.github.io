@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85/</loc>
+    <lastmod>2018-09-02T07:58:33.228Z</lastmod>
+    <data>
+        <display>
+        <title>算法之旅</title>
+        <pubTime>2018-08-26T04:42:00.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.langaobai.top/2018/08/30/%E4%BD%A0%E7%9F%A5%E9%81%93%E6%88%96%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2018-08-31T01:29:31.989Z</lastmod>
     <data>
@@ -28,26 +48,6 @@
 
     
   <url>
-    <loc>http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85/</loc>
-    <lastmod>2018-08-30T15:21:23.140Z</lastmod>
-    <data>
-        <display>
-        <title>算法之旅</title>
-        <pubTime>2018-08-26T04:42:00.000Z</pubTime>
-        
-        <tag>算法</tag>
-         
-         
-           
-             
-              <breadCrumb title="算法" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.langaobai.top/2018/05/07/%E4%B9%A0%E6%83%AF%E7%9A%84%E5%8A%9B%E9%87%8F/</loc>
     <lastmod>2018-08-29T06:13:17.836Z</lastmod>
     <data>
@@ -55,9 +55,9 @@
         <title>习惯的力量</title>
         <pubTime>2018-05-07T05:28:00.000Z</pubTime>
         
-        <tag>管理</tag>
-         
         <tag>习惯</tag>
+         
+        <tag>管理</tag>
          
          
            
@@ -132,9 +132,9 @@
         <title>版本管理——重新认识版本管理</title>
         <pubTime>2018-04-19T09:41:00.000Z</pubTime>
         
-        <tag>管理</tag>
-         
         <tag>版本</tag>
+         
+        <tag>管理</tag>
          
          
            
@@ -176,9 +176,9 @@
         <title>专注力管理-让你的努力更高效</title>
         <pubTime>2018-04-17T03:57:00.000Z</pubTime>
         
-        <tag>专注</tag>
-         
         <tag>管理</tag>
+         
+        <tag>专注</tag>
          
         <tag>高效</tag>
          

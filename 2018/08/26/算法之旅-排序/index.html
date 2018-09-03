@@ -253,7 +253,7 @@
 
     
         <meta property="article:published_time" content="Sun Aug 26 2018 12:42:00 GMT+0800">
-        <meta property="article:modified_time" content="Mon Sep 03 2018 16:43:11 GMT+0800">
+        <meta property="article:modified_time" content="Mon Sep 03 2018 22:07:38 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -276,7 +276,7 @@
     "mainEntityOfPage": "http://blog.langaobai.top/2018/08/26/算法之旅-排序/index.html",
     "headline": "算法之旅-排序",
     "datePublished": "Sun Aug 26 2018 12:42:00 GMT+0800",
-    "dateModified": "Mon Sep 03 2018 16:43:11 GMT+0800",
+    "dateModified": "Mon Sep 03 2018 22:07:38 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "LanGaoBai",
@@ -938,11 +938,46 @@
 <h4 id="算法基本思想"><a href="#算法基本思想" class="headerlink" title="算法基本思想"></a>算法基本思想</h4><blockquote>
 <p>堆排序的基本思想是：将待排序序列构造成一个大顶堆，此时，整个序列的最大值就是堆顶的根节点。将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了</p>
 </blockquote>
-<h4 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h4><p>堆排序的时间，主要由建立初始堆和反复重建堆这两部分的时间开销构成，它们均是通过调用Heapify实现的。<br>平均性能 $O(N*logN)​$。<br>其他性能<br>由于建初始堆所需的比较次数较多，所以堆排序不适宜于记录数较少的文件。<br>堆排序是就地排序，辅助空间为$O(1)​$.<br>它是不稳定的排序方法。</p>
+<h4 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h4><p>堆排序的时间，主要由建立初始堆和反复重建堆这两部分的时间开销构成，它们均是通过调用Heapify实现的。<br>平均性能 $O(N*logN)$。<br>其他性能<br>由于建初始堆所需的比较次数较多，所以堆排序不适宜于记录数较少的文件。<br>堆排序是就地排序，辅助空间为$O(1)$.<br>它是不稳定的排序方法。</p>
 <p>（<strong>排序的稳定性</strong>是指如果在排序的序列中，存在前后相同的两个元素的话，<strong>排序前 和排序后他们的相对位置不发生变化</strong>）</p>
-<h4 id="算法实现-5"><a href="#算法实现-5" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java">
+<h4 id="算法实现-5"><a href="#算法实现-5" class="headerlink" title="算法实现"></a>算法实现</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">sort</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>arr<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//1.构建大顶堆</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>arr<span class="token punctuation">.</span>length<span class="token operator">/</span><span class="token number">2</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">//从第一个非叶子结点从下至上，从右至左调整结构</span>
+            <span class="token function">adjustHeap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>i<span class="token punctuation">,</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">//2.调整堆结构+交换堆顶元素与末尾元素</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span>arr<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            Util<span class="token punctuation">.</span><span class="token function">swap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//将堆顶元素与末尾元素进行交换</span>
+            <span class="token function">adjustHeap</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//重新对堆进行调整</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 调整大顶堆（仅是调整过程，建立在大顶堆已构建的基础上）
+     * @param arr
+     * @param i
+     * @param length
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">adjustHeap</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>arr<span class="token punctuation">,</span><span class="token keyword">int</span> i<span class="token punctuation">,</span><span class="token keyword">int</span> length<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">int</span> temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//先取出当前元素i</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> k<span class="token operator">=</span>i<span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>k<span class="token operator">&lt;</span>length<span class="token punctuation">;</span>k<span class="token operator">=</span>k<span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//从i结点的左子结点开始，也就是2i+1处开始</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token operator">&lt;</span>length <span class="token operator">&amp;&amp;</span> arr<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//如果左子结点小于右子结点，k指向右子结点</span>
+                k<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">></span>temp<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//如果子节点大于父节点，将子节点值赋给父节点（不用进行交换）</span>
+                arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                i <span class="token operator">=</span> k<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//将temp值放到最终的位置</span>
+    <span class="token punctuation">}</span>
 </code></pre>
-<h4 id="算法动画演示-5"><a href="#算法动画演示-5" class="headerlink" title="算法动画演示"></a><a href="https://www.cs.usfca.edu/~galles/visualization/HeapSort.html" target="_blank" rel="noopener">算法动画演示</a></h4><h2 id="其他算法链接地址"><a href="#其他算法链接地址" class="headerlink" title="其他算法链接地址"></a>其他算法链接地址</h2><p><a href="">算法之旅-聚类算法</a></p>
+<h4 id="算法动画演示-5"><a href="#算法动画演示-5" class="headerlink" title="算法动画演示"></a><a href="https://www.cs.usfca.edu/~galles/visualization/HeapSort.html" target="_blank" rel="noopener">算法动画演示</a></h4><h2 id="其他算法链接地址"><a href="#其他算法链接地址" class="headerlink" title="其他算法链接地址"></a>其他算法链接地址</h2><p><a href="http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E6%8E%92%E5%BA%8F/">算法之旅-排序算法</a></p>
+<p><a href="">算法之旅-聚类算法</a></p>
 <p><a href="">算法之旅-列表搜索算法</a></p>
 <p><a href="">算法之旅-图表搜索算法</a></p>
 <p><a href="">算法之旅-数学类算法</a></p>

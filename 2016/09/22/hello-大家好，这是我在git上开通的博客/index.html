@@ -219,7 +219,7 @@
 
     <!-- Import jQuery -->
     
-        <script>lsloader.load("jq_js","https://cdn.bootcss.com/jquery/2.2.1/jquery.js", true)</script>
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
     
 
     <!-- WebAPP Icons -->
@@ -548,13 +548,13 @@
 <blockquote>
 <p>以下是那位大神的解答</p>
 </blockquote>
-<pre class=" language-lang-bash"><code class="language-lang-bash">首先清空 $ hexo clean
+<pre class=" language-bash"><code class="language-bash">首先清空 $ hexo clean
 然后在你建立的博客文件夹下删除.deploy_git
-$ git config --global core.autocrlf false
+$ <span class="token function">git</span> config --global core.autocrlf <span class="token boolean">false</span>
 重新导出：$ hexo g
 发布版本: $ hexo d
 </code></pre>
-<p>_这里的3，代表的意思是配置git的全局变量，关闭它的自动换行功能，当然了，针对其中的工作原理可以选择使用其他的配置方式，不一定要采用关闭的方式。_</p>
+<p><em>这里的3，代表的意思是配置git的全局变量，关闭它的自动换行功能，当然了，针对其中的工作原理可以选择使用其他的配置方式，不一定要采用关闭的方式。</em></p>
 <hr>
 <p><strong>至于其他的初始化，如何进行配置等，这里不做详细指导</strong><br>各位可以通过百度或者谷歌就能找到答案；</p>
 
@@ -814,14 +814,6 @@ $ git config --global core.autocrlf false
 
     <!-- Article Number  -->
     
-        <li>
-            <a href="/archives">
-                文章总数
-                <span class="sidebar-badge">12</span>
-            </a>
-        </li>
-        
-    
 </ul>
 
 
@@ -854,10 +846,25 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Help & Support -->
 <!--
 
+    <a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
+
 -->
 
 <!-- Feedback -->
 <!--
+
+    <a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.feedback
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+    </a>
 
 -->
 

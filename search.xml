@@ -3,6 +3,28 @@
   
     
     <entry>
+      <title>算法之旅-聚类</title>
+      <link href="/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E8%81%9A%E7%B1%BB/"/>
+      <content type="html"><![CDATA[<h2 id="其他算法链接地址"><a href="#其他算法链接地址" class="headerlink" title="其他算法链接地址"></a>其他算法链接地址</h2><p><a href="http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E6%8E%92%E5%BA%8F/">算法之旅-排序算法</a></p><p><a href="">算法之旅-聚类算法</a></p><p><a href="">算法之旅-列表搜索算法</a></p><p><a href="">算法之旅-图表搜索算法</a></p><p><a href="">算法之旅-数学类算法</a></p><p><a href="">算法之旅-数据压缩算法</a></p><p><a href="">算法之旅-安全算法</a></p><p><a href="">算法之旅-数据结构</a></p>]]></content>
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 聚类 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>你知道或不知道的单元测试</title>
       <link href="/2018/08/30/%E4%BD%A0%E7%9F%A5%E9%81%93%E6%88%96%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
       <content type="html"><![CDATA[<h3 id="为什么现在才开始"><a href="#为什么现在才开始" class="headerlink" title="为什么现在才开始"></a>为什么现在才开始</h3><p>其实之前有看过关于Junit的测试，也实际操作并践行着，但是总觉得自己还有所欠缺着些东西；</p><p>于是想想，我应该把自己平时对于测试方面，Junit的学习认识，记录下来，然后定期的修改，增补，让自己的知识进行沉积；</p><h3 id="为什么要单元测试"><a href="#为什么要单元测试" class="headerlink" title="为什么要单元测试"></a>为什么要单元测试</h3><p>单元测试的过程，并不是最终面向客户的甚至不是面向项目经理，开发组长，而是面向程序员自己的；</p><p>单元测试一开始就不是冲着为了获得一些更好的整体质量而设计的；</p><p>那为什么程序员还需要单元测试？</p><p>一个没有用处的东西，他存在的理由究竟是什么？</p><p>首先，我们得明白<strong>什么是单元测试？</strong></p><blockquote><p>单元测试是开发者编写的一小段代码，用于检测代码的一个很小的、很明确的功能是否正确。</p><p>执行单元测试是为了证明某段代码的行为确实和开发者期望的一致。</p></blockquote>]]></content>
@@ -300,9 +322,9 @@
     </entry>
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <content type="html"><![CDATA[<blockquote><p>蓝告白的博客，langaobai‘s blog’</p></blockquote><p>俗话说的好，<strong>好记性不如烂笔头</strong>，这是我的个人博客；</p><p>一直以来都没有好好记录和整理一下关于自己的东西；</p><p>原来建立博客的时候还是两年前的事情了，但直到最近才发现自己很多时候，<strong>没有记录，意味着自己没有好好沉淀属于自己的东西。</strong></p><p>博客会记录关于三个方面的东西，<strong>IT技术</strong>，<strong>书籍</strong>，<strong>电影</strong></p>]]></content>
+      <title>标签云</title>
+      <link href="/tags/index.html"/>
+      <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
@@ -312,15 +334,15 @@
     </entry>
     
     <entry>
-      <title>标签云</title>
-      <link href="/tags/index.html"/>
+      <title>时间桥</title>
+      <link href="/timeline/index.html"/>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>时间桥</title>
-      <link href="/timeline/index.html"/>
-      <content type="html"><![CDATA[]]></content>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <content type="html"><![CDATA[<blockquote><p>蓝告白的博客，langaobai‘s blog’</p></blockquote><p>俗话说的好，<strong>好记性不如烂笔头</strong>，这是我的个人博客；</p><p>一直以来都没有好好记录和整理一下关于自己的东西；</p><p>原来建立博客的时候还是两年前的事情了，但直到最近才发现自己很多时候，<strong>没有记录，意味着自己没有好好沉淀属于自己的东西。</strong></p><p>博客会记录关于三个方面的东西，<strong>IT技术</strong>，<strong>书籍</strong>，<strong>电影</strong></p>]]></content>
     </entry>
     
   

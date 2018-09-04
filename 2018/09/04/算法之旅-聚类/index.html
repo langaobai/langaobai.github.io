@@ -46,7 +46,7 @@
     
     <title>
         
-            标签: 堆排序 | 
+            算法之旅-聚类 | 
         
         墨鸦
     </title>
@@ -57,7 +57,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",算法,聚类">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -225,7 +225,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="墨鸦">
-    <meta name="msapplication-starturl" content="http://blog.langaobai.top/tags/堆排序/">
+    <meta name="msapplication-starturl" content="http://blog.langaobai.top/2018/09/04/算法之旅-聚类/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="墨鸦">
@@ -244,13 +244,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://blog.langaobai.top/tags/堆排序/">
+    <meta property="og:url" content="http://blog.langaobai.top/2018/09/04/算法之旅-聚类/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: 堆排序 | 墨鸦">
+    <meta property="og:title" content="算法之旅-聚类 | 墨鸦">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="算法"> <meta property="og:article:tag" content="聚类"> 
 
+    
+        <meta property="article:published_time" content="Tue Sep 04 2018 10:13:00 GMT+0800">
+        <meta property="article:modified_time" content="Tue Sep 04 2018 10:15:13 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -258,13 +261,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://blog.langaobai.top/tags/堆排序/index.html" />
+        <link rel="canonical" href="http://blog.langaobai.top/2018/09/04/算法之旅-聚类/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://blog.langaobai.top/2018/09/04/算法之旅-聚类/index.html",
+    "headline": "算法之旅-聚类",
+    "datePublished": "Tue Sep 04 2018 10:13:00 GMT+0800",
+    "dateModified": "Tue Sep 04 2018 10:15:13 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "LanGaoBai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "吾日三省吾身"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "墨鸦",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",算法,聚类",
+    "description": "",
+}
+</script>
 
 
     
@@ -322,98 +355,319 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#其他算法链接地址"><span class="post-toc-number">1.</span> <span class="post-toc-text">其他算法链接地址</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 22 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/08/26/算法之旅-排序/">算法之旅-排序</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            入门简介
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/08/26/算法之旅-排序/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="LanGaoBai's avatar">
-            </div>
-            <div>
-                <strong>LanGaoBai</strong>
-                <span>8月 26, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/算法/">算法</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 22 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                算法之旅-聚类
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>LanGaoBai</strong>
+        <span>9月 04, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC4UlEQVR42u3aQW4bMRAEQP3/0841gJNV93CdrMjakxFZFIsCPJkevr6OfF7Y2NjY2NjY2NjYj2S/4id51++v/u03v//795X/sOnLNaM9Y2NjY2/NfvOn/3Jz15jkUPKvYWnP2NjY2Aew84KUHMp1Kbr+nbzI5UeDjY2NjZ1vOilLebPRtiXY2NjY2HkBawOjNjZqmx9sbGxs7CSgaQ8l33pe8P5DloaNjY39eHY+NH3Oz/90vo2NjY39YHb7zC735CvPXo3Wx8bGxt6UnReGWXMyK5btqDgaG2NjY2Nvzc7ffH2lZn21PNhqPxEbGxt7V/YsrE/A7dbz5qf9MrCxsbH3ZrfL1ePV+EBnx7R0ZQcbGxt7C3b0p78sWsNtxWFWEmlhY2Njn8bOw/3kve21yyjcj0fIt4VK2NjY2B/IzgtVXmDaLa4UyDdtEjY2Nvam7PY//fmrSYlqS9dKBIaNjY19Aju/7NgOaNsGY9aivDlibGxs7E3ZeWSThPtttNQe6Ct+6iwNGxsb+2PZObgdsrYBUw5r94mNjY29N3sW37fXJdfbjJVgCxsbG/sEdhvxz65jtuD28uWbNbGxsbGPZK9/8GzNWTErruxgY2Njb8ReCWtmI4H257vGz9jY2Nh7s2cxU35keZtRxP3x0AIbGxt7b/bSQuXVmVk4tXINCBsbG/sEdjEoXWgSVgbDXzc92NjY2Cew85KQj1dnDUl73Scqn9jY2NgHsIuoPR6y5gWsHei2XwM2Njb2OexZwDRjt5HTrMnBxsbG3ptdRzMLgVHeQqwHWNjY2NjnsGdFItloEvS3hXDWhGBjY2OfwG4/chYqJcOA9oCKFbCxsbEPYCcFKUGuxP1tu1IUUWxsbGzsNsQpLwPNStRtUxFsbGzsw9grI4Sfi59uuHyJjY2N/eHstsGY8WYl8AdbEWxsbOwt2CvL3dV4zHaSX/HBxsbG3pV9zoONjY2NjY2NjY39mOcXe5YLbR7u+w4AAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/算法/">算法</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/聚类/">聚类</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=算法之旅-聚类&url=http://blog.langaobai.top/2018/09/04/算法之旅-聚类/index.html&pic=http://blog.langaobai.top/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=算法之旅-聚类&url=http://blog.langaobai.top/2018/09/04/算法之旅-聚类/index.html&via=LanGaoBai" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.langaobai.top/2018/09/04/算法之旅-聚类/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://blog.langaobai.top/2018/09/04/算法之旅-聚类/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="其他算法链接地址"><a href="#其他算法链接地址" class="headerlink" title="其他算法链接地址"></a>其他算法链接地址</h2><p><a href="http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E6%8E%92%E5%BA%8F/">算法之旅-排序算法</a></p>
+<p><a href="">算法之旅-聚类算法</a></p>
+<p><a href="">算法之旅-列表搜索算法</a></p>
+<p><a href="">算法之旅-图表搜索算法</a></p>
+<p><a href="">算法之旅-数学类算法</a></p>
+<p><a href="">算法之旅-数据压缩算法</a></p>
+<p><a href="">算法之旅-安全算法</a></p>
+<p><a href="">算法之旅-数据结构</a></p>
+
+        
+    
+
+    
+</div>
+
+                
+
+                <!-- appreciate -->
+                
+                    <!-- appreciate page -->
+<div class="page-reward">
+    <a href="javascript:;" class="page-reward-btn tooltip-top">
+        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+                赞
+            </span>
+            <span class="tooltip-content">
+                <span class="tooltip-text">
+                    <span class="tooltip-inner">
+                        <p class="reward-p">
+                            <i class="fa fa-quote-left"></i>
+                            欢迎留言^.^
+                            <i class="fa fa-quote-right"></i>
+                        </p>
+                        <div class="reward-box">
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/Alipay.png">
+                                <span class="reward-type">支付宝</span>
+                            </div>
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/WeChatPay.png">
+                                <span class="reward-type">微信</span>
+                            </div>
+
+                        </div>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </a>
+</div>
+                
+
+
+                
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://blog.langaobai.top/2018/09/04/算法之旅-聚类/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://blog.langaobai.top/2018/09/04/算法之旅-聚类/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//langaobai.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/08/30/你知道或不知道的单元测试/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -634,6 +888,14 @@ It will not impact the appearance and can give developers a lot of support :)
 
 </aside>
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 

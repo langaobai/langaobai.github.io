@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2018-11-15T06:42:34.576Z</updated>
+  <updated>2018-11-16T02:21:46.135Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CCF-201312</title>
+    <link href="http://blog.langaobai.top/2018/11/16/CCF-201312/"/>
+    <id>http://blog.langaobai.top/2018/11/16/CCF-201312/</id>
+    <published>2018-11-16T01:28:00.000Z</published>
+    <updated>2018-11-16T02:21:46.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;欲解题，先解意，所以根据实际考试的经验，我必须要理解透彻题目的意思。&lt;/p&gt;
+&lt;h2 id=&quot;出现次数最多的数&quot;&gt;&lt;a href=&quot;#出现次数最多的数&quot; class=&quot;headerlink&quot; title=&quot;出现次数最多的数&quot;&gt;&lt;/a&gt;出现次数最多的数&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="CCF" scheme="http://blog.langaobai.top/categories/CCF/"/>
+    
+      <category term="算法" scheme="http://blog.langaobai.top/categories/CCF/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="数据结构" scheme="http://blog.langaobai.top/categories/CCF/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="数据结构" scheme="http://blog.langaobai.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="总结" scheme="http://blog.langaobai.top/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="CCF" scheme="http://blog.langaobai.top/tags/CCF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CCF之傷</title>
     <link href="http://blog.langaobai.top/2018/11/15/CCF%E4%B9%8B%E5%82%B7/"/>
     <id>http://blog.langaobai.top/2018/11/15/CCF之傷/</id>
     <published>2018-11-15T06:26:00.000Z</published>
-    <updated>2018-11-15T06:42:34.576Z</updated>
+    <updated>2018-11-16T02:19:16.782Z</updated>
     
     <summary type="html">
     
@@ -42,6 +79,8 @@
     
       <category term="数据结构" scheme="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
+      <category term="CCF" scheme="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/CCF/"/>
+    
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
@@ -49,9 +88,9 @@
     
       <category term="总结" scheme="http://blog.langaobai.top/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="教训" scheme="http://blog.langaobai.top/tags/%E6%95%99%E8%AE%AD/"/>
-    
       <category term="CCF" scheme="http://blog.langaobai.top/tags/CCF/"/>
+    
+      <category term="教训" scheme="http://blog.langaobai.top/tags/%E6%95%99%E8%AE%AD/"/>
     
   </entry>
   
@@ -123,9 +162,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="列表" scheme="http://blog.langaobai.top/tags/%E5%88%97%E8%A1%A8/"/>
-    
       <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="列表" scheme="http://blog.langaobai.top/tags/%E5%88%97%E8%A1%A8/"/>
     
   </entry>
   
@@ -145,9 +184,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
-    
       <category term="图表" scheme="http://blog.langaobai.top/tags/%E5%9B%BE%E8%A1%A8/"/>
+    
+      <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
@@ -156,7 +195,7 @@
     <link href="http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E8%81%9A%E7%B1%BB/"/>
     <id>http://blog.langaobai.top/2018/09/04/算法之旅-聚类/</id>
     <published>2018-09-04T02:13:00.000Z</published>
-    <updated>2018-11-15T06:41:09.984Z</updated>
+    <updated>2018-11-15T09:38:52.060Z</updated>
     
     <summary type="html">
     

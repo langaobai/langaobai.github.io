@@ -88,9 +88,9 @@
     
       <category term="总结" scheme="http://blog.langaobai.top/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="教训" scheme="http://blog.langaobai.top/tags/%E6%95%99%E8%AE%AD/"/>
-    
       <category term="CCF" scheme="http://blog.langaobai.top/tags/CCF/"/>
+    
+      <category term="教训" scheme="http://blog.langaobai.top/tags/%E6%95%99%E8%AE%AD/"/>
     
   </entry>
   
@@ -195,7 +195,7 @@
     <link href="http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E8%81%9A%E7%B1%BB/"/>
     <id>http://blog.langaobai.top/2018/09/04/算法之旅-聚类/</id>
     <published>2018-09-04T02:13:00.000Z</published>
-    <updated>2018-11-15T09:38:52.060Z</updated>
+    <updated>2018-11-16T06:39:59.211Z</updated>
     
     <summary type="html">
     
@@ -253,7 +253,7 @@
     <link href="http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E6%8E%92%E5%BA%8F/"/>
     <id>http://blog.langaobai.top/2018/08/26/算法之旅-排序/</id>
     <published>2018-08-26T04:42:00.000Z</published>
-    <updated>2018-09-04T02:24:48.523Z</updated>
+    <updated>2018-11-16T06:31:03.928Z</updated>
     
     <summary type="html">
     
@@ -404,9 +404,9 @@
       <category term="版本管理" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
     
-      <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
-    
       <category term="版本" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC/"/>
+    
+      <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   

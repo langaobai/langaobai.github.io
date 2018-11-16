@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2018-11-16T02:21:46.135Z</updated>
+  <updated>2018-11-16T02:34:03.031Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.langaobai.top/2018/11/16/CCF-201312/"/>
     <id>http://blog.langaobai.top/2018/11/16/CCF-201312/</id>
     <published>2018-11-16T01:28:00.000Z</published>
-    <updated>2018-11-16T02:21:46.135Z</updated>
+    <updated>2018-11-16T02:34:03.031Z</updated>
     
     <summary type="html">
     
@@ -58,7 +58,7 @@
     <link href="http://blog.langaobai.top/2018/11/15/CCF%E4%B9%8B%E5%82%B7/"/>
     <id>http://blog.langaobai.top/2018/11/15/CCF之傷/</id>
     <published>2018-11-15T06:26:00.000Z</published>
-    <updated>2018-11-16T02:19:16.782Z</updated>
+    <updated>2018-11-16T02:33:55.373Z</updated>
     
     <summary type="html">
     
@@ -75,11 +75,11 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="CCF" scheme="http://blog.langaobai.top/categories/CCF/"/>
     
-      <category term="数据结构" scheme="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="算法" scheme="http://blog.langaobai.top/categories/CCF/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="CCF" scheme="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/CCF/"/>
+      <category term="数据结构" scheme="http://blog.langaobai.top/categories/CCF/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
@@ -88,9 +88,9 @@
     
       <category term="总结" scheme="http://blog.langaobai.top/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="CCF" scheme="http://blog.langaobai.top/tags/CCF/"/>
-    
       <category term="教训" scheme="http://blog.langaobai.top/tags/%E6%95%99%E8%AE%AD/"/>
+    
+      <category term="CCF" scheme="http://blog.langaobai.top/tags/CCF/"/>
     
   </entry>
   

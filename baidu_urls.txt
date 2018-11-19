@@ -1,3 +1,4 @@
+http://blog.langaobai.top/2018/11/19/一些常用命令行/
 http://blog.langaobai.top/2018/11/16/CCF-201312/
 http://blog.langaobai.top/2018/11/15/CCF之傷/
 http://blog.langaobai.top/2018/11/09/学习之道——芭芭拉-奥克利/
@@ -16,4 +17,3 @@ http://blog.langaobai.top/2018/03/10/json与bson的区别/
 http://blog.langaobai.top/2018/03/10/MongoDB/
 http://blog.langaobai.top/2018/03/09/Oracle常用命令/
 http://blog.langaobai.top/2018/03/09/MODBUS协议/
-http://blog.langaobai.top/2016/09/22/hello-大家好，这是我在git上开通的博客/

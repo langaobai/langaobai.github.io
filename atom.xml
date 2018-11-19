@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2018-11-16T02:36:07.866Z</updated>
+  <updated>2018-11-19T01:40:03.877Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一些常用命令行</title>
+    <link href="http://blog.langaobai.top/2018/11/19/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    <id>http://blog.langaobai.top/2018/11/19/一些常用命令行/</id>
+    <published>2018-11-19T01:39:00.000Z</published>
+    <updated>2018-11-19T01:40:03.877Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="命令行" scheme="http://blog.langaobai.top/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="window" scheme="http://blog.langaobai.top/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/window/"/>
+    
+    
+      <category term="命令行" scheme="http://blog.langaobai.top/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="cmd" scheme="http://blog.langaobai.top/tags/cmd/"/>
+    
+      <category term="window" scheme="http://blog.langaobai.top/tags/window/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CCF-201312</title>
     <link href="http://blog.langaobai.top/2018/11/16/CCF-201312/"/>
     <id>http://blog.langaobai.top/2018/11/16/CCF-201312/</id>
     <published>2018-11-16T01:28:00.000Z</published>
-    <updated>2018-11-16T02:36:07.866Z</updated>
+    <updated>2018-11-19T02:56:04.251Z</updated>
     
     <summary type="html">
     
@@ -195,7 +219,7 @@
     <link href="http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E8%81%9A%E7%B1%BB/"/>
     <id>http://blog.langaobai.top/2018/09/04/算法之旅-聚类/</id>
     <published>2018-09-04T02:13:00.000Z</published>
-    <updated>2018-11-16T06:39:59.211Z</updated>
+    <updated>2018-11-16T08:52:31.305Z</updated>
     
     <summary type="html">
     
@@ -404,9 +428,9 @@
       <category term="版本管理" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
     
-      <category term="版本" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC/"/>
-    
       <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="版本" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC/"/>
     
   </entry>
   

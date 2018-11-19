@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2018-11-19T01:40:03.877Z</updated>
+  <updated>2018-11-19T06:07:18.305Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -17,13 +17,53 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>爬虫-应该知道些什么？</title>
+    <link href="http://blog.langaobai.top/2018/11/19/%E7%88%AC%E8%99%AB-%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
+    <id>http://blog.langaobai.top/2018/11/19/爬虫-应该知道些什么？/</id>
+    <published>2018-11-19T06:03:00.000Z</published>
+    <updated>2018-11-19T06:07:18.305Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;好长时间，我都觉得爬虫是作为一个程序员必备的一项知识，但是长久的不接触，或者一直忙于其他事情，渐渐的有些忘记了自己最初为啥要做这个事情。&lt;/p&gt;
+&lt;p&gt;直到最近一直在学习着一些&lt;strong&gt;算法分析&lt;/strong&gt;，才发现自己&lt;strong&gt;可用的数据很少，几乎没有&lt;/
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="http://blog.langaobai.top/categories/Python/"/>
+    
+      <category term="爬虫" scheme="http://blog.langaobai.top/categories/Python/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="Python" scheme="http://blog.langaobai.top/tags/Python/"/>
+    
+      <category term="爬虫" scheme="http://blog.langaobai.top/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一些常用命令行</title>
     <link href="http://blog.langaobai.top/2018/11/19/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     <id>http://blog.langaobai.top/2018/11/19/一些常用命令行/</id>
     <published>2018-11-19T01:39:00.000Z</published>
-    <updated>2018-11-19T01:40:03.877Z</updated>
+    <updated>2018-11-19T03:43:57.576Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;经常遇到一些头疼的小问题，而本人对于网络这块的常识有些薄弱，没法了，只能遇到一个问题，查一下，但架不住同类型的问题总是遇到；&lt;/p&gt;
+&lt;p&gt;归纳起来还是对于命令行的问题集中得多一些，当前主要是集中在
+        
+      
     
     </summary>
     
@@ -45,7 +85,7 @@
     <link href="http://blog.langaobai.top/2018/11/16/CCF-201312/"/>
     <id>http://blog.langaobai.top/2018/11/16/CCF-201312/</id>
     <published>2018-11-16T01:28:00.000Z</published>
-    <updated>2018-11-19T02:56:04.251Z</updated>
+    <updated>2018-11-19T03:56:18.322Z</updated>
     
     <summary type="html">
     
@@ -112,9 +152,9 @@
     
       <category term="总结" scheme="http://blog.langaobai.top/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="CCF" scheme="http://blog.langaobai.top/tags/CCF/"/>
-    
       <category term="教训" scheme="http://blog.langaobai.top/tags/%E6%95%99%E8%AE%AD/"/>
+    
+      <category term="CCF" scheme="http://blog.langaobai.top/tags/CCF/"/>
     
   </entry>
   
@@ -428,9 +468,9 @@
       <category term="版本管理" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
     
-      <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
-    
       <category term="版本" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC/"/>
+    
+      <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -574,34 +614,6 @@
       <category term="MODBUS" scheme="http://blog.langaobai.top/tags/MODBUS/"/>
     
       <category term="通信协议" scheme="http://blog.langaobai.top/tags/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hello,大家好，这是我在git上开通的博客</title>
-    <link href="http://blog.langaobai.top/2016/09/22/hello-%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E8%BF%99%E6%98%AF%E6%88%91%E5%9C%A8git%E4%B8%8A%E5%BC%80%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://blog.langaobai.top/2016/09/22/hello-大家好，这是我在git上开通的博客/</id>
-    <published>2016-09-22T15:29:00.000Z</published>
-    <updated>2018-03-10T14:20:08.196Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;这里采用了&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://blog.langaobai.top/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://blog.langaobai.top/tags/Hexo/"/>
-    
-      <category term="Node.js" scheme="http://blog.langaobai.top/tags/Node-js/"/>
     
   </entry>
   

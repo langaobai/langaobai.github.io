@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2018-11-19T06:07:18.305Z</updated>
+  <updated>2018-11-29T02:06:46.638Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>说说离我们最近的单元测试之道</title>
+    <link href="http://blog.langaobai.top/2018/11/28/%E8%AF%B4%E8%AF%B4%E7%A6%BB%E6%88%91%E4%BB%AC%E6%9C%80%E8%BF%91%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93/"/>
+    <id>http://blog.langaobai.top/2018/11/28/说说离我们最近的单元测试之道/</id>
+    <published>2018-11-28T08:14:00.000Z</published>
+    <updated>2018-11-29T02:06:46.638Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;为什么要单元测试？&quot;&gt;&lt;a href=&quot;#为什么要单元测试？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="单元测试" scheme="http://blog.langaobai.top/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="思考" scheme="http://blog.langaobai.top/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="单元测试" scheme="http://blog.langaobai.top/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="JUNIT" scheme="http://blog.langaobai.top/tags/JUNIT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>爬虫-应该知道些什么？</title>
     <link href="http://blog.langaobai.top/2018/11/19/%E7%88%AC%E8%99%AB-%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
     <id>http://blog.langaobai.top/2018/11/19/爬虫-应该知道些什么？/</id>
     <published>2018-11-19T06:03:00.000Z</published>
-    <updated>2018-11-19T06:07:18.305Z</updated>
+    <updated>2018-11-27T09:13:19.152Z</updated>
     
     <summary type="html">
     
@@ -85,7 +115,7 @@
     <link href="http://blog.langaobai.top/2018/11/16/CCF-201312/"/>
     <id>http://blog.langaobai.top/2018/11/16/CCF-201312/</id>
     <published>2018-11-16T01:28:00.000Z</published>
-    <updated>2018-11-19T03:56:18.322Z</updated>
+    <updated>2018-12-04T01:52:50.729Z</updated>
     
     <summary type="html">
     
@@ -226,9 +256,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="列表" scheme="http://blog.langaobai.top/tags/%E5%88%97%E8%A1%A8/"/>
-    
       <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="列表" scheme="http://blog.langaobai.top/tags/%E5%88%97%E8%A1%A8/"/>
     
   </entry>
   
@@ -248,9 +278,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
-    
       <category term="图表" scheme="http://blog.langaobai.top/tags/%E5%9B%BE%E8%A1%A8/"/>
+    
+      <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
@@ -468,9 +498,9 @@
       <category term="版本管理" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
     
-      <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
-    
       <category term="版本" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC/"/>
+    
+      <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -526,9 +556,9 @@
       <category term="数据格式" scheme="http://blog.langaobai.top/categories/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/"/>
     
     
-      <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
-    
       <category term="JSON" scheme="http://blog.langaobai.top/tags/JSON/"/>
+    
+      <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
     
   </entry>
   
@@ -554,9 +584,9 @@
       <category term="MongDB" scheme="http://blog.langaobai.top/categories/MongDB/"/>
     
     
-      <category term="MongDB" scheme="http://blog.langaobai.top/tags/MongDB/"/>
-    
       <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
+    
+      <category term="MongDB" scheme="http://blog.langaobai.top/tags/MongDB/"/>
     
   </entry>
   
@@ -586,34 +616,6 @@
       <category term="Oracle" scheme="http://blog.langaobai.top/tags/Oracle/"/>
     
       <category term="note" scheme="http://blog.langaobai.top/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MODBUS协议</title>
-    <link href="http://blog.langaobai.top/2018/03/09/MODBUS%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://blog.langaobai.top/2018/03/09/MODBUS协议/</id>
-    <published>2018-03-09T06:34:00.000Z</published>
-    <updated>2018-04-09T06:28:13.762Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;情况介绍&quot;&gt;&lt;a href=&quot;#情况介绍&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="MODBUS" scheme="http://blog.langaobai.top/categories/MODBUS/"/>
-    
-    
-      <category term="MODBUS" scheme="http://blog.langaobai.top/tags/MODBUS/"/>
-    
-      <category term="通信协议" scheme="http://blog.langaobai.top/tags/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
     
   </entry>
   

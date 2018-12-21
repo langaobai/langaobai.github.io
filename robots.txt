@@ -3,6 +3,9 @@ User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
+Allow: /about/
+Allow: /timeline/
+Allow: /gallery/
 Allow: /tags/
 
 Disallow: /vendors/

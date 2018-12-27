@@ -253,7 +253,7 @@
 
     
         <meta property="article:published_time" content="Thu May 31 2018 13:53:00 GMT+0800">
-        <meta property="article:modified_time" content="Wed Aug 29 2018 10:02:29 GMT+0800">
+        <meta property="article:modified_time" content="Thu Dec 27 2018 16:37:13 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -276,7 +276,7 @@
     "mainEntityOfPage": "http://blog.langaobai.top/2018/05/31/关于subversion的一些知识/index.html",
     "headline": "关于subversion的一些知识",
     "datePublished": "Thu May 31 2018 13:53:00 GMT+0800",
-    "dateModified": "Wed Aug 29 2018 10:02:29 GMT+0800",
+    "dateModified": "Thu Dec 27 2018 16:37:13 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "LanGaoBai",
@@ -384,7 +384,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SVN的基础内容"><span class="post-toc-number">1.</span> <span class="post-toc-text">SVN的基础内容</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#版本"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#标签"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">标签</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#分支"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">分支</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#合并"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">合并</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#加锁"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">加锁</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#严格加锁"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">严格加锁</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#乐观加锁"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">乐观加锁</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SVN的基础内容"><span class="post-toc-number">1.</span> <span class="post-toc-text">SVN的基础内容</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#版本"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#标签"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">标签</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#分支"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">分支</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#合并"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">合并</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#加锁"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">加锁</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#严格加锁"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">严格加锁</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#乐观加锁"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">乐观加锁</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SVN备份-一关开发室"><span class="post-toc-number">2.</span> <span class="post-toc-text">SVN备份^一关开发室</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-导出"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1. 导出</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-导入-还原："><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2. 导入/还原：</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -572,7 +572,7 @@
 </blockquote>
 <h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><p>当我们一个项目组对同一份源代码添加，修改内容，并进行签入和签出的时候，大家都共享这份源代码；</p>
 <p>我们将这份居于主要地位的源代码称为<strong>主干</strong>；</p>
-<p><img src="C:\Users\ADMINI~1\AppData\Local\Temp\1527747888648.png" alt="主干"></p>
+<p><img src="\img\articlePicture\svnTunk.png" alt="主干"></p>
 <p>那么<strong>分支</strong>又是一个怎样的需求呢？为什么会产生分支这种情况；</p>
 <p>我们可以把主干和分支想象成你所在的时空和另外一个由你本身所做的出改变而产生的另外一个时空；</p>
 <p>通俗一点说，当我们开发到一定过程的时候， 我们需要发布V2.0版本了，这个时候，上线是需要稳定，和减少bug的；</p>
@@ -588,8 +588,6 @@
 <p>分支产生以后，主开发团队可以继续对着之前的主线干活；</p>
 <p>而发布团队，则对分支进行修正，比对而又能对过去的问题进行持续的跟踪；</p>
 <p>这里作者还说了一个问题，有人被分支搞到头大，是因为过度使用分支，而这样最后会发现，你在合并的时候，痛苦异常；</p>
-<p>我想这位老兄肯定是穿越了太多的平行空间，就像<strong>盗梦空间</strong>里那样，梦太多回不去了…</p>
-<p><img src="C:\Users\ADMINI~1\AppData\Local\Temp\1527750672884.png" alt="主干与分支"></p>
 <h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>在这里想到了继续用<strong>盗梦空间</strong>的话题比喻最为合适；</p>
 <p>当我们进入第三层梦的时候，小李子终于修正了富二代费舍的思想，这个时候，需要就需要回归主干，进行<strong>合并</strong>了；</p>
 <p>当然在主干中的行为，修正一些bug，也可以及时的合并到分支上来，也可以想像一下小李子的第二层梦对他第三层梦的影响，在合并的影响下传递到了第三层梦中了。</p>
@@ -600,6 +598,27 @@
 <p>但这个时候，版本控制系统不会简单的以项目仓库中最新版本的文件去覆盖你辛苦改过的文件，而是<strong>尝试着去合并项目仓库中所有的改动和你的改动</strong>；</p>
 <p>一般而言严格加锁在使用过程中会出现很多问题，例如：一个人必须要等其他人编辑结束并签入之后才能继续他的工作；</p>
 <p>因此用得更多的反而是乐观加锁处理；</p>
+<h2 id="SVN备份-一关开发室"><a href="#SVN备份-一关开发室" class="headerlink" title="SVN备份^一关开发室"></a>SVN备份<a href="https://www.cnblogs.com/blogs2014/p/5039213.html" target="_blank" rel="noopener">^一关开发室</a></h2><h3 id="1-导出"><a href="#1-导出" class="headerlink" title="1. 导出"></a>1. 导出</h3><p>1.进入svn安装路径bin文件夹下，使用 cd 命令</p>
+<p>在windows下，<kbd>win</kbd><kbd>+</kbd><kbd>R</kbd> 键入 <code>cmd</code> 回车 打开命令窗口cmd，进入下列目录（<code>svn服务器安装目录bin</code>）： </p>
+<p><code>&quot;c:\Program Files\VisualSVN Server\bin\&quot;</code></p>
+<p><img src="\img\articlePicture\svnbinToc.png" alt="svn目录"></p>
+<p>2.备份/导出（svnadmin dump C:\Repositories\需导出库 &gt; E:**文件夹\full.svn.bak）</p>
+<p>输入下列命令并执行：</p>
+<p><code>svnadmin dump C:\Repositories\Hash加密（MD5、Sha1） &gt; E:\svnbak\full.svn.bak</code></p>
+<p> <img src="\img\articlePicture\svnadmindump.gif" alt="svnadmindump"></p>
+<p>3、full.svn.bak为备份文件。将其文件拷贝到目标机器,或是存储备份。</p>
+<h3 id="2-导入-还原："><a href="#2-导入-还原：" class="headerlink" title="2. 导入/还原："></a>2. 导入/还原：</h3><p>1、在目标机器创建仓库：</p>
+<p><code>svnadmin create D:/repositories/TestProject  (可右键**管理Server**新建)</code></p>
+<p>并注意检查是否需要修改文件夹权限 </p>
+<p>2、执行命令svnadminload:</p>
+<p><code>svnadmin load D:/repositories/TestProject **&lt;** E:\svnbak\full.svn.bak</code></p>
+<p>图解：</p>
+<p> <img src="\img\articlePicture\svnadmindumpload.gif" alt="svnadmindumpload"></p>
+<p>注释：该种方式适用于重装服务器、移动代码库 使用。</p>
+<p>问题：</p>
+<p>1.svn不知道这样的主机</p>
+<p>重做服务器后，计算机名称肯定是不一样的。我们之前的项目还是老计算机名字，只要<strong>更改一下计算机名字</strong>即可实现。或者更改 </p>
+<p><img src="\img\articlePicture\svnRname.gif" alt="svnRname"></p>
 
         
     

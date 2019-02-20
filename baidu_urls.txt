@@ -1,3 +1,4 @@
+http://blog.langaobai.top/2019/02/20/MAVEN常用命令/
 http://blog.langaobai.top/2018/11/28/说说离我们最近的单元测试之道/
 http://blog.langaobai.top/2018/11/19/爬虫-应该知道些什么？/
 http://blog.langaobai.top/2018/11/19/一些常用命令行/
@@ -16,4 +17,3 @@ http://blog.langaobai.top/2018/05/07/习惯的力量/
 http://blog.langaobai.top/2018/04/19/版本管理——重新认识版本管理/
 http://blog.langaobai.top/2018/04/17/专注力管理-让你的努力更高效/
 http://blog.langaobai.top/2018/03/10/json与bson的区别/
-http://blog.langaobai.top/2018/03/10/MongoDB/

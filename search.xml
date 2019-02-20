@@ -3,6 +3,30 @@
   
     
     <entry>
+      <title>MAVEN常用命令</title>
+      <link href="/2019/02/20/MAVEN%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <content type="html"><![CDATA[<p>本人属于有点懒的人，因为公司的项目一直都是用maven构建的，简单的构建，当然没有什么问题；</p><p>但是涉及到一些复杂的问题需要用到命令模式的时候，又避免不了反复去查询了；</p><p>所以只能是记到自己的博客中来了；</p><h3 id="MAVEN常用库"><a href="#MAVEN常用库" class="headerlink" title="MAVEN常用库"></a>MAVEN常用库</h3><p><a href="http://repo2.maven.org/maven2/" target="_blank" rel="noopener">Maven库</a><br><a href="http://mvnrepository.com/" target="_blank" rel="noopener">Maven依赖查询</a></p><h3 id="Maven常用命令"><a href="#Maven常用命令" class="headerlink" title="Maven常用命令"></a>Maven常用命令</h3><pre class=" language-shell"><code class="language-shell">创建Maven的普通java项目：    mvn archetype:create    -DgroupId=packageName    -DartifactId=projectName  创建Maven的Web项目：       mvn archetype:create     -DgroupId=packageName        -DartifactId=webappName     -DarchetypeArtifactId=maven-archetype-webapp    编译源代码： mvn compile 编译测试代码：mvn test-compile    运行测试：mvn test   产生site：mvn site   打包：mvn package在本地Repository中安装jar：mvn install 清除产生的项目：mvn clean   生成eclipse项目：mvn eclipse:eclipse  生成idea项目：mvn idea:idea  组合使用goal命令，如只打包不测试：mvn -Dtest package编译测试的内容：mvn test-compile  只打jar包: mvn jar:jar  只测试而不编译，也不测试编译：mvn test -skipping compile -skipping test-compile  ( -skipping 的灵活运用，当然也可以用于其他组合命令)  清除eclipse的一些系统设置:mvn eclipse:clean  </code></pre><blockquote><p> 一般使用情况是这样，首先通过cvs或svn下载代码到本机，然后执行mvn eclipse:eclipse生成ecllipse项目文件；</p><p>然后导入到eclipse就行了；修改代码后执行mvn compile或mvn test检验，也可以下载eclipse的maven插件。 </p></blockquote><pre class=" language-shell"><code class="language-shell">mvn -version/-v  显示版本信息 mvn archetype:generate        创建mvn项目 mvn archetype:create -DgroupId=com.oreilly -DartifactId=my-app   创建mvn项目  mvn package            生成target目录，编译、测试代码，生成测试报告，生成jar/war文件mvn jetty:run            运行项目于jetty上, mvn compile                    编译 mvn test                    编译并测试 mvn clean                    清空生成的文件 mvn site                    生成项目相关信息的网站 mvn -Dwtpversion=1.0 eclipse:eclipse        生成Wtp插件的Web项目 mvn -Dwtpversion=1.0 eclipse:clean        清除Eclipse项目的配置信息(Web项目) mvn eclipse:eclipse                将项目转化为Eclipse项目 </code></pre><pre class=" language-xml"><code class="language-xml">在应用程序用使用多个存储库 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>repositories</span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>repository</span><span class="token punctuation">></span></span>              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span><span class="token punctuation">></span></span>Ibiblio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>id</span><span class="token punctuation">></span></span>              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">></span></span>Ibiblio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">></span></span>              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>url</span><span class="token punctuation">></span></span>http://www.ibiblio.org/maven/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>url</span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>repository</span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>repository</span><span class="token punctuation">></span></span>              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span><span class="token punctuation">></span></span>PlanetMirror<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>id</span><span class="token punctuation">></span></span>              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">></span></span>Planet Mirror<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">></span></span>              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>url</span><span class="token punctuation">></span></span>http://public.planetmirror.com/pub/maven/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>url</span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>repository</span><span class="token punctuation">></span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>repositories</span><span class="token punctuation">></span></span> </code></pre><pre class=" language-shell"><code class="language-shell">mvn deploy:deploy-file -DgroupId=com -DartifactId=client -Dversion=0.1.0` `-Dpackaging=jar -Dfile=d:\client-0.1.0.jar -DrepositoryId=maven-repository-inner -Durl=ftp://xxxxxxx/opt/maven/repository/ </code></pre><pre class=" language-shell"><code class="language-shell">发布第三方Jar到本地库中： mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0` `-Dpackaging=jar -Dfile=d:\client-0.1.0.jar -DdownloadSources=true-DdownloadJavadocs=true</code></pre><pre class=" language-shell"><code class="language-shell">mvn -e            显示详细错误 信息mvn validate        验证工程是否正确，所有需要的资源是否可用mvn test-compile    编译项目测试代码mvn integration-test     在集成测试可以运行的环境中处理和发布包。mvn verify        运行任何检查，验证包是否有效且达到质量标准。     mvn generate-sources    产生应用需要的任何额外的源代码，如xdoclet。 mvn -v 显示版本 mvn help:describe -Dplugin=help 使用 help 插件的  describe 目标来输出 Maven Help 插件的信息。mvn help:describe -Dplugin=help -Dfull 使用Help 插件输出完整的带有参数的目标列 mvn help:describe -Dplugin=compiler -Dmojo=compile -Dfull 获取单个目标的信息,设置  mojo 参数和  plugin 参数。此命令列出了Compiler 插件的compile 目标的所有信息 mvn help:describe -Dplugin=exec -Dfull 列出所有 Maven Exec 插件可用的目标 mvn help:effective-pom 看这个“有效的 (effective)”POM，它暴露了 Maven的默认设置 mvn archetype:create -DgroupId=org.sonatype.mavenbook.ch03 -DartifactId=simple -DpackageName=org.sonatype.mavenbook 创建Maven的普通java项目，在命令行使用Maven Archetype 插件 mvn exec:java -Dexec.mainClass=org.sonatype.mavenbook.weather.Main Exec 插件让我们能够在不往 classpath 载入适当的依赖的情况下，运行这个程序 mvn dependency:resolve 打印出已解决依赖的列表 mvn dependency:tree 打印整个依赖树 mvn install -X 想要查看完整的依赖踪迹，包含那些因为冲突或者其它原因而被拒绝引入的构件，打开 Maven 的调试标记运行 mvn install -Dmaven.test.skip=true` `给任何目标添加maven.test.skip 属性就能跳过测试 mvn install assembly:assembly 构建装配Maven Assembly 插件是一个用来创建你应用程序特有分发包的插件 mvn jetty:run 调用 Jetty 插件的 Run 目标在 Jetty Servlet 容器中启动 web 应用 mvn compile 编译你的项目 mvn clean install 删除再编译 mvn hibernate3:hbm2ddl 使用 Hibernate3 插件构造数据库</code></pre>]]></content>
+      
+      <categories>
+          
+          <category> MAVEN </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MAVEN </tag>
+            
+            <tag> command </tag>
+            
+            <tag> shell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>说说离我们最近的单元测试之道</title>
       <link href="/2018/11/28/%E8%AF%B4%E8%AF%B4%E7%A6%BB%E6%88%91%E4%BB%AC%E6%9C%80%E8%BF%91%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93/"/>
       <content type="html"><![CDATA[<h3 id="为什么要单元测试？"><a href="#为什么要单元测试？" class="headerlink" title="为什么要单元测试？"></a>为什么要单元测试？</h3><p>很多时候，我一直有个疑问，为什么我写的代码还有那么多的问题，而究竟应该如何才能减少这些问题呢？</p><blockquote><p>单元测试不但会使你的工作完成的更轻松，而且会使你的设计变得更好，甚至大大减少你花在测试上面的时间。</p></blockquote><p><strong>一般而言，在代码设计之初就应当配备相应的测试计划！</strong></p><blockquote><p>间接损坏，意思就是加入一个新特性，或者修复一个bug之后，给系统的其他部分又引入了一个新的bug，类似 <strong>打地鼠游戏</strong>一样的效果。</p></blockquote><p>很多时候，我们会有这样的一个借口，就是测试代码不是我的工作，这是一个很搞笑的借口，因为你说出来的时候，甚至都没有意识到自己究竟是搞什么工作的。</p>]]></content>
@@ -16,11 +40,11 @@
       
         <tags>
             
-            <tag> 思考 </tag>
-            
             <tag> 单元测试 </tag>
             
             <tag> JUNIT </tag>
+            
+            <tag> 思考 </tag>
             
         </tags>
       
@@ -154,11 +178,11 @@
       
         <tags>
             
+            <tag> 思考 </tag>
+            
             <tag> 书籍 </tag>
             
             <tag> 学习 </tag>
-            
-            <tag> 思考 </tag>
             
         </tags>
       
@@ -339,7 +363,7 @@
     <entry>
       <title>关于subversion的一些知识</title>
       <link href="/2018/05/31/%E5%85%B3%E4%BA%8Esubversion%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86/"/>
-      <content type="html"><![CDATA[<p>前面，有一篇文章专门提到了，<strong>重新认识版本管理</strong>，并提到的<strong>版本管理的重要性</strong>；</p><p>作为一名程序员，少不了对自己的要求越来越严格，但是如何严谨的规范和约束自己，包括自己所在的团队呢？</p><p>在之前，我的一位大佬，跟我们说了这么一段话：</p><blockquote><p>做事情呢，一定要讲究 <strong>道</strong>，<strong>法</strong>，<strong>术</strong>，<strong>器</strong>；</p></blockquote><p>前面的各有各的说法，我们着重讲解一下，这个<strong>器</strong>；</p><p>这里我将聚焦在更详细的地方，当然是有出处的——出自《版本管理之道-使用subversion》；</p><p>感兴趣的朋友不妨去下载看看，或者购买纸质的书籍，也不算厚，相信即使你是初学者，一个星期的时间也能读完本书并掌握基础的技能；</p><p>这里算是我的学习笔记，不完全抄自本书，会结合部分自己的见解加以深入思考；</p><h2 id="SVN的基础内容"><a href="#SVN的基础内容" class="headerlink" title="SVN的基础内容"></a>SVN的基础内容</h2><h3 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h3><p>版本从何而来呢？每一次的增、删、改都会在SVN（subversion的简写，后面均称为SVN）中标记一个新版本；</p><p>用过CVS（<em>Concurrent Versions System 并行版本系统的简称</em>），就会知道这里有点区别；</p><p><strong>CVS</strong>记录的是<strong>单个文件的版本</strong>,而<strong>SVN</strong>记录的是整个<strong>项目仓库的版本</strong>;</p><h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>很多时候，我们都无法记住r677到底用于干什么的？但我们准能记住V3.0这种，第三正式版本；</p><p>版本控制系统让你可以给<strong>某一时刻的一组文件、或者一些目录或者整个项目分配一个名字</strong>。</p><p>如果你们的项目开发到达了一定程度，你标记为 <strong>v2.0 beta</strong>，你以后就能用这个标签签出他们；</p><blockquote><p>标签是一种很好的跟踪项目代码开发过程中发生重要事件的方式；</p></blockquote><h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><p>当我们一个项目组对同一份源代码添加，修改内容，并进行签入和签出的时候，大家都共享这份源代码；</p><p>我们将这份居于主要地位的源代码称为<strong>主干</strong>；</p><p><img src="\img\articlePicture\svnTunk.png" alt="主干"></p><p>那么<strong>分支</strong>又是一个怎样的需求呢？为什么会产生分支这种情况；</p><p>我们可以把主干和分支想象成你所在的时空和另外一个由你本身所做的出改变而产生的另外一个时空；</p><p>通俗一点说，当我们开发到一定过程的时候， 我们需要发布V2.0版本了，这个时候，上线是需要稳定，和减少bug的；</p><p>你不可能说拿着一堆在开发的东西就给客户，至少你需要粉饰一下，而你能怎么做呢？</p><ol><li>让大家都停下手中的活，向着发布的方向进行改动？</li><li>拷贝到其他地方，重新开始，那怎么比对项目最开始的地方，进行跟踪和修正呢？（别跟我说重开一个服务器什么的）</li></ol><p>这个时候，就产生了这样的需求“分支”；</p><blockquote><p>老实说，我还是觉得这样的解释，弱化了分支的功能，有点强行解释的味道，后面我加深理解，再做扩展；</p></blockquote><p>分支产生以后，主开发团队可以继续对着之前的主线干活；</p><p>而发布团队，则对分支进行修正，比对而又能对过去的问题进行持续的跟踪；</p><p>这里作者还说了一个问题，有人被分支搞到头大，是因为过度使用分支，而这样最后会发现，你在合并的时候，痛苦异常；</p><h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>在这里想到了继续用<strong>盗梦空间</strong>的话题比喻最为合适；</p><p>当我们进入第三层梦的时候，小李子终于修正了富二代费舍的思想，这个时候，需要就需要回归主干，进行<strong>合并</strong>了；</p><p>当然在主干中的行为，修正一些bug，也可以及时的合并到分支上来，也可以想像一下小李子的第二层梦对他第三层梦的影响，在合并的影响下传递到了第三层梦中了。</p><h3 id="加锁"><a href="#加锁" class="headerlink" title="加锁"></a>加锁</h3><p>学过编程的都知道，加锁，在编程中加锁以后的线程，只能是单个线程访问，不能是多线程同时访问；</p><p>顾明思议，当两个人都要操作同一个源文件的时候，就像我要进房间，而又不允许别人进这个房间，那么我就选择<strong>加锁处理</strong>；</p><h4 id="严格加锁"><a href="#严格加锁" class="headerlink" title="严格加锁"></a>严格加锁</h4><p>被加锁的文件一开始都是<strong>只读</strong>状态，要编辑和修改必须征询项目仓库的同意，在没有其他人编辑同一个文件的时候，项目仓库就会授权给你，其他人这个时候要编辑，仓库就会拒绝；</p><h4 id="乐观加锁"><a href="#乐观加锁" class="headerlink" title="乐观加锁"></a>乐观加锁</h4><p>也就是当你进行签入的时候，项目仓库会先行更新你的本地文件，再让你进行签入；</p><p>但这个时候，版本控制系统不会简单的以项目仓库中最新版本的文件去覆盖你辛苦改过的文件，而是<strong>尝试着去合并项目仓库中所有的改动和你的改动</strong>；</p><p>一般而言严格加锁在使用过程中会出现很多问题，例如：一个人必须要等其他人编辑结束并签入之后才能继续他的工作；</p><p>因此用得更多的反而是乐观加锁处理；</p><h2 id="SVN备份-一关开发室"><a href="#SVN备份-一关开发室" class="headerlink" title="SVN备份^一关开发室"></a>SVN备份<a href="https://www.cnblogs.com/blogs2014/p/5039213.html" target="_blank" rel="noopener">^一关开发室</a></h2><h3 id="1-导出"><a href="#1-导出" class="headerlink" title="1. 导出"></a>1. 导出</h3><p>1.进入svn安装路径bin文件夹下，使用 cd 命令</p><p>在windows下，<kbd>win</kbd><kbd>+</kbd><kbd>R</kbd> 键入 <code>cmd</code> 回车 打开命令窗口cmd，进入下列目录（<code>svn服务器安装目录bin</code>）： </p><p><code>&quot;c:\Program Files\VisualSVN Server\bin\&quot;</code></p><p><img src="\img\articlePicture\svnbinToc.png" alt="svn目录"></p><p>2.备份/导出（svnadmin dump C:\Repositories\需导出库 &gt; E:**文件夹\full.svn.bak）</p><p>输入下列命令并执行：</p><p><code>svnadmin dump C:\Repositories\Hash加密（MD5、Sha1） &gt; E:\svnbak\full.svn.bak</code></p><p> <img src="\img\articlePicture\svnadmindump.gif" alt="svnadmindump"></p><p>3、full.svn.bak为备份文件。将其文件拷贝到目标机器,或是存储备份。</p><h3 id="2-导入-还原："><a href="#2-导入-还原：" class="headerlink" title="2. 导入/还原："></a>2. 导入/还原：</h3><p>1、在目标机器创建仓库：</p><p><code>svnadmin create D:/repositories/TestProject  (可右键**管理Server**新建)</code></p><p>并注意检查是否需要修改文件夹权限 </p><p>2、执行命令svnadminload:</p><p><code>svnadmin load D:/repositories/TestProject **&lt;** E:\svnbak\full.svn.bak</code></p><p>图解：</p><p> <img src="\img\articlePicture\svnadmindumpload.gif" alt="svnadmindumpload"></p><p>注释：该种方式适用于重装服务器、移动代码库 使用。</p><p>问题：</p><p>1.svn不知道这样的主机</p><p>重做服务器后，计算机名称肯定是不一样的。我们之前的项目还是老计算机名字，只要<strong>更改一下计算机名字</strong>即可实现。或者更改 </p><p><img src="\img\articlePicture\svnRname.gif" alt="svnRname"></p>]]></content>
+      <content type="html"><![CDATA[<p>前面，有一篇文章专门提到了，<strong>重新认识版本管理</strong>，并提到的<strong>版本管理的重要性</strong>；</p><p>作为一名程序员，少不了对自己的要求越来越严格，但是如何严谨的规范和约束自己，包括自己所在的团队呢？</p><p>在之前，我的一位大佬，跟我们说了这么一段话：</p><blockquote><p>做事情呢，一定要讲究 <strong>道</strong>，<strong>法</strong>，<strong>术</strong>，<strong>器</strong>；</p></blockquote><p>前面的各有各的说法，我们着重讲解一下，这个<strong>器</strong>；</p><p>这里我将聚焦在更详细的地方，当然是有出处的——出自《版本管理之道-使用subversion》；</p><p>感兴趣的朋友不妨去下载看看，或者购买纸质的书籍，也不算厚，相信即使你是初学者，一个星期的时间也能读完本书并掌握基础的技能；</p><p>这里算是我的学习笔记，不完全抄自本书，会结合部分自己的见解加以深入思考；</p><h2 id="SVN的基础内容"><a href="#SVN的基础内容" class="headerlink" title="SVN的基础内容"></a>SVN的基础内容</h2><h3 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h3><p>版本从何而来呢？每一次的增、删、改都会在SVN（subversion的简写，后面均称为SVN）中标记一个新版本；</p><p>用过CVS（<em>Concurrent Versions System 并行版本系统的简称</em>），就会知道这里有点区别；</p><p><strong>CVS</strong>记录的是<strong>单个文件的版本</strong>,而<strong>SVN</strong>记录的是整个<strong>项目仓库的版本</strong>;</p><h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>很多时候，我们都无法记住r677到底用于干什么的？但我们准能记住V3.0这种，第三正式版本；</p><p>版本控制系统让你可以给<strong>某一时刻的一组文件、或者一些目录或者整个项目分配一个名字</strong>。</p><p>如果你们的项目开发到达了一定程度，你标记为 <strong>v2.0 beta</strong>，你以后就能用这个标签签出他们；</p><blockquote><p>标签是一种很好的跟踪项目代码开发过程中发生重要事件的方式；</p></blockquote><h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><p>当我们一个项目组对同一份源代码添加，修改内容，并进行签入和签出的时候，大家都共享这份源代码；</p><p>我们将这份居于主要地位的源代码称为<strong>主干</strong>；</p><p><img src="\img\articlePicture\svnTunk.gif" alt="主干"></p><p>那么<strong>分支</strong>又是一个怎样的需求呢？为什么会产生分支这种情况；</p><p>我们可以把主干和分支想象成你所在的时空和另外一个由你本身所做的出改变而产生的另外一个时空；</p><p>通俗一点说，当我们开发到一定过程的时候， 我们需要发布V2.0版本了，这个时候，上线是需要稳定，和减少bug的；</p><p>你不可能说拿着一堆在开发的东西就给客户，至少你需要粉饰一下，而你能怎么做呢？</p><ol><li>让大家都停下手中的活，向着发布的方向进行改动？</li><li>拷贝到其他地方，重新开始，那怎么比对项目最开始的地方，进行跟踪和修正呢？（别跟我说重开一个服务器什么的）</li></ol><p>这个时候，就产生了这样的需求“分支”；</p><blockquote><p>老实说，我还是觉得这样的解释，弱化了分支的功能，有点强行解释的味道，后面我加深理解，再做扩展；</p></blockquote><p>分支产生以后，主开发团队可以继续对着之前的主线干活；</p><p>而发布团队，则对分支进行修正，比对而又能对过去的问题进行持续的跟踪；</p><p>这里作者还说了一个问题，有人被分支搞到头大，是因为过度使用分支，而这样最后会发现，你在合并的时候，痛苦异常；</p><h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>在这里想到了继续用<strong>盗梦空间</strong>的话题比喻最为合适；</p><p>当我们进入第三层梦的时候，小李子终于修正了富二代费舍的思想，这个时候，需要就需要回归主干，进行<strong>合并</strong>了；</p><p>当然在主干中的行为，修正一些bug，也可以及时的合并到分支上来，也可以想像一下小李子的第二层梦对他第三层梦的影响，在合并的影响下传递到了第三层梦中了。</p><h3 id="加锁"><a href="#加锁" class="headerlink" title="加锁"></a>加锁</h3><p>学过编程的都知道，加锁，在编程中加锁以后的线程，只能是单个线程访问，不能是多线程同时访问；</p><p>顾明思议，当两个人都要操作同一个源文件的时候，就像我要进房间，而又不允许别人进这个房间，那么我就选择<strong>加锁处理</strong>；</p><h4 id="严格加锁"><a href="#严格加锁" class="headerlink" title="严格加锁"></a>严格加锁</h4><p>被加锁的文件一开始都是<strong>只读</strong>状态，要编辑和修改必须征询项目仓库的同意，在没有其他人编辑同一个文件的时候，项目仓库就会授权给你，其他人这个时候要编辑，仓库就会拒绝；</p><h4 id="乐观加锁"><a href="#乐观加锁" class="headerlink" title="乐观加锁"></a>乐观加锁</h4><p>也就是当你进行签入的时候，项目仓库会先行更新你的本地文件，再让你进行签入；</p><p>但这个时候，版本控制系统不会简单的以项目仓库中最新版本的文件去覆盖你辛苦改过的文件，而是<strong>尝试着去合并项目仓库中所有的改动和你的改动</strong>；</p><p>一般而言严格加锁在使用过程中会出现很多问题，例如：一个人必须要等其他人编辑结束并签入之后才能继续他的工作；</p><p>因此用得更多的反而是乐观加锁处理；</p><h2 id="SVN备份-一关开发室"><a href="#SVN备份-一关开发室" class="headerlink" title="SVN备份^一关开发室"></a>SVN备份<a href="https://www.cnblogs.com/blogs2014/p/5039213.html" target="_blank" rel="noopener">^一关开发室</a></h2><h3 id="1-导出"><a href="#1-导出" class="headerlink" title="1. 导出"></a>1. 导出</h3><p>1.进入svn安装路径bin文件夹下，使用 cd 命令</p><p>在windows下，<kbd>win</kbd><kbd>+</kbd><kbd>R</kbd> 键入 <code>cmd</code> 回车 打开命令窗口cmd，进入下列目录（<code>svn服务器安装目录bin</code>）： </p><p><code>&quot;c:\Program Files\VisualSVN Server\bin\&quot;</code></p><p><img src="\img\articlePicture\svnbinToc.png" alt="svn目录"></p><p>2.备份/导出（svnadmin dump C:\Repositories\需导出库 &gt; E:**文件夹\full.svn.bak）</p><p>输入下列命令并执行：</p><p><code>svnadmin dump C:\Repositories\Hash加密（MD5、Sha1） &gt; E:\svnbak\full.svn.bak</code></p><p> <img src="\img\articlePicture\svnadmindump.gif" alt="svnadmindump"></p><p>3、full.svn.bak为备份文件。将其文件拷贝到目标机器,或是存储备份。</p><h3 id="2-导入-还原："><a href="#2-导入-还原：" class="headerlink" title="2. 导入/还原："></a>2. 导入/还原：</h3><p>1、在目标机器创建仓库：</p><p><code>svnadmin create D:/repositories/TestProject  (可右键**管理Server**新建)</code></p><p>并注意检查是否需要修改文件夹权限 </p><p>2、执行命令svnadminload:</p><p><code>svnadmin load D:/repositories/TestProject **&lt;** E:\svnbak\full.svn.bak</code></p><p>图解：</p><p> <img src="\img\articlePicture\svnadmindumpload.gif" alt="svnadmindumpload"></p><p>注释：该种方式适用于重装服务器、移动代码库 使用。</p><p>问题：</p><p>1.svn不知道这样的主机</p><p>重做服务器后，计算机名称肯定是不一样的。我们之前的项目还是老计算机名字，只要<strong>更改一下计算机名字</strong>即可实现。或者更改 </p><p><img src="\img\articlePicture\svnRname.gif" alt="svnRname"></p><h3 id="3-目录式导入导出"><a href="#3-目录式导入导出" class="headerlink" title="3. 目录式导入导出"></a>3. 目录式导入导出</h3><p>找到<code>VisualSvn Server</code>中的<strong>操作</strong>点击<strong>Stroage</strong>查找到svn管理目录，直接进行拷贝备份；</p><p>移植到新目录也是这样，这个方法简单粗暴了点，而且也并非官方支持，<em>谨慎使用吧</em>；</p>]]></content>
       
       <categories>
           
@@ -380,9 +404,9 @@
       
         <tags>
             
-            <tag> 习惯 </tag>
-            
             <tag> 管理 </tag>
+            
+            <tag> 习惯 </tag>
             
         </tags>
       
@@ -424,9 +448,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 专注 </tag>
+            
+            <tag> 管理 </tag>
             
             <tag> 高效 </tag>
             
@@ -549,14 +573,14 @@
     
     <entry>
       <title></title>
-      <link href="/google9f9cc14ef2981a0f.html"/>
-      <content type="html"><![CDATA[google-site-verification: google9f9cc14ef2981a0f.html]]></content>
+      <link href="/baidu_verify_UJnzbcntPV.html"/>
+      <content type="html"><![CDATA[UJnzbcntPV]]></content>
     </entry>
     
     <entry>
       <title></title>
-      <link href="/baidu_verify_UJnzbcntPV.html"/>
-      <content type="html"><![CDATA[UJnzbcntPV]]></content>
+      <link href="/google9f9cc14ef2981a0f.html"/>
+      <content type="html"><![CDATA[google-site-verification: google9f9cc14ef2981a0f.html]]></content>
     </entry>
     
     <entry>
@@ -572,14 +596,14 @@
     </entry>
     
     <entry>
-      <title>时间桥</title>
-      <link href="/timeline/index.html"/>
+      <title>标签云</title>
+      <link href="/tags/index.html"/>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>标签云</title>
-      <link href="/tags/index.html"/>
+      <title>时间桥</title>
+      <link href="/timeline/index.html"/>
       <content type="html"><![CDATA[]]></content>
     </entry>
     

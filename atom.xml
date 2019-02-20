@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2018-11-29T02:06:46.638Z</updated>
+  <updated>2019-02-20T04:15:43.135Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MAVEN常用命令</title>
+    <link href="http://blog.langaobai.top/2019/02/20/MAVEN%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://blog.langaobai.top/2019/02/20/MAVEN常用命令/</id>
+    <published>2019-02-20T04:03:00.000Z</published>
+    <updated>2019-02-20T04:15:43.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本人属于有点懒的人，因为公司的项目一直都是用maven构建的，简单的构建，当然没有什么问题；&lt;/p&gt;
+&lt;p&gt;但是涉及到一些复杂的问题需要用到命令模式的时候，又避免不了反复去查询了；&lt;/p&gt;
+&lt;p&gt;所以只能是记到自己的博客中来了；&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="MAVEN" scheme="http://blog.langaobai.top/categories/MAVEN/"/>
+    
+    
+      <category term="MAVEN" scheme="http://blog.langaobai.top/tags/MAVEN/"/>
+    
+      <category term="command" scheme="http://blog.langaobai.top/tags/command/"/>
+    
+      <category term="shell" scheme="http://blog.langaobai.top/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>说说离我们最近的单元测试之道</title>
@@ -38,11 +71,11 @@
       <category term="单元测试" scheme="http://blog.langaobai.top/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="思考" scheme="http://blog.langaobai.top/tags/%E6%80%9D%E8%80%83/"/>
-    
       <category term="单元测试" scheme="http://blog.langaobai.top/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
     
       <category term="JUNIT" scheme="http://blog.langaobai.top/tags/JUNIT/"/>
+    
+      <category term="思考" scheme="http://blog.langaobai.top/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
@@ -212,11 +245,11 @@
       <category term="想法" scheme="http://blog.langaobai.top/categories/%E4%B9%A6%E7%B1%8D/%E6%83%B3%E6%B3%95/"/>
     
     
+      <category term="思考" scheme="http://blog.langaobai.top/tags/%E6%80%9D%E8%80%83/"/>
+    
       <category term="书籍" scheme="http://blog.langaobai.top/tags/%E4%B9%A6%E7%B1%8D/"/>
     
       <category term="学习" scheme="http://blog.langaobai.top/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="思考" scheme="http://blog.langaobai.top/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
@@ -289,7 +322,7 @@
     <link href="http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E8%81%9A%E7%B1%BB/"/>
     <id>http://blog.langaobai.top/2018/09/04/算法之旅-聚类/</id>
     <published>2018-09-04T02:13:00.000Z</published>
-    <updated>2018-11-16T08:52:31.305Z</updated>
+    <updated>2018-12-27T08:42:36.318Z</updated>
     
     <summary type="html">
     
@@ -415,7 +448,7 @@
     <link href="http://blog.langaobai.top/2018/05/31/%E5%85%B3%E4%BA%8Esubversion%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86/"/>
     <id>http://blog.langaobai.top/2018/05/31/关于subversion的一些知识/</id>
     <published>2018-05-31T05:53:00.000Z</published>
-    <updated>2018-12-27T08:37:13.265Z</updated>
+    <updated>2018-12-27T08:47:03.374Z</updated>
     
     <summary type="html">
     
@@ -470,9 +503,9 @@
       <category term="笔记" scheme="http://blog.langaobai.top/categories/%E4%B9%A6%E7%B1%8D/%E7%AE%A1%E7%90%86/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="习惯" scheme="http://blog.langaobai.top/tags/%E4%B9%A0%E6%83%AF/"/>
-    
       <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="习惯" scheme="http://blog.langaobai.top/tags/%E4%B9%A0%E6%83%AF/"/>
     
   </entry>
   
@@ -526,9 +559,9 @@
       <category term="书籍" scheme="http://blog.langaobai.top/categories/%E4%B9%A6%E7%B1%8D/"/>
     
     
-      <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
-    
       <category term="专注" scheme="http://blog.langaobai.top/tags/%E4%B8%93%E6%B3%A8/"/>
+    
+      <category term="管理" scheme="http://blog.langaobai.top/tags/%E7%AE%A1%E7%90%86/"/>
     
       <category term="高效" scheme="http://blog.langaobai.top/tags/%E9%AB%98%E6%95%88/"/>
     
@@ -587,35 +620,6 @@
       <category term="MongDB" scheme="http://blog.langaobai.top/tags/MongDB/"/>
     
       <category term="BSON" scheme="http://blog.langaobai.top/tags/BSON/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Oracle常用命令</title>
-    <link href="http://blog.langaobai.top/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.langaobai.top/2018/03/09/Oracle常用命令/</id>
-    <published>2018-03-09T08:02:00.000Z</published>
-    <updated>2018-11-15T02:47:31.251Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Oracle表空间创建&quot;&gt;&lt;a href=&quot;#Oracle表空间创建&quot; class=&quot;headerlink&quot; title=&quot;Oracle表空间创建&quot;&gt;&lt;/a&gt;Oracle表空间创建&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;创建临时表空间&lt;pre class=&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Oracle" scheme="http://blog.langaobai.top/categories/Oracle/"/>
-    
-    
-      <category term="Oracle" scheme="http://blog.langaobai.top/tags/Oracle/"/>
-    
-      <category term="note" scheme="http://blog.langaobai.top/tags/note/"/>
     
   </entry>
   

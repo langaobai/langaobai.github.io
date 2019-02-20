@@ -4,8 +4,32 @@
 
     
   <url>
+    <loc>http://blog.langaobai.top/2019/02/20/MAVEN%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2019-02-20T04:15:43.135Z</lastmod>
+    <data>
+        <display>
+        <title>MAVEN常用命令</title>
+        <pubTime>2019-02-20T04:03:00.000Z</pubTime>
+        
+        <tag>MAVEN</tag>
+         
+        <tag>command</tag>
+         
+        <tag>shell</tag>
+         
+         
+           
+             
+              <breadCrumb title="MAVEN" url="http://blog.langaobai.top/categories/MAVEN/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.langaobai.top/2018/05/31/%E5%85%B3%E4%BA%8Esubversion%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2018-12-27T08:37:13.265Z</lastmod>
+    <lastmod>2018-12-27T08:47:03.374Z</lastmod>
     <data>
         <display>
         <title>关于subversion的一些知识</title>
@@ -31,6 +55,28 @@
 
     
   <url>
+    <loc>http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E8%81%9A%E7%B1%BB/</loc>
+    <lastmod>2018-12-27T08:42:36.318Z</lastmod>
+    <data>
+        <display>
+        <title>算法之旅-聚类</title>
+        <pubTime>2018-09-04T02:13:00.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+        <tag>聚类</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.langaobai.top/2018/11/09/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E9%81%93%E2%80%94%E2%80%94%E8%8A%AD%E8%8A%AD%E6%8B%89-%E5%A5%A5%E5%85%8B%E5%88%A9/</loc>
     <lastmod>2018-12-26T08:36:43.990Z</lastmod>
     <data>
@@ -38,11 +84,11 @@
         <title>学习之道——芭芭拉-奥克利</title>
         <pubTime>2018-11-09T03:19:00.000Z</pubTime>
         
+        <tag>思考</tag>
+         
         <tag>书籍</tag>
          
         <tag>学习</tag>
-         
-        <tag>思考</tag>
          
          
            
@@ -122,11 +168,11 @@
         <title>说说离我们最近的单元测试之道</title>
         <pubTime>2018-11-28T08:14:00.000Z</pubTime>
         
-        <tag>思考</tag>
-         
         <tag>单元测试</tag>
          
         <tag>JUNIT</tag>
+         
+        <tag>思考</tag>
          
          
            
@@ -160,28 +206,6 @@
           
              
               <breadCrumb title="window" url="http://blog.langaobai.top/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/window/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E8%81%9A%E7%B1%BB/</loc>
-    <lastmod>2018-11-16T08:52:31.305Z</lastmod>
-    <data>
-        <display>
-        <title>算法之旅-聚类</title>
-        <pubTime>2018-09-04T02:13:00.000Z</pubTime>
-        
-        <tag>算法</tag>
-         
-        <tag>聚类</tag>
-         
-         
-           
-             
-              <breadCrumb title="算法" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
           
         </display>
     </data>
@@ -381,9 +405,9 @@
         <title>习惯的力量</title>
         <pubTime>2018-05-07T05:28:00.000Z</pubTime>
         
-        <tag>习惯</tag>
-         
         <tag>管理</tag>
+         
+        <tag>习惯</tag>
          
          
            
@@ -453,9 +477,9 @@
         <title>专注力管理-让你的努力更高效</title>
         <pubTime>2018-04-17T03:57:00.000Z</pubTime>
         
-        <tag>管理</tag>
-         
         <tag>专注</tag>
+         
+        <tag>管理</tag>
          
         <tag>高效</tag>
          

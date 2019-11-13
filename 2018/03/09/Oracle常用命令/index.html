@@ -253,7 +253,7 @@
 
     
         <meta property="article:published_time" content="Fri Mar 09 2018 16:02:00 GMT+0800">
-        <meta property="article:modified_time" content="Thu Nov 15 2018 10:47:31 GMT+0800">
+        <meta property="article:modified_time" content="Mon Oct 28 2019 14:44:37 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -276,7 +276,7 @@
     "mainEntityOfPage": "http://blog.langaobai.top/2018/03/09/Oracle常用命令/index.html",
     "headline": "Oracle常用命令",
     "datePublished": "Fri Mar 09 2018 16:02:00 GMT+0800",
-    "dateModified": "Thu Nov 15 2018 10:47:31 GMT+0800",
+    "dateModified": "Mon Oct 28 2019 14:44:37 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "LanGaoBai",
@@ -583,6 +583,12 @@ extent management <span class="token keyword">local</span><span class="token pun
 <h3 id="Oracle导入-导出dmp"><a href="#Oracle导入-导出dmp" class="headerlink" title="Oracle导入/导出dmp"></a>Oracle导入/导出dmp</h3><ol>
 <li><p>导出命令</p>
 <pre class=" language-bash"><code class="language-bash">exp YNMZCC/YNMZCC@orcl  file<span class="token operator">=</span>d:\ynmzcc.dmp owner <span class="token operator">=</span> YNMZCC
+<span class="token comment" spellcheck="true"># 字符集问题，NLS_LANG</span>
+<span class="token comment" spellcheck="true"># 查看环境变量</span>
+<span class="token keyword">echo</span> %NLS_LANG%
+<span class="token comment" spellcheck="true"># 设置环境变量</span>
+<span class="token keyword">set</span> NLS_LANG<span class="token operator">=</span>AMERICAN_AMERICA.AL32UTF8
+<span class="token keyword">set</span> NLS_LANG<span class="token operator">=</span>AMERICAN_AMERICA.ZHS16GBK
 </code></pre>
 </li>
 <li><p>导入命令</p>
@@ -871,7 +877,7 @@ SPOOL logs<span class="token operator">/</span>create_procedure<span class="toke
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -889,7 +895,7 @@ SPOOL logs<span class="token operator">/</span>create_procedure<span class="toke
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/CCF/">CCF<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/">算法<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/数据结构/">数据结构<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MAVEN/">MAVEN<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/爬虫/">爬虫<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/想法/">想法<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/单元测试/">单元测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/">命令行<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/window/">window<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/傅里叶变换/">傅里叶变换<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/">深度学习<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/机器学习/">机器学习<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/CCF/">CCF<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/">算法<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/数据结构/">数据结构<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MAVEN/">MAVEN<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/爬虫/">爬虫<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/想法/">想法<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/单元测试/">单元测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/">命令行<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/window/">window<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/傅里叶变换/">傅里叶变换<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/">深度学习<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/机器学习/">机器学习<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -943,7 +949,7 @@ SPOOL logs<span class="token operator">/</span>create_procedure<span class="toke
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">26</span>
+                <span class="sidebar-badge">28</span>
             </a>
         </li>
         

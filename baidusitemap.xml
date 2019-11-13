@@ -4,26 +4,95 @@
 
     
   <url>
-    <loc>http://blog.langaobai.top/2018/11/09/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E9%81%93%E2%80%94%E2%80%94%E8%8A%AD%E8%8A%AD%E6%8B%89-%E5%A5%A5%E5%85%8B%E5%88%A9/</loc>
-    <lastmod>2019-03-07T02:42:38.588Z</lastmod>
+    <loc>http://blog.langaobai.top/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2019-10-28T06:44:37.811Z</lastmod>
     <data>
         <display>
-        <title>学习之道——芭芭拉-奥克利</title>
-        <pubTime>2018-11-09T03:19:00.000Z</pubTime>
+        <title>Oracle常用命令</title>
+        <pubTime>2018-03-09T08:02:00.000Z</pubTime>
         
-        <tag>思考</tag>
+        <tag>Oracle</tag>
          
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="Oracle" url="http://blog.langaobai.top/categories/Oracle/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.langaobai.top/2019/04/23/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/</loc>
+    <lastmod>2019-05-07T06:33:20.734Z</lastmod>
+    <data>
+        <display>
+        <title>刻意练习</title>
+        <pubTime>2019-04-23T08:35:00.000Z</pubTime>
+        
         <tag>书籍</tag>
-         
-        <tag>学习</tag>
          
          
            
              
               <breadCrumb title="书籍" url="http://blog.langaobai.top/categories/%E4%B9%A6%E7%B1%8D/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.langaobai.top/2019/02/28/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2019-03-26T01:58:07.910Z</lastmod>
+    <data>
+        <display>
+        <title>认识深度学习（一）</title>
+        <pubTime>2019-02-28T07:11:00.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+        <tag>机器学习</tag>
+         
+        <tag>深度学习</tag>
+         
+         
+           
              
-              <breadCrumb title="想法" url="http://blog.langaobai.top/categories/%E4%B9%A6%E7%B1%8D/%E6%83%B3%E6%B3%95/"/>
+              <breadCrumb title="算法" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
+          
+             
+              <breadCrumb title="深度学习" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.langaobai.top/2019/03/25/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2019-03-26T01:29:17.678Z</lastmod>
+    <data>
+        <display>
+        <title>认识深度学习（二）卷积神经网络</title>
+        <pubTime>2019-03-25T14:24:00.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+        <tag>机器学习</tag>
+         
+        <tag>深度学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
+          
+             
+              <breadCrumb title="深度学习" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -32,7 +101,7 @@
     
   <url>
     <loc>http://blog.langaobai.top/2019/03/05/Docker%E5%BD%92%E7%BA%B3/</loc>
-    <lastmod>2019-03-05T02:09:54.832Z</lastmod>
+    <lastmod>2019-03-25T09:35:49.970Z</lastmod>
     <data>
         <display>
         <title>Docker归纳</title>
@@ -61,26 +130,26 @@
 
     
   <url>
-    <loc>http://blog.langaobai.top/2019/02/28/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2019-03-04T09:04:37.920Z</lastmod>
+    <loc>http://blog.langaobai.top/2018/11/09/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E9%81%93%E2%80%94%E2%80%94%E8%8A%AD%E8%8A%AD%E6%8B%89-%E5%A5%A5%E5%85%8B%E5%88%A9/</loc>
+    <lastmod>2019-03-07T02:42:38.588Z</lastmod>
     <data>
         <display>
-        <title>认识深度学习（一）</title>
-        <pubTime>2019-02-28T07:11:00.000Z</pubTime>
+        <title>学习之道——芭芭拉-奥克利</title>
+        <pubTime>2018-11-09T03:19:00.000Z</pubTime>
         
-        <tag>算法</tag>
+        <tag>书籍</tag>
          
-        <tag>深度学习</tag>
+        <tag>思考</tag>
          
-        <tag>机器学习</tag>
+        <tag>学习</tag>
          
          
            
              
-              <breadCrumb title="算法" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/"/>
+              <breadCrumb title="书籍" url="http://blog.langaobai.top/categories/%E4%B9%A6%E7%B1%8D/"/>
           
              
-              <breadCrumb title="深度学习" url="http://blog.langaobai.top/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="想法" url="http://blog.langaobai.top/categories/%E4%B9%A6%E7%B1%8D/%E6%83%B3%E6%B3%95/"/>
           
         </display>
     </data>
@@ -97,9 +166,9 @@
         
         <tag>算法</tag>
          
-        <tag>深度学习</tag>
-         
         <tag>机器学习</tag>
+         
+        <tag>深度学习</tag>
          
          
            
@@ -361,28 +430,6 @@
           
              
               <breadCrumb title="数据结构" url="http://blog.langaobai.top/categories/CCF/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.langaobai.top/2018/03/09/Oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2018-11-15T02:47:31.251Z</lastmod>
-    <data>
-        <display>
-        <title>Oracle常用命令</title>
-        <pubTime>2018-03-09T08:02:00.000Z</pubTime>
-        
-        <tag>Oracle</tag>
-         
-        <tag>note</tag>
-         
-         
-           
-             
-              <breadCrumb title="Oracle" url="http://blog.langaobai.top/categories/Oracle/"/>
           
         </display>
     </data>

@@ -253,7 +253,7 @@
 
     
         <meta property="article:published_time" content="Tue Mar 05 2019 10:09:00 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 05 2019 10:09:54 GMT+0800">
+        <meta property="article:modified_time" content="Mon Mar 25 2019 17:35:49 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -276,7 +276,7 @@
     "mainEntityOfPage": "http://blog.langaobai.top/2019/03/05/Docker归纳/index.html",
     "headline": "Docker归纳",
     "datePublished": "Tue Mar 05 2019 10:09:00 GMT+0800",
-    "dateModified": "Tue Mar 05 2019 10:09:54 GMT+0800",
+    "dateModified": "Mon Mar 25 2019 17:35:49 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "LanGaoBai",
@@ -377,6 +377,15 @@
 
     <!-- Left aligned menu below button -->
     
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Docker的来由"><span class="post-toc-number">1.</span> <span class="post-toc-text">Docker的来由</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Dockerfile"><span class="post-toc-number">2.</span> <span class="post-toc-text">Dockerfile</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#简介"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Dockerfile命令"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Dockerfile命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#ADD"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">ADD</span></a></li></ol></li></ol></li></ol>
+    </ul>
     
 
 
@@ -542,7 +551,26 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <p>学习和使用docker已经有一段时间了，可是一直没有时间进行归纳总结；</p>
+<p>想来最近项目稍闲，所以赶紧整理一下之前学到，并运用的一些docker知识，并作为后面自己的知识库进行运用；</p>
+<h3 id="Docker的来由"><a href="#Docker的来由" class="headerlink" title="Docker的来由"></a>Docker的来由</h3><p>任何的软件由来，都是由一个需求而得来的，如果这个需求是个特别痛点的需求，那么解决这个需求的软件就会发展得很好；</p>
+<p>那么docker究竟解决了用户什么样的痛点需求呢？</p>
+<blockquote>
+<p>Docker 的出现一定是因为目前的后端在开发和运维阶段确实需要一种虚拟化技术解决开发环境和生产环境环境一致的问题。</p>
+<p>通过 Docker 我们可以将程序运行的环境也纳入到版本控制中，排除因为环境造成不同运行结果的可能。</p>
+</blockquote>
+<p>但是上述需求虽然推动了虚拟化技术的产生，但是如果没有合适的底层技术支撑，那么我们仍然得不到一个完美的产品。</p>
+<p>因为之前学过了部分的Docker知识，但是一段时间不使用，有点生疏了，所以特地记录到博客中，至于刚才所说的Docker的一些核心技术和实现原理，留待后面进行分析了；</p>
+<h3 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>Dockerfile是由一系列命令和参数构成的脚本，<strong>这些命令应用于基础镜像并最终创建一个新的镜像。</strong></p>
+<p><strong>它们简化了从头到尾的流程并极大的简化了部署工作。</strong></p>
+<p>Dockerfile从FROM命令开始，紧接着跟随者各种方法，命令和参数。其产出为一个新的可以用于创建容器的镜像。</p>
+<p><strong>Dockerfile语法由两部分构成，注释和命令+参数</strong></p>
+<h4 id="Dockerfile命令"><a href="#Dockerfile命令" class="headerlink" title="Dockerfile命令"></a>Dockerfile命令</h4><p>Dockerfile有十几条命令可用于构建镜像，下文将简略介绍这些命令。</p>
+<h5 id="ADD"><a href="#ADD" class="headerlink" title="ADD"></a>ADD</h5><p>ADD命令有两个参数，源和目标。它的基本作用是从源系统的文件系统上复制文件到目标容器的文件系统。如果源是一个URL，那该URL的内容将被下载并复制到容器中。</p>
+<pre class=" language-powershell"><code class="language-powershell">Usage: ADD <span class="token namespace">[source directory or URL]</span> <span class="token namespace">[destination directory]</span>
+ADD <span class="token operator">/</span>my_app_folder <span class="token operator">/</span>my_app_folder
+</code></pre>
+
         
     
 
@@ -631,6 +659,14 @@
             <!-- Post Prev & Next Nav -->
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
+    
+        <a href="/2019/03/25/认识深度学习（二）卷积神经网络/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
     
 
     <!-- Section Spacer -->
@@ -730,7 +766,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -748,7 +784,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/CCF/">CCF<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/">算法<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/数据结构/">数据结构<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MAVEN/">MAVEN<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/爬虫/">爬虫<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/想法/">想法<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/单元测试/">单元测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/">命令行<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/window/">window<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/傅里叶变换/">傅里叶变换<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/">深度学习<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/机器学习/">机器学习<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/CCF/">CCF<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/">算法<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/数据结构/">数据结构<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MAVEN/">MAVEN<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/爬虫/">爬虫<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/想法/">想法<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/单元测试/">单元测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/">命令行<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/window/">window<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/傅里叶变换/">傅里叶变换<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/">深度学习<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/机器学习/">机器学习<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -802,7 +838,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">26</span>
+                <span class="sidebar-badge">28</span>
             </a>
         </li>
         

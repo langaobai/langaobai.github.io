@@ -1,3 +1,5 @@
+http://blog.langaobai.top/2019/04/23/刻意练习/
+http://blog.langaobai.top/2019/03/25/认识深度学习（二）卷积神经网络/
 http://blog.langaobai.top/2019/03/05/Docker归纳/
 http://blog.langaobai.top/2019/02/28/认识深度学习（一）/
 http://blog.langaobai.top/2019/02/20/MAVEN常用命令/
@@ -15,5 +17,3 @@ http://blog.langaobai.top/2018/09/04/算法之旅-聚类/
 http://blog.langaobai.top/2018/08/30/你知道或不知道的单元测试/
 http://blog.langaobai.top/2018/08/26/算法之旅-排序/
 http://blog.langaobai.top/2018/08/24/一些版本命名小常识/
-http://blog.langaobai.top/2018/05/31/关于subversion的一些知识/
-http://blog.langaobai.top/2018/05/07/习惯的力量/

@@ -184,7 +184,7 @@ a.page-reward-btn.tooltip-top {
     font-family: Satisfy,cursive;
     -webkit-font-smoothing: antialiased;
     transition: opacity .3s .3s;
-    padding-bottom: 80px
+    padding-bottom: 20px
 }
 
 .tooltip-top .tooltip:hover .tooltip-content {

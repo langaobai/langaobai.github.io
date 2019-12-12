@@ -3,6 +3,28 @@
   
     
     <entry>
+      <title>AXURE快捷操作</title>
+      <link href="/2019/12/12/AXURE%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
+      <content type="html"><![CDATA[<p>之前一直忙于项目或者一些事情，然后欠账太多，导致今年都没有认真记过什么东西；</p><p>最近新项目开展，本来是个技术，但奈何人手不足，只能顶缸一下需求调研，以及软件设计规划的活了；</p><p>再由于之前，没有充分调研，结果我用<strong>lunacy类sketch的软件做好设计稿</strong>，以为只用给组内的开发人员看就可以了；</p><p>结果要给客户做交互演示，<strong>懵了</strong>；</p><p>好吧，赶紧调转过来，使用业内广泛使用的axure来做交互，还好<strong>axure官方开发了sketch插件能够将sketch文件复制到axure里面</strong>；</p><p>当然以上<strong>操作只支持Mac，win下面因为没有sketch</strong>，所以自然也不支持；</p><p>废话不说了，直接上快捷键</p><table><thead><tr><th><strong>常用</strong></th><th><strong>Windows</strong></th><th><strong>OS X</strong></th></tr></thead><tbody><tr><td>剪切</td><td>CTRL + X</td><td>CMD + X</td></tr><tr><td>复制</td><td>CTRL + C</td><td>CMD + C</td></tr><tr><td>粘贴</td><td>CTRL + V</td><td>CMD + V</td></tr><tr><td>重复</td><td>CTRL + D</td><td>CMD + D</td></tr><tr><td>撤销</td><td>CTRL + Z</td><td>CMD + Z</td></tr><tr><td>重做</td><td>CTRL + Y</td><td>CMD + Y</td></tr><tr><td>全选</td><td>CTRL + A</td><td>CMD + A</td></tr><tr><td>打开</td><td>CTRL + O</td><td>CMD + O</td></tr><tr><td>新建</td><td>CTRL + N</td><td>CMD + N</td></tr><tr><td>保存</td><td>CTRL + S</td><td>CMD + S</td></tr><tr><td>另存</td><td>CTRL + SHIFT + S</td><td>CMD + SHIFT + S</td></tr><tr><td>退出</td><td>ALT + F4</td><td>CMD + Q</td></tr><tr><td>打印</td><td>CTRL + P</td><td>CMD + P</td></tr><tr><td>查找</td><td>CTRL + F</td><td>CMD + F</td></tr><tr><td>替换</td><td>CTRL + H</td><td>CMD + R</td></tr><tr><td>帮助</td><td>F1</td><td>F1</td></tr><tr><td>拼写检查</td><td>F7</td><td>–</td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong>页面/树</strong></td><td><strong>Windows</strong></td><td><strong>OS X</strong></td></tr><tr><td>新建页面</td><td>CTRL + ENTER</td><td>CMD + ENTER</td></tr><tr><td>新建文件夹</td><td>CTRL + SHIFT + ENTER</td><td>CMD + SHIFT + ENTER</td></tr><tr><td>缩进选中项</td><td>TAB</td><td>TAB</td></tr><tr><td>减少缩进选中项</td><td>SHIFT + TAB</td><td>SHIFT + TAB</td></tr><tr><td>向上移动选中项</td><td>CTRL + ↑</td><td>CMD + ↑</td></tr><tr><td>向下移动选中项</td><td>CTRL + ↓</td><td>CMD + ↓</td></tr><tr><td>查询</td><td>输入即查询</td><td>输入即查询</td></tr><tr><td>搜索栏移动到结果</td><td>↓</td><td>↓</td></tr><tr><td>从结果返回搜索栏</td><td>SHIFT + TAB</td><td>SHIFT + TAB</td></tr><tr><td>退出查询</td><td>ESC</td><td>ESC</td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong>发布</strong></td><td><strong>Windows</strong></td><td><strong>OS X</strong></td></tr><tr><td>预览</td><td>F5</td><td>CMD + SHIFT + P</td></tr><tr><td>预览选项</td><td>CTRL + F5</td><td>CMD + SHIFT + OPT + P</td></tr><tr><td>共享</td><td>F6</td><td>CMD + SHIFT + A</td></tr><tr><td>生成HTML</td><td>F8</td><td>CMD + SHIFT + O</td></tr><tr><td>重新生成当前页面</td><td>CTRL + F8</td><td>CMD + SHIFT + I</td></tr><tr><td>生成说明文档</td><td>F9</td><td>CMD + SHIFT + D</td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong>工具</strong></td><td><strong>Windows</strong></td><td><strong>OS X</strong></td></tr><tr><td>相交选中</td><td>CTRL + 1</td><td>CMD + 1</td></tr><tr><td>包含选中</td><td>CTRL + 2</td><td>CMD + 2</td></tr><tr><td>连接线</td><td>CTRL + 3</td><td>CMD + 3</td></tr><tr><td>钢笔</td><td>CTRL + 4</td><td>CMD + 4</td></tr><tr><td>边界点</td><td>CTRL + 5</td><td>CMD + 5</td></tr><tr><td>切割</td><td>CTRL + 6</td><td>CMD + 6</td></tr><tr><td>裁剪</td><td>CTRL + 7</td><td>CMD + 7</td></tr><tr><td>连接点</td><td>CTRL + 8</td><td>CMD + 8</td></tr><tr><td>格式刷</td><td>CTRL + 9</td><td>CMD + 9</td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong>画布</strong></td><td><strong>Windows</strong></td><td><strong>OS X</strong></td></tr><tr><td>向后切换选项卡</td><td>CTRL + TAB</td><td>CTRL + TAB</td></tr><tr><td>向前切换选项卡</td><td>CTRL + SHIFT + TAB</td><td>CTRL + SHIFT + TAB</td></tr><tr><td>左右移动选项卡</td><td>CTRL + ALT + ←/→</td><td>CMD + ALT + ←/→</td></tr><tr><td>选择上一个元件</td><td>CTRL + SHIFT + 9</td><td>CMD + SHIFT + 9</td></tr><tr><td>选择下一个元件</td><td>CTRL + SHIFT + 0</td><td>CMD + SHIFT + 0</td></tr><tr><td>关闭页面/母版</td><td>CTRL + W</td><td>CMD + W</td></tr><tr><td>关闭全部选项卡</td><td>CTRL + SHIFT + W</td><td>CMD + SHIFT + W</td></tr><tr><td>向上翻页</td><td>PAGE UP</td><td>PAGE UP</td></tr><tr><td>向下翻页</td><td>PAGE DOWN</td><td>PAGE DOWN</td></tr><tr><td>向左翻页</td><td>SHIFT + PAGE UP</td><td>SHIFT + PAGE UP</td></tr><tr><td>向右翻页</td><td>SHIFT + PAGE DOWN</td><td>SHIFT + PAGE DOWN</td></tr><tr><td>向上滚动</td><td>鼠标滚轮向上</td><td>鼠标滚轮向上</td></tr><tr><td>向下滚动</td><td>鼠标滚轮向下</td><td>鼠标滚轮向下</td></tr><tr><td>向左滚动</td><td>SHIFT + 鼠标滚轮向上</td><td>SHIFT + 鼠标滚轮向上</td></tr><tr><td>向右滚动</td><td>SHIFT + 鼠标滚轮向下</td><td>SHIFT + 鼠标滚轮向下</td></tr><tr><td>缩小比例</td><td>CTRL + +</td><td>CMD + +</td></tr><tr><td>放大比例</td><td>CTRL + -</td><td>CMD + -</td></tr><tr><td>还原比例</td><td>CTRL + 0</td><td>CMD + 0</td></tr><tr><td>拖动画布</td><td>按住空格拖动</td><td>按住空格拖动</td></tr><tr><td>暂时隐藏遮罩与网格</td><td>按住 [CTRL] + [SPACE]</td><td>按住[CTRL] + [SPACE]</td></tr><tr><td>显示/隐藏网格</td><td>CTRL + ‘</td><td>CMD + ‘</td></tr><tr><td>显示/隐藏全局辅助线</td><td>CTRL + .</td><td>CMD + .</td></tr><tr><td>显示/隐藏页面辅助线</td><td>CTRL + ,</td><td>CMD + ,</td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong>面板</strong></td><td><strong>Windows</strong></td><td><strong>OS X</strong></td></tr><tr><td>左侧功能面板开关</td><td>CTRL + ALT+ [</td><td>CMD + ALT + [</td></tr><tr><td>右侧功能面板开关</td><td>CTRL + ALT + ]</td><td>CMD + ALT + ]</td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong>账户</strong></td><td><strong>Windows</strong></td><td><strong>OS X</strong></td></tr><tr><td>登录</td><td>CTRL + F12</td><td>CMD + F12</td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong>编辑</strong></td><td><strong>Windows</strong></td><td><strong>OS X</strong></td></tr><tr><td>组合</td><td>CTRL + G</td><td>CMD + G</td></tr><tr><td>取消组合</td><td>CTRL + SHIFT + G</td><td>CMD + SHIFT + G</td></tr><tr><td>上移一层</td><td>CTRL + ]</td><td>CMD + ]</td></tr><tr><td>下移一层</td><td>CTRL + [</td><td>CMD + [</td></tr><tr><td>置于顶层</td><td>CTRL + SHIFT + ]</td><td>CMD + SHIFT + ]</td></tr><tr><td>置于底层</td><td>CTRL + SHIFT + [</td><td>CMD + SHIFT + [</td></tr><tr><td>元件左侧对齐</td><td>CTRL + ALT + L</td><td>CMD + OPT + L</td></tr><tr><td>元件水平居中对齐</td><td>CTRL + ALT + C</td><td>CMD + OPT + C</td></tr><tr><td>元件右侧对齐</td><td>CTRL + ALT + R</td><td>CMD + OPT + R</td></tr><tr><td>元件顶部对齐</td><td>CTRL + ALT + T</td><td>CMD + OPT + T</td></tr><tr><td>元件垂直居中对齐</td><td>CTRL + ALT + M</td><td>CMD + OPT + M</td></tr><tr><td>元件底部对齐</td><td>CTRL + ALT + B</td><td>CMD + OPT + B</td></tr><tr><td>文本左侧对齐</td><td>CTRL + SHIFT + L</td><td>CMD + SHIFT + L</td></tr><tr><td>文本水平居中对齐</td><td>CTRL + SHIFT + C</td><td>CMD + SHIFT + C</td></tr><tr><td>文本右侧对齐</td><td>CTRL + SHIFT + R</td><td>CMD + SHIFT + ALT + R</td></tr><tr><td>水平分布</td><td>CTRL + SHIFT + H</td><td>CMD + SHIFT + H</td></tr><tr><td>垂直分布</td><td>CTRL + SHIFT + U</td><td>CMD + SHIFT + U</td></tr><tr><td>转换为动态面板</td><td>CTRL + SHIFT + ALT + D</td><td>CMD + SHIFT + OPT + D</td></tr><tr><td>转换为母版</td><td>CTRL + SHIFT + ALT + M</td><td>CMD + SHIFT + OPT + M</td></tr><tr><td>锁定位置与尺寸</td><td>CTRL + K</td><td>CMD + K</td></tr><tr><td>解锁位置与尺寸</td><td>CTRL + SHIFT + K</td><td>CMD + SHIFT + K</td></tr><tr><td>编辑位置与尺寸</td><td>CTRL + L</td><td>CMD + L</td></tr><tr><td>保持宽高比例</td><td>SHIFT + ENTER</td><td>SHIFT + ENTER</td></tr><tr><td>切割图像</td><td>CTRL + SHIFT + ALT + S</td><td>CMD + SHIFT + OPT + S</td></tr><tr><td>插入文本链接</td><td>CTRL + SHIFT + ALT + H</td><td>CMD + SHIFT + OPT + H</td></tr><tr><td>复制选中元件内容</td><td>CTRL + SHIFT + ALT + C</td><td>CMD + SHIFT + OPT + C</td></tr><tr><td>粘贴为纯文本</td><td>CTRL + SHIFT + V</td><td>CMD + SHIFT + V</td></tr><tr><td>粘贴包含锁定元件</td><td>CTRL + ALT + V</td><td>CMD + OPT + V</td></tr><tr><td>从所有视图删除</td><td>CTRL + DEL</td><td>CMD + DEL</td></tr><tr><td>焦点进入下个元件</td><td>CTRL + 0</td><td>CMD + SHIFT + 0</td></tr><tr><td>焦点进入上个元件</td><td>CTRL + 9</td><td>CMD + SHIFT + 9</td></tr><tr><td>增大脚注编号</td><td>CTRL + J</td><td>CMD + J</td></tr><tr><td>减小脚注编号</td><td>CTRL + SHIFT + J</td><td>CMD + SHIFT + J</td></tr><tr><td>增大字体尺寸</td><td>CTRL + SHIFT + &lt;</td><td>CMD + SHIFT + &lt;</td></tr><tr><td>缩小字体尺寸</td><td>CTRL + SHIFT + &gt;</td><td>CMD + SHIFT + &gt;</td></tr></tbody></table>]]></content>
+      
+      <categories>
+          
+          <category> 快捷键 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 快捷键 </tag>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>刻意练习</title>
       <link href="/2019/04/23/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/"/>
       <content type="html"><![CDATA[<h3 id="我与本书的一些接触"><a href="#我与本书的一些接触" class="headerlink" title="我与本书的一些接触"></a>我与本书的一些接触</h3><p>在早之前就了解过学习三件套，但在看完学习之道以后，就有些没时间来阅读下一本，刻意练习；</p><p>在我最早的认识里面，我第一个听到关于刻意练习这个词汇最先想到的会是<strong>一万小时理论</strong>；</p><p>几乎在我听到有关于练习的套路的都是围绕着这一万小时理论来进行展开的；</p><p>随着年纪的增大，我对于这个理解上面，增加了些自己的理解，就是，<strong>有效的练习，才能在一万小时内达到专家的级别；</strong></p><p>同时在阅读本书的时候，也不禁对于一些小观点所着迷，例如下面这句话：</p><blockquote><p>一旦你已经达到了这种<strong>令你满意的技能水平</strong>，而且能做到自然而然地表现出你的水平，无论是开车、打网球还是烘焙饼干，<strong>你就已经不再进步了</strong>。</p></blockquote><p>这让我想到的是，很多时候，人的进步通常是改变过去对于自己发现问题的不满，不然没有改进的动力；</p><p>这段话以后，作者提出了另外的一个观点让我深以为然；</p><p>那就如果长时间的练习能代表一切的话，我们是否可以理解：一个开车20年的人一定比开车5年的人开得更好？</p><p>记得前两年有过这么一个节目介绍说，一个在日本的华裔，因为被安排清扫类的工作，最后成了一个清洁的匠人，让我觉得很不可思议，因为通常而言，在中国一个扫大街的大妈是无论如何也做不到这样的；</p><p>这也侧面佐证了作者的观点，不是时间越久，技术就会越好的；</p><blockquote><p>有目的的练习VS天真的练习</p></blockquote><h3 id="如何定义有目的的练习？"><a href="#如何定义有目的的练习？" class="headerlink" title="如何定义有目的的练习？"></a>如何定义有目的的练习？</h3><ol><li>有目的的练习具有定义明确的特定目标</li></ol><p>在针对一些练习的时候，只有连续三次的成功才能算做练习通过；</p><blockquote><p>　有目的的练习，主要是“积小胜为大胜”“积跬步以至千里”，最终达到长期目标。</p></blockquote><ol start="2"><li>有目的的练习具有定义明确的特定目标</li><li>有目的的练习包含反馈</li><li>有目的的练习包含反馈</li></ol><h3 id="遇到瓶颈怎么办？"><a href="#遇到瓶颈怎么办？" class="headerlink" title="遇到瓶颈怎么办？"></a>遇到瓶颈怎么办？</h3><blockquote><p>试着做不同的事情，而不是更难的事情；</p></blockquote><p>我想我总是搞歪了方向，在此之前我一直都是这样，遇到瓶颈，我觉得，我应该是没有尝试更困难的事情；</p><p>所以每次突破瓶颈的时候，我都会选择更难的事情，但最后发现，从事不一样的事情的时候，也是能有很好的收获，不必要所有的关注力都围绕着我要突破的瓶颈上；</p>]]></content>
@@ -40,9 +62,9 @@
             
             <tag> 算法 </tag>
             
-            <tag> 机器学习 </tag>
-            
             <tag> 深度学习 </tag>
+            
+            <tag> 机器学习 </tag>
             
         </tags>
       
@@ -96,9 +118,9 @@
             
             <tag> 算法 </tag>
             
-            <tag> 机器学习 </tag>
-            
             <tag> 深度学习 </tag>
+            
+            <tag> 机器学习 </tag>
             
         </tags>
       
@@ -148,9 +170,9 @@
             
             <tag> 算法 </tag>
             
-            <tag> 机器学习 </tag>
-            
             <tag> 深度学习 </tag>
+            
+            <tag> 机器学习 </tag>
             
         </tags>
       
@@ -356,9 +378,9 @@
             
             <tag> 算法 </tag>
             
-            <tag> 列表 </tag>
-            
             <tag> 搜索 </tag>
+            
+            <tag> 列表 </tag>
             
         </tags>
       
@@ -380,9 +402,9 @@
             
             <tag> 算法 </tag>
             
-            <tag> 搜索 </tag>
-            
             <tag> 图表 </tag>
+            
+            <tag> 搜索 </tag>
             
         </tags>
       
@@ -714,12 +736,6 @@
     </entry>
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <content type="html"><![CDATA[<blockquote><p>蓝告白的博客，langaobai‘s blog’</p></blockquote><p>俗话说的好，<strong>好记性不如烂笔头</strong>，这是我的个人博客；</p><p>一直以来都没有好好记录和整理一下关于自己的东西；</p><p>原来建立博客的时候还是两年前的事情了，但直到最近才发现自己很多时候，<strong>没有记录，意味着自己没有好好沉淀属于自己的东西。</strong></p><p>博客会记录关于三个方面的东西，<strong>IT技术</strong>，<strong>书籍</strong>，<strong>电影</strong></p>]]></content>
-    </entry>
-    
-    <entry>
       <title>走廊</title>
       <link href="/gallery/index.html"/>
       <content type="html"><![CDATA[]]></content>
@@ -729,6 +745,12 @@
       <title>标签云</title>
       <link href="/tags/index.html"/>
       <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <content type="html"><![CDATA[<blockquote><p>蓝告白的博客，langaobai‘s blog’</p></blockquote><p>俗话说的好，<strong>好记性不如烂笔头</strong>，这是我的个人博客；</p><p>一直以来都没有好好记录和整理一下关于自己的东西；</p><p>原来建立博客的时候还是两年前的事情了，但直到最近才发现自己很多时候，<strong>没有记录，意味着自己没有好好沉淀属于自己的东西。</strong></p><p>博客会记录关于三个方面的东西，<strong>IT技术</strong>，<strong>书籍</strong>，<strong>电影</strong></p>]]></content>
     </entry>
     
     <entry>

@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="baidu-site-verification" content="UJnzbcntPV" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            AXURE快捷操作 | 
+        
+        墨鸦
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",快捷键,软件">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+
+    
+        <link rel="stylesheet" href="/css/appreciate.css">
+    
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="墨鸦">
+    <meta name="msapplication-starturl" content="http://blog.langaobai.top/2019/12/12/AXURE快捷操作/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="墨鸦">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="/atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://blog.langaobai.top/2019/12/12/AXURE快捷操作/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="AXURE快捷操作 | 墨鸦">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="快捷键"> <meta property="og:article:tag" content="软件"> 
+
+    
+        <meta property="article:published_time" content="Thu Dec 12 2019 09:30:00 GMT+0800">
+        <meta property="article:modified_time" content="Thu Dec 12 2019 09:53:18 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://blog.langaobai.top/2019/12/12/AXURE快捷操作/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://blog.langaobai.top/2019/12/12/AXURE快捷操作/index.html",
+    "headline": "AXURE快捷操作",
+    "datePublished": "Thu Dec 12 2019 09:30:00 GMT+0800",
+    "dateModified": "Thu Dec 12 2019 09:53:18 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "LanGaoBai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "吾日三省吾身"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "墨鸦",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",快捷键,软件",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?956dbb717858ec56aa5bed10a3b493b8';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!-- 百度资源推送 -->
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<link rel="stylesheet" href="/css/prism.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 22 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                AXURE快捷操作
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>LanGaoBai</strong>
+        <span>12月 12, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC1UlEQVR42u3aO5LbQAwFQN3/0nbqRKr3MJSLApvRlpYip6EAhc/rzyOvFzY2NjY2NjY2NvYt2a/4Kl7wz/3vnvP58/aZyZmxsbGxd7Nzxuyed7DPyLeA0XmwsbGxn8BOksp5qstJs/NgY2NjY+eveYdpqd8ODTY2NjZ2ck9bZlxbzGBjY2Njt+3+k5FAG4hb9NKwsbGxb8/OW0X3+fu/zrexsbGxb8xur3YF56QUSZJfcXJsbGzspew8MczKj9m72mFDFG5sbGzs1exkcNs2ifKx7qyZVQcLGxsbeym7bce3zaaTYW3eZoqeg42Njf0Y9ucQ5IVE0gw6Abehx8bGxt7NThLDVWFqS4u8QKoTGDY2NvYKdg7OU1S79JM/M/kxhlMRbGxs7J9lt236fNUmD03+tGRogY2Njf009nmLvz168vlJ6irm29jY2Ngr2EnKKRo3ZWqZJb92UI2NjY29m5003PPQ5ImtLS3aZImNjY39HPa1ZUmS8NolniRAw/k2NjY29gp2QspTzvlSzqwsid6OjY2NvZTdhqAdG1zbkPrKfBsbGxv7x9n5UU7GCTNM3jyKfhhsbGzspezZEkxSfrTjhKRcSYJb5G1sbGzspezzJZurRrazwqaYimBjY2MvZbdHz5PKa3Sdp1VsbGzs3exZE79tFZ0MHtriZzgewMbGxv5xdhKC9kCzAuakzVSUItjY2NhL2SdN/HYNKPnvyWgZGxsb+8nsPM20gcthSbuqLUuwsbGxt7Lb62Tt5gSTj4GjphI2Njb2IvZs4NqWKG1TqQ131NjCxsbGXs1uXzkb4uZj47z9VAyesbGxsR/Abps1bcjOC5iTxU1sbGxs7JadgJOCpx0D1FMRbGxs7EeyZ22j/Fuz5Z6vJzBsbGzs27PzVJSEIP/W7M4vbiphY2Nj/yD7e0s27Yh3VqIMm0rY2NjYK9jPubCxsbGxsbGxsbFvc/0FernilZyqgfMAAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/快捷键/">快捷键</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/软件/">软件</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=AXURE快捷操作&url=http://blog.langaobai.top/2019/12/12/AXURE快捷操作/index.html&pic=http://blog.langaobai.top/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=AXURE快捷操作&url=http://blog.langaobai.top/2019/12/12/AXURE快捷操作/index.html&via=LanGaoBai" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.langaobai.top/2019/12/12/AXURE快捷操作/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://blog.langaobai.top/2019/12/12/AXURE快捷操作/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>之前一直忙于项目或者一些事情，然后欠账太多，导致今年都没有认真记过什么东西；</p>
+<p>最近新项目开展，本来是个技术，但奈何人手不足，只能顶缸一下需求调研，以及软件设计规划的活了；</p>
+<p>再由于之前，没有充分调研，结果我用<strong>lunacy类sketch的软件做好设计稿</strong>，以为只用给组内的开发人员看就可以了；</p>
+<p>结果要给客户做交互演示，<strong>懵了</strong>；</p>
+<p>好吧，赶紧调转过来，使用业内广泛使用的axure来做交互，还好<strong>axure官方开发了sketch插件能够将sketch文件复制到axure里面</strong>；</p>
+<p>当然以上<strong>操作只支持Mac，win下面因为没有sketch</strong>，所以自然也不支持；</p>
+<p>废话不说了，直接上快捷键</p>
+<table>
+<thead>
+<tr>
+<th><strong>常用</strong></th>
+<th><strong>Windows</strong></th>
+<th><strong>OS X</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>剪切</td>
+<td>CTRL + X</td>
+<td>CMD + X</td>
+</tr>
+<tr>
+<td>复制</td>
+<td>CTRL + C</td>
+<td>CMD + C</td>
+</tr>
+<tr>
+<td>粘贴</td>
+<td>CTRL + V</td>
+<td>CMD + V</td>
+</tr>
+<tr>
+<td>重复</td>
+<td>CTRL + D</td>
+<td>CMD + D</td>
+</tr>
+<tr>
+<td>撤销</td>
+<td>CTRL + Z</td>
+<td>CMD + Z</td>
+</tr>
+<tr>
+<td>重做</td>
+<td>CTRL + Y</td>
+<td>CMD + Y</td>
+</tr>
+<tr>
+<td>全选</td>
+<td>CTRL + A</td>
+<td>CMD + A</td>
+</tr>
+<tr>
+<td>打开</td>
+<td>CTRL + O</td>
+<td>CMD + O</td>
+</tr>
+<tr>
+<td>新建</td>
+<td>CTRL + N</td>
+<td>CMD + N</td>
+</tr>
+<tr>
+<td>保存</td>
+<td>CTRL + S</td>
+<td>CMD + S</td>
+</tr>
+<tr>
+<td>另存</td>
+<td>CTRL + SHIFT + S</td>
+<td>CMD + SHIFT + S</td>
+</tr>
+<tr>
+<td>退出</td>
+<td>ALT + F4</td>
+<td>CMD + Q</td>
+</tr>
+<tr>
+<td>打印</td>
+<td>CTRL + P</td>
+<td>CMD + P</td>
+</tr>
+<tr>
+<td>查找</td>
+<td>CTRL + F</td>
+<td>CMD + F</td>
+</tr>
+<tr>
+<td>替换</td>
+<td>CTRL + H</td>
+<td>CMD + R</td>
+</tr>
+<tr>
+<td>帮助</td>
+<td>F1</td>
+<td>F1</td>
+</tr>
+<tr>
+<td>拼写检查</td>
+<td>F7</td>
+<td>–</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>页面/树</strong></td>
+<td><strong>Windows</strong></td>
+<td><strong>OS X</strong></td>
+</tr>
+<tr>
+<td>新建页面</td>
+<td>CTRL + ENTER</td>
+<td>CMD + ENTER</td>
+</tr>
+<tr>
+<td>新建文件夹</td>
+<td>CTRL + SHIFT + ENTER</td>
+<td>CMD + SHIFT + ENTER</td>
+</tr>
+<tr>
+<td>缩进选中项</td>
+<td>TAB</td>
+<td>TAB</td>
+</tr>
+<tr>
+<td>减少缩进选中项</td>
+<td>SHIFT + TAB</td>
+<td>SHIFT + TAB</td>
+</tr>
+<tr>
+<td>向上移动选中项</td>
+<td>CTRL + ↑</td>
+<td>CMD + ↑</td>
+</tr>
+<tr>
+<td>向下移动选中项</td>
+<td>CTRL + ↓</td>
+<td>CMD + ↓</td>
+</tr>
+<tr>
+<td>查询</td>
+<td>输入即查询</td>
+<td>输入即查询</td>
+</tr>
+<tr>
+<td>搜索栏移动到结果</td>
+<td>↓</td>
+<td>↓</td>
+</tr>
+<tr>
+<td>从结果返回搜索栏</td>
+<td>SHIFT + TAB</td>
+<td>SHIFT + TAB</td>
+</tr>
+<tr>
+<td>退出查询</td>
+<td>ESC</td>
+<td>ESC</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>发布</strong></td>
+<td><strong>Windows</strong></td>
+<td><strong>OS X</strong></td>
+</tr>
+<tr>
+<td>预览</td>
+<td>F5</td>
+<td>CMD + SHIFT + P</td>
+</tr>
+<tr>
+<td>预览选项</td>
+<td>CTRL + F5</td>
+<td>CMD + SHIFT + OPT + P</td>
+</tr>
+<tr>
+<td>共享</td>
+<td>F6</td>
+<td>CMD + SHIFT + A</td>
+</tr>
+<tr>
+<td>生成HTML</td>
+<td>F8</td>
+<td>CMD + SHIFT + O</td>
+</tr>
+<tr>
+<td>重新生成当前页面</td>
+<td>CTRL + F8</td>
+<td>CMD + SHIFT + I</td>
+</tr>
+<tr>
+<td>生成说明文档</td>
+<td>F9</td>
+<td>CMD + SHIFT + D</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>工具</strong></td>
+<td><strong>Windows</strong></td>
+<td><strong>OS X</strong></td>
+</tr>
+<tr>
+<td>相交选中</td>
+<td>CTRL + 1</td>
+<td>CMD + 1</td>
+</tr>
+<tr>
+<td>包含选中</td>
+<td>CTRL + 2</td>
+<td>CMD + 2</td>
+</tr>
+<tr>
+<td>连接线</td>
+<td>CTRL + 3</td>
+<td>CMD + 3</td>
+</tr>
+<tr>
+<td>钢笔</td>
+<td>CTRL + 4</td>
+<td>CMD + 4</td>
+</tr>
+<tr>
+<td>边界点</td>
+<td>CTRL + 5</td>
+<td>CMD + 5</td>
+</tr>
+<tr>
+<td>切割</td>
+<td>CTRL + 6</td>
+<td>CMD + 6</td>
+</tr>
+<tr>
+<td>裁剪</td>
+<td>CTRL + 7</td>
+<td>CMD + 7</td>
+</tr>
+<tr>
+<td>连接点</td>
+<td>CTRL + 8</td>
+<td>CMD + 8</td>
+</tr>
+<tr>
+<td>格式刷</td>
+<td>CTRL + 9</td>
+<td>CMD + 9</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>画布</strong></td>
+<td><strong>Windows</strong></td>
+<td><strong>OS X</strong></td>
+</tr>
+<tr>
+<td>向后切换选项卡</td>
+<td>CTRL + TAB</td>
+<td>CTRL + TAB</td>
+</tr>
+<tr>
+<td>向前切换选项卡</td>
+<td>CTRL + SHIFT + TAB</td>
+<td>CTRL + SHIFT + TAB</td>
+</tr>
+<tr>
+<td>左右移动选项卡</td>
+<td>CTRL + ALT + ←/→</td>
+<td>CMD + ALT + ←/→</td>
+</tr>
+<tr>
+<td>选择上一个元件</td>
+<td>CTRL + SHIFT + 9</td>
+<td>CMD + SHIFT + 9</td>
+</tr>
+<tr>
+<td>选择下一个元件</td>
+<td>CTRL + SHIFT + 0</td>
+<td>CMD + SHIFT + 0</td>
+</tr>
+<tr>
+<td>关闭页面/母版</td>
+<td>CTRL + W</td>
+<td>CMD + W</td>
+</tr>
+<tr>
+<td>关闭全部选项卡</td>
+<td>CTRL + SHIFT + W</td>
+<td>CMD + SHIFT + W</td>
+</tr>
+<tr>
+<td>向上翻页</td>
+<td>PAGE UP</td>
+<td>PAGE UP</td>
+</tr>
+<tr>
+<td>向下翻页</td>
+<td>PAGE DOWN</td>
+<td>PAGE DOWN</td>
+</tr>
+<tr>
+<td>向左翻页</td>
+<td>SHIFT + PAGE UP</td>
+<td>SHIFT + PAGE UP</td>
+</tr>
+<tr>
+<td>向右翻页</td>
+<td>SHIFT + PAGE DOWN</td>
+<td>SHIFT + PAGE DOWN</td>
+</tr>
+<tr>
+<td>向上滚动</td>
+<td>鼠标滚轮向上</td>
+<td>鼠标滚轮向上</td>
+</tr>
+<tr>
+<td>向下滚动</td>
+<td>鼠标滚轮向下</td>
+<td>鼠标滚轮向下</td>
+</tr>
+<tr>
+<td>向左滚动</td>
+<td>SHIFT + 鼠标滚轮向上</td>
+<td>SHIFT + 鼠标滚轮向上</td>
+</tr>
+<tr>
+<td>向右滚动</td>
+<td>SHIFT + 鼠标滚轮向下</td>
+<td>SHIFT + 鼠标滚轮向下</td>
+</tr>
+<tr>
+<td>缩小比例</td>
+<td>CTRL + +</td>
+<td>CMD + +</td>
+</tr>
+<tr>
+<td>放大比例</td>
+<td>CTRL + -</td>
+<td>CMD + -</td>
+</tr>
+<tr>
+<td>还原比例</td>
+<td>CTRL + 0</td>
+<td>CMD + 0</td>
+</tr>
+<tr>
+<td>拖动画布</td>
+<td>按住空格拖动</td>
+<td>按住空格拖动</td>
+</tr>
+<tr>
+<td>暂时隐藏遮罩与网格</td>
+<td>按住 [CTRL] + [SPACE]</td>
+<td>按住[CTRL] + [SPACE]</td>
+</tr>
+<tr>
+<td>显示/隐藏网格</td>
+<td>CTRL + ‘</td>
+<td>CMD + ‘</td>
+</tr>
+<tr>
+<td>显示/隐藏全局辅助线</td>
+<td>CTRL + .</td>
+<td>CMD + .</td>
+</tr>
+<tr>
+<td>显示/隐藏页面辅助线</td>
+<td>CTRL + ,</td>
+<td>CMD + ,</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>面板</strong></td>
+<td><strong>Windows</strong></td>
+<td><strong>OS X</strong></td>
+</tr>
+<tr>
+<td>左侧功能面板开关</td>
+<td>CTRL + ALT+ [</td>
+<td>CMD + ALT + [</td>
+</tr>
+<tr>
+<td>右侧功能面板开关</td>
+<td>CTRL + ALT + ]</td>
+<td>CMD + ALT + ]</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>账户</strong></td>
+<td><strong>Windows</strong></td>
+<td><strong>OS X</strong></td>
+</tr>
+<tr>
+<td>登录</td>
+<td>CTRL + F12</td>
+<td>CMD + F12</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>编辑</strong></td>
+<td><strong>Windows</strong></td>
+<td><strong>OS X</strong></td>
+</tr>
+<tr>
+<td>组合</td>
+<td>CTRL + G</td>
+<td>CMD + G</td>
+</tr>
+<tr>
+<td>取消组合</td>
+<td>CTRL + SHIFT + G</td>
+<td>CMD + SHIFT + G</td>
+</tr>
+<tr>
+<td>上移一层</td>
+<td>CTRL + ]</td>
+<td>CMD + ]</td>
+</tr>
+<tr>
+<td>下移一层</td>
+<td>CTRL + [</td>
+<td>CMD + [</td>
+</tr>
+<tr>
+<td>置于顶层</td>
+<td>CTRL + SHIFT + ]</td>
+<td>CMD + SHIFT + ]</td>
+</tr>
+<tr>
+<td>置于底层</td>
+<td>CTRL + SHIFT + [</td>
+<td>CMD + SHIFT + [</td>
+</tr>
+<tr>
+<td>元件左侧对齐</td>
+<td>CTRL + ALT + L</td>
+<td>CMD + OPT + L</td>
+</tr>
+<tr>
+<td>元件水平居中对齐</td>
+<td>CTRL + ALT + C</td>
+<td>CMD + OPT + C</td>
+</tr>
+<tr>
+<td>元件右侧对齐</td>
+<td>CTRL + ALT + R</td>
+<td>CMD + OPT + R</td>
+</tr>
+<tr>
+<td>元件顶部对齐</td>
+<td>CTRL + ALT + T</td>
+<td>CMD + OPT + T</td>
+</tr>
+<tr>
+<td>元件垂直居中对齐</td>
+<td>CTRL + ALT + M</td>
+<td>CMD + OPT + M</td>
+</tr>
+<tr>
+<td>元件底部对齐</td>
+<td>CTRL + ALT + B</td>
+<td>CMD + OPT + B</td>
+</tr>
+<tr>
+<td>文本左侧对齐</td>
+<td>CTRL + SHIFT + L</td>
+<td>CMD + SHIFT + L</td>
+</tr>
+<tr>
+<td>文本水平居中对齐</td>
+<td>CTRL + SHIFT + C</td>
+<td>CMD + SHIFT + C</td>
+</tr>
+<tr>
+<td>文本右侧对齐</td>
+<td>CTRL + SHIFT + R</td>
+<td>CMD + SHIFT + ALT + R</td>
+</tr>
+<tr>
+<td>水平分布</td>
+<td>CTRL + SHIFT + H</td>
+<td>CMD + SHIFT + H</td>
+</tr>
+<tr>
+<td>垂直分布</td>
+<td>CTRL + SHIFT + U</td>
+<td>CMD + SHIFT + U</td>
+</tr>
+<tr>
+<td>转换为动态面板</td>
+<td>CTRL + SHIFT + ALT + D</td>
+<td>CMD + SHIFT + OPT + D</td>
+</tr>
+<tr>
+<td>转换为母版</td>
+<td>CTRL + SHIFT + ALT + M</td>
+<td>CMD + SHIFT + OPT + M</td>
+</tr>
+<tr>
+<td>锁定位置与尺寸</td>
+<td>CTRL + K</td>
+<td>CMD + K</td>
+</tr>
+<tr>
+<td>解锁位置与尺寸</td>
+<td>CTRL + SHIFT + K</td>
+<td>CMD + SHIFT + K</td>
+</tr>
+<tr>
+<td>编辑位置与尺寸</td>
+<td>CTRL + L</td>
+<td>CMD + L</td>
+</tr>
+<tr>
+<td>保持宽高比例</td>
+<td>SHIFT + ENTER</td>
+<td>SHIFT + ENTER</td>
+</tr>
+<tr>
+<td>切割图像</td>
+<td>CTRL + SHIFT + ALT + S</td>
+<td>CMD + SHIFT + OPT + S</td>
+</tr>
+<tr>
+<td>插入文本链接</td>
+<td>CTRL + SHIFT + ALT + H</td>
+<td>CMD + SHIFT + OPT + H</td>
+</tr>
+<tr>
+<td>复制选中元件内容</td>
+<td>CTRL + SHIFT + ALT + C</td>
+<td>CMD + SHIFT + OPT + C</td>
+</tr>
+<tr>
+<td>粘贴为纯文本</td>
+<td>CTRL + SHIFT + V</td>
+<td>CMD + SHIFT + V</td>
+</tr>
+<tr>
+<td>粘贴包含锁定元件</td>
+<td>CTRL + ALT + V</td>
+<td>CMD + OPT + V</td>
+</tr>
+<tr>
+<td>从所有视图删除</td>
+<td>CTRL + DEL</td>
+<td>CMD + DEL</td>
+</tr>
+<tr>
+<td>焦点进入下个元件</td>
+<td>CTRL + 0</td>
+<td>CMD + SHIFT + 0</td>
+</tr>
+<tr>
+<td>焦点进入上个元件</td>
+<td>CTRL + 9</td>
+<td>CMD + SHIFT + 9</td>
+</tr>
+<tr>
+<td>增大脚注编号</td>
+<td>CTRL + J</td>
+<td>CMD + J</td>
+</tr>
+<tr>
+<td>减小脚注编号</td>
+<td>CTRL + SHIFT + J</td>
+<td>CMD + SHIFT + J</td>
+</tr>
+<tr>
+<td>增大字体尺寸</td>
+<td>CTRL + SHIFT + &lt;</td>
+<td>CMD + SHIFT + &lt;</td>
+</tr>
+<tr>
+<td>缩小字体尺寸</td>
+<td>CTRL + SHIFT + &gt;</td>
+<td>CMD + SHIFT + &gt;</td>
+</tr>
+</tbody>
+</table>
+
+        
+    
+
+    
+</div>
+
+                
+
+                <!-- appreciate -->
+                
+                    <!-- appreciate page -->
+<div class="page-reward">
+    <a href="javascript:;" class="page-reward-btn tooltip-top">
+        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+                赞
+            </span>
+            <span class="tooltip-content">
+                <span class="tooltip-text">
+                    <span class="tooltip-inner">
+                        <p class="reward-p">
+                            <i class="fa fa-quote-left"></i>
+                            欢迎留言^.^
+                            <i class="fa fa-quote-right"></i>
+                        </p>
+                        <div class="reward-box">
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/Alipay.png">
+                                <span class="reward-type">支付宝</span>
+                            </div>
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/WeChatPay.png">
+                                <span class="reward-type">微信</span>
+                            </div>
+
+                        </div>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </a>
+</div>
+                
+
+
+                
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://blog.langaobai.top/2019/12/12/AXURE快捷操作/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://blog.langaobai.top/2019/12/12/AXURE快捷操作/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//langaobai.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/04/23/刻意练习/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="LanGaoBai's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        langaobai@Gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: langaobai@gmail.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2019/12/">十二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/CCF/">CCF<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/">算法<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/数据结构/">数据结构<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MAVEN/">MAVEN<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/爬虫/">爬虫<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/想法/">想法<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/单元测试/">单元测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/">命令行<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/window/">window<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/快捷键/">快捷键<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/傅里叶变换/">傅里叶变换<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/">深度学习<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/机器学习/">机器学习<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/gallery" title="走廊">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                走廊
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="时间桥">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时间桥
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">cloud</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">29</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+    <a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
+
+-->
+
+<!-- Feedback -->
+<!--
+
+    <a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.feedback
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+    </a>
+
+-->
+
+<!-- About Theme -->
+<!--
+
+    <a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+             sidebar.about_theme
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+    </a>
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/langaobai" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>墨鸦
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//langaobai.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+    
+</html>

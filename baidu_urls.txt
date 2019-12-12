@@ -1,3 +1,4 @@
+http://blog.langaobai.top/2019/12/12/AXURE快捷操作/
 http://blog.langaobai.top/2019/04/23/刻意练习/
 http://blog.langaobai.top/2019/03/25/认识深度学习（二）卷积神经网络/
 http://blog.langaobai.top/2019/03/05/Docker归纳/
@@ -16,4 +17,3 @@ http://blog.langaobai.top/2018/09/04/算法之旅-图表搜索/
 http://blog.langaobai.top/2018/09/04/算法之旅-聚类/
 http://blog.langaobai.top/2018/08/30/你知道或不知道的单元测试/
 http://blog.langaobai.top/2018/08/26/算法之旅-排序/
-http://blog.langaobai.top/2018/08/24/一些版本命名小常识/

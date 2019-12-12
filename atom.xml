@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.langaobai.top/"/>
-  <updated>2019-05-07T06:33:20.734Z</updated>
+  <updated>2019-12-12T01:53:18.000Z</updated>
   <id>http://blog.langaobai.top/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AXURE快捷操作</title>
+    <link href="http://blog.langaobai.top/2019/12/12/AXURE%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
+    <id>http://blog.langaobai.top/2019/12/12/AXURE快捷操作/</id>
+    <published>2019-12-12T01:30:00.000Z</published>
+    <updated>2019-12-12T01:53:18.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;之前一直忙于项目或者一些事情，然后欠账太多，导致今年都没有认真记过什么东西；&lt;/p&gt;
+&lt;p&gt;最近新项目开展，本来是个技术，但奈何人手不足，只能顶缸一下需求调研，以及软件设计规划的活了；&lt;/p&gt;
+&lt;p&gt;再由于之前，没有充分调研，结果我用&lt;strong&gt;lunacy类sketc
+        
+      
+    
+    </summary>
+    
+      <category term="快捷键" scheme="http://blog.langaobai.top/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    
+      <category term="快捷键" scheme="http://blog.langaobai.top/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+      <category term="软件" scheme="http://blog.langaobai.top/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>刻意练习</title>
     <link href="http://blog.langaobai.top/2019/04/23/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/"/>
     <id>http://blog.langaobai.top/2019/04/23/刻意练习/</id>
     <published>2019-04-23T08:35:00.000Z</published>
-    <updated>2019-05-07T06:33:20.734Z</updated>
+    <updated>2019-05-07T06:33:22.000Z</updated>
     
     <summary type="html">
     
@@ -47,7 +77,7 @@
     <link href="http://blog.langaobai.top/2019/03/25/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     <id>http://blog.langaobai.top/2019/03/25/认识深度学习（二）卷积神经网络/</id>
     <published>2019-03-25T14:24:00.000Z</published>
-    <updated>2019-03-26T01:29:17.678Z</updated>
+    <updated>2019-03-26T01:29:18.000Z</updated>
     
     <summary type="html">
     
@@ -71,9 +101,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="机器学习" scheme="http://blog.langaobai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="深度学习" scheme="http://blog.langaobai.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="机器学习" scheme="http://blog.langaobai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -82,7 +112,7 @@
     <link href="http://blog.langaobai.top/2019/03/05/Docker%E5%BD%92%E7%BA%B3/"/>
     <id>http://blog.langaobai.top/2019/03/05/Docker归纳/</id>
     <published>2019-03-05T02:09:00.000Z</published>
-    <updated>2019-03-25T09:35:49.970Z</updated>
+    <updated>2019-03-25T09:35:50.000Z</updated>
     
     <summary type="html">
     
@@ -120,7 +150,7 @@
     <link href="http://blog.langaobai.top/2019/02/28/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://blog.langaobai.top/2019/02/28/认识深度学习（一）/</id>
     <published>2019-02-28T07:11:00.000Z</published>
-    <updated>2019-03-26T01:58:07.910Z</updated>
+    <updated>2019-03-26T01:58:08.000Z</updated>
     
     <summary type="html">
     
@@ -141,9 +171,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="机器学习" scheme="http://blog.langaobai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="深度学习" scheme="http://blog.langaobai.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="机器学习" scheme="http://blog.langaobai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -152,7 +182,7 @@
     <link href="http://blog.langaobai.top/2019/02/20/MAVEN%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://blog.langaobai.top/2019/02/20/MAVEN常用命令/</id>
     <published>2019-02-20T04:03:00.000Z</published>
-    <updated>2019-02-20T04:15:43.135Z</updated>
+    <updated>2019-02-20T04:15:44.000Z</updated>
     
     <summary type="html">
     
@@ -185,7 +215,7 @@
     <link href="http://blog.langaobai.top/2018/12/26/%E8%81%8A%E4%B8%80%E8%81%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     <id>http://blog.langaobai.top/2018/12/26/聊一聊深度学习/</id>
     <published>2018-12-26T07:17:00.000Z</published>
-    <updated>2019-03-04T01:50:31.331Z</updated>
+    <updated>2019-03-04T01:50:32.000Z</updated>
     
     <summary type="html">
     
@@ -208,9 +238,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="机器学习" scheme="http://blog.langaobai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="深度学习" scheme="http://blog.langaobai.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="机器学习" scheme="http://blog.langaobai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -219,7 +249,7 @@
     <link href="http://blog.langaobai.top/2018/11/28/%E8%AF%B4%E8%AF%B4%E7%A6%BB%E6%88%91%E4%BB%AC%E6%9C%80%E8%BF%91%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93/"/>
     <id>http://blog.langaobai.top/2018/11/28/说说离我们最近的单元测试之道/</id>
     <published>2018-11-28T08:14:00.000Z</published>
-    <updated>2018-11-29T02:06:46.638Z</updated>
+    <updated>2018-11-29T02:06:48.000Z</updated>
     
     <summary type="html">
     
@@ -249,7 +279,7 @@
     <link href="http://blog.langaobai.top/2018/11/19/%E7%88%AC%E8%99%AB-%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
     <id>http://blog.langaobai.top/2018/11/19/爬虫-应该知道些什么？/</id>
     <published>2018-11-19T06:03:00.000Z</published>
-    <updated>2018-12-26T07:17:00.181Z</updated>
+    <updated>2018-12-26T07:17:02.000Z</updated>
     
     <summary type="html">
     
@@ -280,7 +310,7 @@
     <link href="http://blog.langaobai.top/2018/11/19/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     <id>http://blog.langaobai.top/2018/11/19/一些常用命令行/</id>
     <published>2018-11-19T01:39:00.000Z</published>
-    <updated>2018-11-19T03:43:57.576Z</updated>
+    <updated>2018-11-19T03:43:58.000Z</updated>
     
     <summary type="html">
     
@@ -313,7 +343,7 @@
     <link href="http://blog.langaobai.top/2018/11/16/CCF-201312/"/>
     <id>http://blog.langaobai.top/2018/11/16/CCF-201312/</id>
     <published>2018-11-16T01:28:00.000Z</published>
-    <updated>2018-12-04T01:52:50.729Z</updated>
+    <updated>2018-12-04T01:52:52.000Z</updated>
     
     <summary type="html">
     
@@ -350,7 +380,7 @@
     <link href="http://blog.langaobai.top/2018/11/15/CCF%E4%B9%8B%E5%82%B7/"/>
     <id>http://blog.langaobai.top/2018/11/15/CCF之傷/</id>
     <published>2018-11-15T06:26:00.000Z</published>
-    <updated>2018-11-16T02:33:55.373Z</updated>
+    <updated>2018-11-16T02:33:56.000Z</updated>
     
     <summary type="html">
     
@@ -391,7 +421,7 @@
     <link href="http://blog.langaobai.top/2018/11/09/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E9%81%93%E2%80%94%E2%80%94%E8%8A%AD%E8%8A%AD%E6%8B%89-%E5%A5%A5%E5%85%8B%E5%88%A9/"/>
     <id>http://blog.langaobai.top/2018/11/09/学习之道——芭芭拉-奥克利/</id>
     <published>2018-11-09T03:19:00.000Z</published>
-    <updated>2019-03-07T02:42:38.588Z</updated>
+    <updated>2019-03-07T02:42:40.000Z</updated>
     
     <summary type="html">
     
@@ -425,7 +455,7 @@
     <link href="http://blog.langaobai.top/2018/09/05/%E4%B9%8D%E7%9C%8B%E5%BE%88%E9%9A%BE%EF%BC%8C%E7%BB%86%E7%9C%8B%E5%BE%88%E7%BE%8E-%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/"/>
     <id>http://blog.langaobai.top/2018/09/05/乍看很难，细看很美-傅里叶变换/</id>
     <published>2018-09-05T03:02:00.000Z</published>
-    <updated>2018-09-05T03:03:52.269Z</updated>
+    <updated>2018-09-05T03:03:54.000Z</updated>
     
     <summary type="html">
     
@@ -445,7 +475,7 @@
     <link href="http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E5%88%97%E8%A1%A8%E6%90%9C%E7%B4%A2/"/>
     <id>http://blog.langaobai.top/2018/09/04/算法之旅-列表搜索/</id>
     <published>2018-09-04T13:28:00.000Z</published>
-    <updated>2018-09-04T13:30:12.438Z</updated>
+    <updated>2018-09-04T13:30:14.000Z</updated>
     
     <summary type="html">
     
@@ -456,9 +486,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="列表" scheme="http://blog.langaobai.top/tags/%E5%88%97%E8%A1%A8/"/>
-    
       <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="列表" scheme="http://blog.langaobai.top/tags/%E5%88%97%E8%A1%A8/"/>
     
   </entry>
   
@@ -467,7 +497,7 @@
     <link href="http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E5%9B%BE%E8%A1%A8%E6%90%9C%E7%B4%A2/"/>
     <id>http://blog.langaobai.top/2018/09/04/算法之旅-图表搜索/</id>
     <published>2018-09-04T13:26:00.000Z</published>
-    <updated>2018-09-04T13:45:24.280Z</updated>
+    <updated>2018-09-04T13:45:26.000Z</updated>
     
     <summary type="html">
     
@@ -478,9 +508,9 @@
     
       <category term="算法" scheme="http://blog.langaobai.top/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
-    
       <category term="图表" scheme="http://blog.langaobai.top/tags/%E5%9B%BE%E8%A1%A8/"/>
+    
+      <category term="搜索" scheme="http://blog.langaobai.top/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
@@ -489,7 +519,7 @@
     <link href="http://blog.langaobai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E8%81%9A%E7%B1%BB/"/>
     <id>http://blog.langaobai.top/2018/09/04/算法之旅-聚类/</id>
     <published>2018-09-04T02:13:00.000Z</published>
-    <updated>2018-12-27T08:42:36.318Z</updated>
+    <updated>2018-12-27T08:42:38.000Z</updated>
     
     <summary type="html">
     
@@ -517,7 +547,7 @@
     <link href="http://blog.langaobai.top/2018/08/30/%E4%BD%A0%E7%9F%A5%E9%81%93%E6%88%96%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
     <id>http://blog.langaobai.top/2018/08/30/你知道或不知道的单元测试/</id>
     <published>2018-08-30T07:25:00.000Z</published>
-    <updated>2018-08-31T01:29:31.989Z</updated>
+    <updated>2018-08-31T01:29:32.000Z</updated>
     
     <summary type="html">
     
@@ -547,7 +577,7 @@
     <link href="http://blog.langaobai.top/2018/08/26/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E6%8E%92%E5%BA%8F/"/>
     <id>http://blog.langaobai.top/2018/08/26/算法之旅-排序/</id>
     <published>2018-08-26T04:42:00.000Z</published>
-    <updated>2018-11-16T06:31:03.928Z</updated>
+    <updated>2018-11-16T06:31:04.000Z</updated>
     
     <summary type="html">
     
@@ -587,7 +617,7 @@
     <link href="http://blog.langaobai.top/2018/08/24/%E4%B8%80%E4%BA%9B%E7%89%88%E6%9C%AC%E5%91%BD%E5%90%8D%E5%B0%8F%E5%B8%B8%E8%AF%86/"/>
     <id>http://blog.langaobai.top/2018/08/24/一些版本命名小常识/</id>
     <published>2018-08-24T02:02:00.000Z</published>
-    <updated>2018-08-24T02:13:34.310Z</updated>
+    <updated>2018-08-24T02:13:36.000Z</updated>
     
     <summary type="html">
     
@@ -607,40 +637,6 @@
       <category term="版本" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC/"/>
     
       <category term="小常识" scheme="http://blog.langaobai.top/tags/%E5%B0%8F%E5%B8%B8%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于subversion的一些知识</title>
-    <link href="http://blog.langaobai.top/2018/05/31/%E5%85%B3%E4%BA%8Esubversion%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86/"/>
-    <id>http://blog.langaobai.top/2018/05/31/关于subversion的一些知识/</id>
-    <published>2018-05-31T05:53:00.000Z</published>
-    <updated>2018-12-27T08:47:03.374Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;前面，有一篇文章专门提到了，&lt;strong&gt;重新认识版本管理&lt;/strong&gt;，并提到的&lt;strong&gt;版本管理的重要性&lt;/strong&gt;；&lt;/p&gt;
-&lt;p&gt;作为一名程序员，少不了对自己的要求越来越严格，但是如何严谨的规范和约束自己，包括自己所在的团队呢？&lt;/p&gt;
-&lt;p&gt;在之
-        
-      
-    
-    </summary>
-    
-      <category term="版本管理" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="书籍" scheme="http://blog.langaobai.top/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/%E4%B9%A6%E7%B1%8D/"/>
-    
-    
-      <category term="SVN" scheme="http://blog.langaobai.top/tags/SVN/"/>
-    
-      <category term="版本管理" scheme="http://blog.langaobai.top/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="程序员必修三部曲" scheme="http://blog.langaobai.top/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E4%BF%AE%E4%B8%89%E9%83%A8%E6%9B%B2/"/>
     
   </entry>
   

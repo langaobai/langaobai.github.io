@@ -1,3 +1,6 @@
+http://blog.langaobai.top/2020/04/02/npm包管理常用命令/
+http://blog.langaobai.top/2020/02/24/Swagger常用注解/
+http://blog.langaobai.top/2020/01/16/HomeBrew常用命令集/
 http://blog.langaobai.top/2019/12/12/AXURE快捷操作/
 http://blog.langaobai.top/2019/04/23/刻意练习/
 http://blog.langaobai.top/2019/03/25/认识深度学习（二）卷积神经网络/
@@ -14,6 +17,3 @@ http://blog.langaobai.top/2018/11/09/学习之道——芭芭拉-奥克利/
 http://blog.langaobai.top/2018/09/05/乍看很难，细看很美-傅里叶变换/
 http://blog.langaobai.top/2018/09/04/算法之旅-列表搜索/
 http://blog.langaobai.top/2018/09/04/算法之旅-图表搜索/
-http://blog.langaobai.top/2018/09/04/算法之旅-聚类/
-http://blog.langaobai.top/2018/08/30/你知道或不知道的单元测试/
-http://blog.langaobai.top/2018/08/26/算法之旅-排序/

@@ -1,3 +1,4 @@
+http://blog.langaibai.top/2020/06/18/文本处理命令AWK/
 http://blog.langaibai.top/2020/05/04/Emmet笔记/
 http://blog.langaibai.top/2020/04/02/npm包管理常用命令/
 http://blog.langaibai.top/2020/02/24/Swagger常用注解/
@@ -16,4 +17,3 @@ http://blog.langaibai.top/2018/11/16/CCF-201312/
 http://blog.langaibai.top/2018/11/15/CCF之傷/
 http://blog.langaibai.top/2018/11/09/学习之道——芭芭拉-奥克利/
 http://blog.langaibai.top/2018/09/05/乍看很难，细看很美-傅里叶变换/
-http://blog.langaibai.top/2018/09/04/算法之旅-列表搜索/

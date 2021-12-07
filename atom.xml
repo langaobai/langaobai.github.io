@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.langaibai.top/"/>
+  <link href="http://langaobai.github.io/"/>
   <updated>2020-06-18T03:03:58.234Z</updated>
-  <id>http://blog.langaibai.top/</id>
+  <id>http://langaobai.github.io/</id>
   
   <author>
     <name>LanGaoBai</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>文本处理命令AWK</title>
-    <link href="http://blog.langaibai.top/2020/06/18/%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4AWK/"/>
-    <id>http://blog.langaibai.top/2020/06/18/文本处理命令AWK/</id>
+    <link href="http://langaobai.github.io/2020/06/18/%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4AWK/"/>
+    <id>http://langaobai.github.io/2020/06/18/文本处理命令AWK/</id>
     <published>2020-06-18T01:27:00.000Z</published>
     <updated>2020-06-18T03:03:58.234Z</updated>
     
@@ -37,21 +37,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://blog.langaibai.top/categories/Linux/"/>
+      <category term="Linux" scheme="http://langaobai.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://blog.langaibai.top/tags/Linux/"/>
+      <category term="Linux" scheme="http://langaobai.github.io/tags/Linux/"/>
     
-      <category term="AWK" scheme="http://blog.langaibai.top/tags/AWK/"/>
+      <category term="AWK" scheme="http://langaobai.github.io/tags/AWK/"/>
     
-      <category term="文本处理" scheme="http://blog.langaibai.top/tags/%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86/"/>
+      <category term="文本处理" scheme="http://langaobai.github.io/tags/%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>Emmet笔记</title>
-    <link href="http://blog.langaibai.top/2020/05/04/Emmet%E7%AC%94%E8%AE%B0/"/>
-    <id>http://blog.langaibai.top/2020/05/04/Emmet笔记/</id>
+    <link href="http://langaobai.github.io/2020/05/04/Emmet%E7%AC%94%E8%AE%B0/"/>
+    <id>http://langaobai.github.io/2020/05/04/Emmet笔记/</id>
     <published>2020-05-04T01:52:00.000Z</published>
     <updated>2020-05-04T02:25:16.624Z</updated>
     
@@ -69,21 +69,21 @@
     
     </summary>
     
-      <category term="HTML" scheme="http://blog.langaibai.top/categories/HTML/"/>
+      <category term="HTML" scheme="http://langaobai.github.io/categories/HTML/"/>
     
-      <category term="前端" scheme="http://blog.langaibai.top/categories/HTML/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="http://langaobai.github.io/categories/HTML/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="前端" scheme="http://blog.langaibai.top/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="http://langaobai.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="HTML" scheme="http://blog.langaibai.top/tags/HTML/"/>
+      <category term="HTML" scheme="http://langaobai.github.io/tags/HTML/"/>
     
   </entry>
   
   <entry>
     <title>npm包管理常用命令（不定时更新）</title>
-    <link href="http://blog.langaibai.top/2020/04/02/npm%E5%8C%85%E7%AE%A1%E7%90%86%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.langaibai.top/2020/04/02/npm包管理常用命令/</id>
+    <link href="http://langaobai.github.io/2020/04/02/npm%E5%8C%85%E7%AE%A1%E7%90%86%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://langaobai.github.io/2020/04/02/npm包管理常用命令/</id>
     <published>2020-04-02T01:55:00.000Z</published>
     <updated>2020-04-18T04:20:47.089Z</updated>
     
@@ -99,19 +99,19 @@
     
     </summary>
     
-      <category term="node" scheme="http://blog.langaibai.top/categories/node/"/>
+      <category term="node" scheme="http://langaobai.github.io/categories/node/"/>
     
     
-      <category term="node" scheme="http://blog.langaibai.top/tags/node/"/>
+      <category term="node" scheme="http://langaobai.github.io/tags/node/"/>
     
-      <category term="npm" scheme="http://blog.langaibai.top/tags/npm/"/>
+      <category term="npm" scheme="http://langaobai.github.io/tags/npm/"/>
     
   </entry>
   
   <entry>
     <title>Swagger常用注解</title>
-    <link href="http://blog.langaibai.top/2020/02/24/Swagger%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/"/>
-    <id>http://blog.langaibai.top/2020/02/24/Swagger常用注解/</id>
+    <link href="http://langaobai.github.io/2020/02/24/Swagger%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/"/>
+    <id>http://langaobai.github.io/2020/02/24/Swagger常用注解/</id>
     <published>2020-02-24T01:24:00.000Z</published>
     <updated>2020-04-18T04:20:47.088Z</updated>
     
@@ -127,21 +127,21 @@
     
     </summary>
     
-      <category term="API" scheme="http://blog.langaibai.top/categories/API/"/>
+      <category term="API" scheme="http://langaobai.github.io/categories/API/"/>
     
-      <category term="Swagger" scheme="http://blog.langaibai.top/categories/API/Swagger/"/>
+      <category term="Swagger" scheme="http://langaobai.github.io/categories/API/Swagger/"/>
     
     
-      <category term="Swagger" scheme="http://blog.langaibai.top/tags/Swagger/"/>
+      <category term="Swagger" scheme="http://langaobai.github.io/tags/Swagger/"/>
     
-      <category term="API" scheme="http://blog.langaibai.top/tags/API/"/>
+      <category term="API" scheme="http://langaobai.github.io/tags/API/"/>
     
   </entry>
   
   <entry>
     <title>HomeBrew常用命令集</title>
-    <link href="http://blog.langaibai.top/2020/01/16/HomeBrew%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86/"/>
-    <id>http://blog.langaibai.top/2020/01/16/HomeBrew常用命令集/</id>
+    <link href="http://langaobai.github.io/2020/01/16/HomeBrew%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86/"/>
+    <id>http://langaobai.github.io/2020/01/16/HomeBrew常用命令集/</id>
     <published>2020-01-16T03:38:00.000Z</published>
     <updated>2021-01-07T03:43:27.216Z</updated>
     
@@ -158,19 +158,19 @@
     
     </summary>
     
-      <category term="homebrew" scheme="http://blog.langaibai.top/categories/homebrew/"/>
+      <category term="homebrew" scheme="http://langaobai.github.io/categories/homebrew/"/>
     
     
-      <category term="Mac" scheme="http://blog.langaibai.top/tags/Mac/"/>
+      <category term="Mac" scheme="http://langaobai.github.io/tags/Mac/"/>
     
-      <category term="homebrew" scheme="http://blog.langaibai.top/tags/homebrew/"/>
+      <category term="homebrew" scheme="http://langaobai.github.io/tags/homebrew/"/>
     
   </entry>
   
   <entry>
     <title>AXURE快捷操作</title>
-    <link href="http://blog.langaibai.top/2019/12/12/AXURE%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
-    <id>http://blog.langaibai.top/2019/12/12/AXURE快捷操作/</id>
+    <link href="http://langaobai.github.io/2019/12/12/AXURE%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
+    <id>http://langaobai.github.io/2019/12/12/AXURE快捷操作/</id>
     <published>2019-12-12T01:30:00.000Z</published>
     <updated>2020-04-18T04:20:47.086Z</updated>
     
@@ -188,19 +188,19 @@
     
     </summary>
     
-      <category term="快捷键" scheme="http://blog.langaibai.top/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <category term="快捷键" scheme="http://langaobai.github.io/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
     
-      <category term="快捷键" scheme="http://blog.langaibai.top/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <category term="快捷键" scheme="http://langaobai.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
-      <category term="软件" scheme="http://blog.langaibai.top/tags/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="http://langaobai.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>刻意练习</title>
-    <link href="http://blog.langaibai.top/2019/04/23/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/"/>
-    <id>http://blog.langaibai.top/2019/04/23/刻意练习/</id>
+    <link href="http://langaobai.github.io/2019/04/23/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/"/>
+    <id>http://langaobai.github.io/2019/04/23/刻意练习/</id>
     <published>2019-04-23T08:35:00.000Z</published>
     <updated>2020-04-18T04:20:47.090Z</updated>
     
@@ -216,17 +216,17 @@
     
     </summary>
     
-      <category term="书籍" scheme="http://blog.langaibai.top/categories/%E4%B9%A6%E7%B1%8D/"/>
+      <category term="书籍" scheme="http://langaobai.github.io/categories/%E4%B9%A6%E7%B1%8D/"/>
     
     
-      <category term="书籍" scheme="http://blog.langaibai.top/tags/%E4%B9%A6%E7%B1%8D/"/>
+      <category term="书籍" scheme="http://langaobai.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
     
   </entry>
   
   <entry>
     <title>认识深度学习（二）卷积神经网络</title>
-    <link href="http://blog.langaibai.top/2019/03/25/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    <id>http://blog.langaibai.top/2019/03/25/认识深度学习（二）卷积神经网络/</id>
+    <link href="http://langaobai.github.io/2019/03/25/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <id>http://langaobai.github.io/2019/03/25/认识深度学习（二）卷积神经网络/</id>
     <published>2019-03-25T14:24:00.000Z</published>
     <updated>2020-04-18T04:20:47.093Z</updated>
     
@@ -245,23 +245,23 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="深度学习" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="算法" scheme="http://blog.langaibai.top/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="机器学习" scheme="http://blog.langaibai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="深度学习" scheme="http://blog.langaibai.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>Docker归纳</title>
-    <link href="http://blog.langaibai.top/2019/03/05/Docker%E5%BD%92%E7%BA%B3/"/>
-    <id>http://blog.langaibai.top/2019/03/05/Docker归纳/</id>
+    <link href="http://langaobai.github.io/2019/03/05/Docker%E5%BD%92%E7%BA%B3/"/>
+    <id>http://langaobai.github.io/2019/03/05/Docker归纳/</id>
     <published>2019-03-05T02:09:00.000Z</published>
     <updated>2020-04-18T04:20:47.087Z</updated>
     
@@ -279,27 +279,27 @@
     
     </summary>
     
-      <category term="docker" scheme="http://blog.langaibai.top/categories/docker/"/>
+      <category term="docker" scheme="http://langaobai.github.io/categories/docker/"/>
     
     
-      <category term="容器" scheme="http://blog.langaibai.top/tags/%E5%AE%B9%E5%99%A8/"/>
+      <category term="容器" scheme="http://langaobai.github.io/tags/%E5%AE%B9%E5%99%A8/"/>
     
-      <category term="docker" scheme="http://blog.langaibai.top/tags/docker/"/>
+      <category term="docker" scheme="http://langaobai.github.io/tags/docker/"/>
     
-      <category term="image" scheme="http://blog.langaibai.top/tags/image/"/>
+      <category term="image" scheme="http://langaobai.github.io/tags/image/"/>
     
-      <category term="container" scheme="http://blog.langaibai.top/tags/container/"/>
+      <category term="container" scheme="http://langaobai.github.io/tags/container/"/>
     
-      <category term="swarm" scheme="http://blog.langaibai.top/tags/swarm/"/>
+      <category term="swarm" scheme="http://langaobai.github.io/tags/swarm/"/>
     
-      <category term="k8s" scheme="http://blog.langaibai.top/tags/k8s/"/>
+      <category term="k8s" scheme="http://langaobai.github.io/tags/k8s/"/>
     
   </entry>
   
   <entry>
     <title>认识深度学习（一）</title>
-    <link href="http://blog.langaibai.top/2019/02/28/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://blog.langaibai.top/2019/02/28/认识深度学习（一）/</id>
+    <link href="http://langaobai.github.io/2019/02/28/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://langaobai.github.io/2019/02/28/认识深度学习（一）/</id>
     <published>2019-02-28T07:11:00.000Z</published>
     <updated>2021-01-05T06:31:59.290Z</updated>
     
@@ -315,23 +315,23 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="深度学习" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="算法" scheme="http://blog.langaibai.top/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="机器学习" scheme="http://blog.langaibai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="深度学习" scheme="http://blog.langaibai.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>MAVEN常用命令</title>
-    <link href="http://blog.langaibai.top/2019/02/20/MAVEN%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.langaibai.top/2019/02/20/MAVEN常用命令/</id>
+    <link href="http://langaobai.github.io/2019/02/20/MAVEN%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://langaobai.github.io/2019/02/20/MAVEN常用命令/</id>
     <published>2019-02-20T04:03:00.000Z</published>
     <updated>2020-04-18T04:20:47.087Z</updated>
     
@@ -350,21 +350,21 @@
     
     </summary>
     
-      <category term="MAVEN" scheme="http://blog.langaibai.top/categories/MAVEN/"/>
+      <category term="MAVEN" scheme="http://langaobai.github.io/categories/MAVEN/"/>
     
     
-      <category term="MAVEN" scheme="http://blog.langaibai.top/tags/MAVEN/"/>
+      <category term="MAVEN" scheme="http://langaobai.github.io/tags/MAVEN/"/>
     
-      <category term="command" scheme="http://blog.langaibai.top/tags/command/"/>
+      <category term="command" scheme="http://langaobai.github.io/tags/command/"/>
     
-      <category term="shell" scheme="http://blog.langaibai.top/tags/shell/"/>
+      <category term="shell" scheme="http://langaobai.github.io/tags/shell/"/>
     
   </entry>
   
   <entry>
     <title>聊一聊深度学习</title>
-    <link href="http://blog.langaibai.top/2018/12/26/%E8%81%8A%E4%B8%80%E8%81%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://blog.langaibai.top/2018/12/26/聊一聊深度学习/</id>
+    <link href="http://langaobai.github.io/2018/12/26/%E8%81%8A%E4%B8%80%E8%81%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://langaobai.github.io/2018/12/26/聊一聊深度学习/</id>
     <published>2018-12-26T07:17:00.000Z</published>
     <updated>2020-04-18T04:20:47.093Z</updated>
     
@@ -380,25 +380,25 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="深度学习" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="机器学习" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="算法" scheme="http://blog.langaibai.top/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="机器学习" scheme="http://blog.langaibai.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="深度学习" scheme="http://blog.langaibai.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>说说离我们最近的单元测试之道</title>
-    <link href="http://blog.langaibai.top/2018/11/28/%E8%AF%B4%E8%AF%B4%E7%A6%BB%E6%88%91%E4%BB%AC%E6%9C%80%E8%BF%91%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93/"/>
-    <id>http://blog.langaibai.top/2018/11/28/说说离我们最近的单元测试之道/</id>
+    <link href="http://langaobai.github.io/2018/11/28/%E8%AF%B4%E8%AF%B4%E7%A6%BB%E6%88%91%E4%BB%AC%E6%9C%80%E8%BF%91%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93/"/>
+    <id>http://langaobai.github.io/2018/11/28/说说离我们最近的单元测试之道/</id>
     <published>2018-11-28T08:14:00.000Z</published>
     <updated>2020-04-18T04:20:47.094Z</updated>
     
@@ -414,21 +414,21 @@
     
     </summary>
     
-      <category term="单元测试" scheme="http://blog.langaibai.top/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
+      <category term="单元测试" scheme="http://langaobai.github.io/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="单元测试" scheme="http://blog.langaibai.top/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
+      <category term="单元测试" scheme="http://langaobai.github.io/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="JUNIT" scheme="http://blog.langaibai.top/tags/JUNIT/"/>
+      <category term="JUNIT" scheme="http://langaobai.github.io/tags/JUNIT/"/>
     
-      <category term="思考" scheme="http://blog.langaibai.top/tags/%E6%80%9D%E8%80%83/"/>
+      <category term="思考" scheme="http://langaobai.github.io/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
   <entry>
     <title>爬虫-应该知道些什么？</title>
-    <link href="http://blog.langaibai.top/2018/11/19/%E7%88%AC%E8%99%AB-%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
-    <id>http://blog.langaibai.top/2018/11/19/爬虫-应该知道些什么？/</id>
+    <link href="http://langaobai.github.io/2018/11/19/%E7%88%AC%E8%99%AB-%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
+    <id>http://langaobai.github.io/2018/11/19/爬虫-应该知道些什么？/</id>
     <published>2018-11-19T06:03:00.000Z</published>
     <updated>2020-04-18T04:20:47.091Z</updated>
     
@@ -445,21 +445,21 @@
     
     </summary>
     
-      <category term="Python" scheme="http://blog.langaibai.top/categories/Python/"/>
+      <category term="Python" scheme="http://langaobai.github.io/categories/Python/"/>
     
-      <category term="爬虫" scheme="http://blog.langaibai.top/categories/Python/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="http://langaobai.github.io/categories/Python/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="Python" scheme="http://blog.langaibai.top/tags/Python/"/>
+      <category term="Python" scheme="http://langaobai.github.io/tags/Python/"/>
     
-      <category term="爬虫" scheme="http://blog.langaibai.top/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="http://langaobai.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>一些常用命令行</title>
-    <link href="http://blog.langaibai.top/2018/11/19/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    <id>http://blog.langaibai.top/2018/11/19/一些常用命令行/</id>
+    <link href="http://langaobai.github.io/2018/11/19/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    <id>http://langaobai.github.io/2018/11/19/一些常用命令行/</id>
     <published>2018-11-19T01:39:00.000Z</published>
     <updated>2020-04-18T04:20:47.089Z</updated>
     
@@ -476,23 +476,23 @@
     
     </summary>
     
-      <category term="命令行" scheme="http://blog.langaibai.top/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+      <category term="命令行" scheme="http://langaobai.github.io/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
-      <category term="window" scheme="http://blog.langaibai.top/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/window/"/>
+      <category term="window" scheme="http://langaobai.github.io/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/window/"/>
     
     
-      <category term="命令行" scheme="http://blog.langaibai.top/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+      <category term="命令行" scheme="http://langaobai.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
-      <category term="cmd" scheme="http://blog.langaibai.top/tags/cmd/"/>
+      <category term="cmd" scheme="http://langaobai.github.io/tags/cmd/"/>
     
-      <category term="window" scheme="http://blog.langaibai.top/tags/window/"/>
+      <category term="window" scheme="http://langaobai.github.io/tags/window/"/>
     
   </entry>
   
   <entry>
     <title>CCF-201312</title>
-    <link href="http://blog.langaibai.top/2018/11/16/CCF-201312/"/>
-    <id>http://blog.langaibai.top/2018/11/16/CCF-201312/</id>
+    <link href="http://langaobai.github.io/2018/11/16/CCF-201312/"/>
+    <id>http://langaobai.github.io/2018/11/16/CCF-201312/</id>
     <published>2018-11-16T01:28:00.000Z</published>
     <updated>2020-04-18T04:20:47.087Z</updated>
     
@@ -509,27 +509,27 @@
     
     </summary>
     
-      <category term="CCF" scheme="http://blog.langaibai.top/categories/CCF/"/>
+      <category term="CCF" scheme="http://langaobai.github.io/categories/CCF/"/>
     
-      <category term="算法" scheme="http://blog.langaibai.top/categories/CCF/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/categories/CCF/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数据结构" scheme="http://blog.langaibai.top/categories/CCF/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://langaobai.github.io/categories/CCF/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="算法" scheme="http://blog.langaibai.top/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数据结构" scheme="http://blog.langaibai.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://langaobai.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-      <category term="总结" scheme="http://blog.langaibai.top/tags/%E6%80%BB%E7%BB%93/"/>
+      <category term="总结" scheme="http://langaobai.github.io/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="CCF" scheme="http://blog.langaibai.top/tags/CCF/"/>
+      <category term="CCF" scheme="http://langaobai.github.io/tags/CCF/"/>
     
   </entry>
   
   <entry>
     <title>CCF之傷</title>
-    <link href="http://blog.langaibai.top/2018/11/15/CCF%E4%B9%8B%E5%82%B7/"/>
-    <id>http://blog.langaibai.top/2018/11/15/CCF之傷/</id>
+    <link href="http://langaobai.github.io/2018/11/15/CCF%E4%B9%8B%E5%82%B7/"/>
+    <id>http://langaobai.github.io/2018/11/15/CCF之傷/</id>
     <published>2018-11-15T06:26:00.000Z</published>
     <updated>2020-04-18T04:20:47.087Z</updated>
     
@@ -548,29 +548,29 @@
     
     </summary>
     
-      <category term="CCF" scheme="http://blog.langaibai.top/categories/CCF/"/>
+      <category term="CCF" scheme="http://langaobai.github.io/categories/CCF/"/>
     
-      <category term="算法" scheme="http://blog.langaibai.top/categories/CCF/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/categories/CCF/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数据结构" scheme="http://blog.langaibai.top/categories/CCF/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://langaobai.github.io/categories/CCF/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="算法" scheme="http://blog.langaibai.top/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数据结构" scheme="http://blog.langaibai.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://langaobai.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-      <category term="总结" scheme="http://blog.langaibai.top/tags/%E6%80%BB%E7%BB%93/"/>
+      <category term="总结" scheme="http://langaobai.github.io/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="教训" scheme="http://blog.langaibai.top/tags/%E6%95%99%E8%AE%AD/"/>
+      <category term="教训" scheme="http://langaobai.github.io/tags/%E6%95%99%E8%AE%AD/"/>
     
-      <category term="CCF" scheme="http://blog.langaibai.top/tags/CCF/"/>
+      <category term="CCF" scheme="http://langaobai.github.io/tags/CCF/"/>
     
   </entry>
   
   <entry>
     <title>学习之道——芭芭拉-奥克利</title>
-    <link href="http://blog.langaibai.top/2018/11/09/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E9%81%93%E2%80%94%E2%80%94%E8%8A%AD%E8%8A%AD%E6%8B%89-%E5%A5%A5%E5%85%8B%E5%88%A9/"/>
-    <id>http://blog.langaibai.top/2018/11/09/学习之道——芭芭拉-奥克利/</id>
+    <link href="http://langaobai.github.io/2018/11/09/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E9%81%93%E2%80%94%E2%80%94%E8%8A%AD%E8%8A%AD%E6%8B%89-%E5%A5%A5%E5%85%8B%E5%88%A9/"/>
+    <id>http://langaobai.github.io/2018/11/09/学习之道——芭芭拉-奥克利/</id>
     <published>2018-11-09T03:19:00.000Z</published>
     <updated>2020-04-18T04:20:47.091Z</updated>
     
@@ -588,23 +588,23 @@
     
     </summary>
     
-      <category term="书籍" scheme="http://blog.langaibai.top/categories/%E4%B9%A6%E7%B1%8D/"/>
+      <category term="书籍" scheme="http://langaobai.github.io/categories/%E4%B9%A6%E7%B1%8D/"/>
     
-      <category term="想法" scheme="http://blog.langaibai.top/categories/%E4%B9%A6%E7%B1%8D/%E6%83%B3%E6%B3%95/"/>
+      <category term="想法" scheme="http://langaobai.github.io/categories/%E4%B9%A6%E7%B1%8D/%E6%83%B3%E6%B3%95/"/>
     
     
-      <category term="书籍" scheme="http://blog.langaibai.top/tags/%E4%B9%A6%E7%B1%8D/"/>
+      <category term="书籍" scheme="http://langaobai.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
     
-      <category term="思考" scheme="http://blog.langaibai.top/tags/%E6%80%9D%E8%80%83/"/>
+      <category term="思考" scheme="http://langaobai.github.io/tags/%E6%80%9D%E8%80%83/"/>
     
-      <category term="学习" scheme="http://blog.langaibai.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="http://langaobai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>乍看很难，细看很美-傅里叶变换</title>
-    <link href="http://blog.langaibai.top/2018/09/05/%E4%B9%8D%E7%9C%8B%E5%BE%88%E9%9A%BE%EF%BC%8C%E7%BB%86%E7%9C%8B%E5%BE%88%E7%BE%8E-%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/"/>
-    <id>http://blog.langaibai.top/2018/09/05/乍看很难，细看很美-傅里叶变换/</id>
+    <link href="http://langaobai.github.io/2018/09/05/%E4%B9%8D%E7%9C%8B%E5%BE%88%E9%9A%BE%EF%BC%8C%E7%BB%86%E7%9C%8B%E5%BE%88%E7%BE%8E-%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/"/>
+    <id>http://langaobai.github.io/2018/09/05/乍看很难，细看很美-傅里叶变换/</id>
     <published>2018-09-05T03:02:00.000Z</published>
     <updated>2020-04-18T04:20:47.090Z</updated>
     
@@ -612,19 +612,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="傅里叶变换" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/"/>
+      <category term="傅里叶变换" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/"/>
     
     
-      <category term="傅里叶变换" scheme="http://blog.langaibai.top/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/"/>
+      <category term="傅里叶变换" scheme="http://langaobai.github.io/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/"/>
     
   </entry>
   
   <entry>
     <title>算法之旅-列表搜索</title>
-    <link href="http://blog.langaibai.top/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E5%88%97%E8%A1%A8%E6%90%9C%E7%B4%A2/"/>
-    <id>http://blog.langaibai.top/2018/09/04/算法之旅-列表搜索/</id>
+    <link href="http://langaobai.github.io/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E5%88%97%E8%A1%A8%E6%90%9C%E7%B4%A2/"/>
+    <id>http://langaobai.github.io/2018/09/04/算法之旅-列表搜索/</id>
     <published>2018-09-04T13:28:00.000Z</published>
     <updated>2020-04-18T04:20:47.092Z</updated>
     
@@ -632,14 +632,14 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.langaibai.top/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="http://blog.langaibai.top/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="列表" scheme="http://blog.langaibai.top/tags/%E5%88%97%E8%A1%A8/"/>
+      <category term="列表" scheme="http://langaobai.github.io/tags/%E5%88%97%E8%A1%A8/"/>
     
-      <category term="搜索" scheme="http://blog.langaibai.top/tags/%E6%90%9C%E7%B4%A2/"/>
+      <category term="搜索" scheme="http://langaobai.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   

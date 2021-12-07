@@ -15,5 +15,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://blog.langaibai.top/sitemap.xml
-Sitemap: http://blog.langaibai.top/baidusitemap.xml
+Sitemap: http://langaobai.github.io/sitemap.xml
+Sitemap: http://langaobai.github.io/baidusitemap.xml

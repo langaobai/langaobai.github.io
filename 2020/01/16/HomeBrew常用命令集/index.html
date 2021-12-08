@@ -253,7 +253,7 @@
 
     
         <meta property="article:published_time" content="Thu Jan 16 2020 11:38:00 GMT+0800">
-        <meta property="article:modified_time" content="Thu Jan 07 2021 11:43:27 GMT+0800">
+        <meta property="article:modified_time" content="Wed Dec 08 2021 09:39:08 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -276,7 +276,7 @@
     "mainEntityOfPage": "http://langaobai.github.io/2020/01/16/HomeBrew常用命令集/index.html",
     "headline": "HomeBrew常用命令集",
     "datePublished": "Thu Jan 16 2020 11:38:00 GMT+0800",
-    "dateModified": "Thu Jan 07 2021 11:43:27 GMT+0800",
+    "dateModified": "Wed Dec 08 2021 09:39:08 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "LanGaoBai",
@@ -377,15 +377,6 @@
 
     <!-- Left aligned menu below button -->
     
-    
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#brew相关命令"><span class="post-toc-number">2.</span> <span class="post-toc-text">brew相关命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#brew-cask-相关命令"><span class="post-toc-number">3.</span> <span class="post-toc-text">brew cask 相关命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#brew-serivces-相关命令"><span class="post-toc-number">4.</span> <span class="post-toc-text">brew serivces 相关命令</span></a></li></ol>
-    </ul>
     
 
 
@@ -551,97 +542,9 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>通过Homebrew大概是安装软件最方便的方式了，这篇POST将会介绍Brew相关的命令。</p>
-<h2 id="brew相关命令"><a href="#brew相关命令" class="headerlink" title="brew相关命令"></a>brew相关命令</h2><ol>
-<li><p>搜索 受Homebrew支持的软件</p>
-<pre><code>$ brew search keyword-to-search
-</code></pre></li>
-</ol>
-<p>如果返回<code>No formula or cask found for …</code>，可能代表关键词错误。</p>
-<p>例如，阿里的钉钉在Homebrew的软件名为<code>dingtalk</code>，而不是<code>dingding</code>。</p>
-<pre><code>$ brew search dingding
-No formula or cask found for &quot;dingding&quot;.
-
-$ brew search dingtalk
-==&gt; Casks
-dingtalk ✔
-
-$ brew search ding
-==&gt; Formulae
-glbinding                               schroedinger
-==&gt; Casks
-dingtalk ✔                folding-at-home           loading
-findings                  foldingtext
-</code></pre><p> <strong><code>brew search</code>的检索范围包含了cask模块</strong></p>
-<ol>
-<li><p>安装软件</p>
-<pre><code>$ brew install software-name
-</code></pre><p><code>brew install</code>相比<code>brew search</code>的不同之处在于，<code>brew install</code>必须提供完整的软件名，如果软件不受Homebrew支持，则报错。</p>
-</li>
-<li><p>查看所有通过<code>brew install</code>安装的软件</p>
-<pre><code>$ brew list
-</code></pre></li>
-<li><p>查看通过<code>brew install</code>安装的软件的详细信息</p>
-<pre><code>$ brew info software-name
-</code></pre><p>能够查看版本号、依赖的软件、与自身冲突的软件等信息</p>
-</li>
-<li><p>查看通过<code>brew install</code>安装的可更新的软件</p>
-<pre><code>$ brew outdated
-</code></pre></li>
-<li><p>更新通过<code>brew install</code>安装的软件</p>
-<pre><code>$ brew upgrade software-name
-</code></pre></li>
-<li><p>卸载通过<code>brew install</code>安装的软件</p>
-<pre><code>$ brew uninstall software-name
-</code></pre></li>
-<li><p>更新Homebrew自身</p>
-<pre><code>$ brew update
-</code></pre></li>
-<li><p>清除缓存</p>
-<pre><code>$ brew cleanup
-</code></pre></li>
-</ol>
-<h2 id="brew-cask-相关命令"><a href="#brew-cask-相关命令" class="headerlink" title="brew cask 相关命令"></a>brew cask 相关命令</h2><p>cask可以认为是Homebrew的一个模块</p>
-<p><code>brew cask</code>开头的命令一般管理的是带有GUI的软件（如Navicat、Sourcetree等）</p>
-<p>而<code>brew</code>开头的命令一般管理的是无GUI软件或是各种环境（如MySQL、Git等）</p>
-<ol>
-<li><p>安装软件</p>
-<pre><code>$ brew cask install software-name
-</code></pre></li>
-<li><p>查看所有通过<code>brew cask install</code>安装的软件</p>
-<pre><code>$ brew cask list
-</code></pre></li>
-<li><p>查看通过<code>brew cask install</code>安装的软件的详细信息</p>
-<pre><code>$ brew cask info software-name
-</code></pre></li>
-<li><p>查看通过<code>brew cask install</code>安装的可更新的软件</p>
-<pre><code>$ brew cask outdated
-</code></pre></li>
-<li><p>更新通过<code>brew cask install</code>安装的软件的详细信息</p>
-<pre><code>$ brew cask upgrade software-name
-</code></pre></li>
-<li><p>卸载通过<code>brew cask install</code>安装的软件的详细信息</p>
-<pre><code>$ brew cask uninstall software-name
-</code></pre></li>
-</ol>
-<h2 id="brew-serivces-相关命令"><a href="#brew-serivces-相关命令" class="headerlink" title="brew serivces 相关命令"></a>brew serivces 相关命令</h2><p><code>brew services</code>开头的命令一般是用于管理通过Homebrew安装的各类服务的。</p>
-<ol>
-<li><p>查看所有服务及其它们各自的运行状态</p>
-<pre><code>$ brew services list
-</code></pre></li>
-<li><p>启动服务</p>
-<pre><code>$ brew services start redis
-</code></pre><pre><code>$ brew services start --all
-</code></pre></li>
-<li><p>重启服务</p>
-<pre><code>$ brew services restart redis
-</code></pre><pre><code>$ brew services restart --all
-</code></pre></li>
-<li><p>停止服务</p>
-<pre><code>$ brew services stop redis
-</code></pre><pre><code>$ brew services stop --all
-</code></pre></li>
-</ol>
+        <p>最近将生成力工具大量迁移到Mac上,在安装软件部分,很多人都推荐了homebrew,因此我也快速的用上.</p>
+<p>在使用过程中,出现了很多的问题,因此我需要对这些常用的命令进行记录一下;</p>
+<p>以下是这个工具的常用命令:</p>
 
         
     

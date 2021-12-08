@@ -143,7 +143,7 @@
     <link href="http://langaobai.github.io/2020/01/16/HomeBrew%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86/"/>
     <id>http://langaobai.github.io/2020/01/16/HomeBrew常用命令集/</id>
     <published>2020-01-16T03:38:00.000Z</published>
-    <updated>2021-01-07T03:43:27.216Z</updated>
+    <updated>2021-12-08T01:39:08.240Z</updated>
     
     <summary type="html">
     
@@ -151,8 +151,10 @@
       
         
         
-          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;通过Homebrew大概是安装软件最方便的方式了，这篇POST将会介绍Brew相关的命令。&lt;/p&gt;
-&lt;h2
+          &lt;p&gt;最近将生成力工具大量迁移到Mac上,在安装软件部分,很多人都推荐了homebrew,因此我也快速的用上.&lt;/p&gt;
+&lt;p&gt;在使用过程中,出现了很多的问题,因此我需要对这些常用的命令进行记录一下;&lt;/p&gt;
+&lt;p&gt;以下是这个工具的常用命令:&lt;/p&gt;
+
         
       
     
@@ -301,7 +303,7 @@
     <link href="http://langaobai.github.io/2019/02/28/%E8%AE%A4%E8%AF%86%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://langaobai.github.io/2019/02/28/认识深度学习（一）/</id>
     <published>2019-02-28T07:11:00.000Z</published>
-    <updated>2021-01-05T06:31:59.290Z</updated>
+    <updated>2021-12-08T01:38:53.809Z</updated>
     
     <summary type="html">
     

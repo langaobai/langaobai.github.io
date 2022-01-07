@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://langaobai.github.io/"/>
-  <updated>2020-06-18T03:03:58.234Z</updated>
+  <updated>2022-01-07T03:22:05.822Z</updated>
   <id>http://langaobai.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VIM使用系列：寄存器与复制粘贴缓冲区</title>
+    <link href="http://langaobai.github.io/2022/01/07/VIM%E4%BD%BF%E7%94%A8%E7%B3%BB%E5%88%97%EF%BC%9A%E5%AF%84%E5%AD%98%E5%99%A8%E4%B8%8E%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E7%BC%93%E5%86%B2%E5%8C%BA/"/>
+    <id>http://langaobai.github.io/2022/01/07/VIM使用系列：寄存器与复制粘贴缓冲区/</id>
+    <published>2022-01-07T03:19:00.000Z</published>
+    <updated>2022-01-07T03:22:05.822Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;现在已经可以熟练使用VIM的大多数基本命令、功能来进行项目代码的开发了，但是在项目的开发过程中，依然会感觉到一些操作效率比较低，比如通过h/j/k/l来进行光标的大范围移动这类操作，显然VIM提供了更高效的命令操作方式。最近经常需要完成的工作就是需要在代码之间来回的复制、粘
+        
+      
+    
+    </summary>
+    
+      <category term="vim" scheme="http://langaobai.github.io/categories/vim/"/>
+    
+    
+      <category term="vim" scheme="http://langaobai.github.io/tags/vim/"/>
+    
+      <category term="vim寄存器" scheme="http://langaobai.github.io/tags/vim%E5%AF%84%E5%AD%98%E5%99%A8/"/>
+    
+      <category term="快捷操作" scheme="http://langaobai.github.io/tags/%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
+    
+      <category term="工具流" scheme="http://langaobai.github.io/tags/%E5%B7%A5%E5%85%B7%E6%B5%81/"/>
+    
+  </entry>
   
   <entry>
     <title>文本处理命令AWK</title>
@@ -620,28 +652,6 @@
     
     
       <category term="傅里叶变换" scheme="http://langaobai.github.io/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法之旅-列表搜索</title>
-    <link href="http://langaobai.github.io/2018/09/04/%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85-%E5%88%97%E8%A1%A8%E6%90%9C%E7%B4%A2/"/>
-    <id>http://langaobai.github.io/2018/09/04/算法之旅-列表搜索/</id>
-    <published>2018-09-04T13:28:00.000Z</published>
-    <updated>2020-04-18T04:20:47.092Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="算法" scheme="http://langaobai.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="列表" scheme="http://langaobai.github.io/tags/%E5%88%97%E8%A1%A8/"/>
-    
-      <category term="搜索" scheme="http://langaobai.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   

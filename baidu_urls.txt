@@ -1,3 +1,4 @@
+http://langaobai.github.io/2022/01/07/VIM使用系列：寄存器与复制粘贴缓冲区/
 http://langaobai.github.io/2020/06/18/文本处理命令AWK/
 http://langaobai.github.io/2020/05/04/Emmet笔记/
 http://langaobai.github.io/2020/04/02/npm包管理常用命令/
@@ -16,4 +17,3 @@ http://langaobai.github.io/2018/11/19/一些常用命令行/
 http://langaobai.github.io/2018/11/16/CCF-201312/
 http://langaobai.github.io/2018/11/15/CCF之傷/
 http://langaobai.github.io/2018/11/09/学习之道——芭芭拉-奥克利/
-http://langaobai.github.io/2018/09/05/乍看很难，细看很美-傅里叶变换/

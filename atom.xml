@@ -175,7 +175,7 @@
     <link href="http://langaobai.github.io/2020/01/16/HomeBrew%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86/"/>
     <id>http://langaobai.github.io/2020/01/16/HomeBrew常用命令集/</id>
     <published>2020-01-16T03:38:00.000Z</published>
-    <updated>2021-12-08T01:39:08.240Z</updated>
+    <updated>2022-03-07T02:12:06.291Z</updated>
     
     <summary type="html">
     
@@ -185,8 +185,7 @@
         
           &lt;p&gt;最近将生成力工具大量迁移到Mac上,在安装软件部分,很多人都推荐了homebrew,因此我也快速的用上.&lt;/p&gt;
 &lt;p&gt;在使用过程中,出现了很多的问题,因此我需要对这些常用的命令进行记录一下;&lt;/p&gt;
-&lt;p&gt;以下是这个工具的常用命令:&lt;/p&gt;
-
+&lt;h3 id=&quot;查看当前Homebrew-镜像源&quot;&gt;&lt;a
         
       
     
@@ -286,9 +285,9 @@
     
       <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -356,9 +355,9 @@
     
       <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -423,9 +422,9 @@
     
       <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   

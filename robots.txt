@@ -1,0 +1,19 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /about/
+Allow: /timeline/
+Allow: /gallery/
+Allow: /tags/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://langaobai.github.io/sitemap.xml
+Sitemap: http://langaobai.github.io/baidusitemap.xml

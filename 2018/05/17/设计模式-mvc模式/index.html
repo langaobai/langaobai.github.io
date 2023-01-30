@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info">
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="baidu-site-verification" content="UJnzbcntPV">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            设计模式—MVC模式 | 
+        
+        墨鸦
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" itemprop="description" content>
+    <meta name="keywords" content=",设计模式">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+
+    
+        <link rel="stylesheet" href="/css/appreciate.css">
+    
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="墨鸦">
+    <meta name="msapplication-starturl" content="http://langaobai.github.io/2018/05/17/设计模式-mvc模式/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="墨鸦">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://langaobai.github.io/2018/05/17/设计模式-mvc模式/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="设计模式—MVC模式 | 墨鸦">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content>
+    <meta property="og:article:tag" content="设计模式"> 
+
+    
+        <meta property="article:published_time" content="Thu May 17 2018 21:24:00 GMT+0800">
+        <meta property="article:modified_time" content="Fri Aug 05 2022 15:01:54 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://langaobai.github.io/2018/05/17/设计模式-mvc模式/index.html">
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://langaobai.github.io/2018/05/17/设计模式-mvc模式/index.html",
+    "headline": "设计模式—MVC模式",
+    "datePublished": "Thu May 17 2018 21:24:00 GMT+0800",
+    "dateModified": "Fri Aug 05 2022 15:01:54 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "LanGaoBai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "吾日三省吾身"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "墨鸦",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",设计模式",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?956dbb717858ec56aa5bed10a3b493b8';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!-- 百度资源推送 -->
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<link rel="stylesheet" href="/css/prism.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MVC-模式"><span class="post-toc-number">1.</span> <span class="post-toc-text">MVC 模式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#实现"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">实现</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 22 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                设计模式—MVC模式
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>LanGaoBai</strong>
+        <span>5月 17, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACxElEQVR42u3aUW4iMRAEUO5/6c0BEFDVdiLWfv5CMMP4GSkdd/nx78rxwMbGxsbGxsbGxv5K9iMez3c9v351TXLX86fvv7meMzY2NvbR7A9/+ktYMukE3y70h7lhY2NjX8B+Nen3pSW5Pi8/ySK2c8bGxsbGXlmC99T805U5Y2NjY2Mn17TNoJUtCjY2Njb2SlPp/fU5bG9x+vVeGjY2NvbXs/PQ9Hte/2m+jY2Njf3F7HbMwt22NLblKnoWNjY29qHsvDDs2qjMGlWzqBgbGxv7BnYS37bFrC1s+fGdpB328n1sbGzso9l5MUuWaRYDzMLmYuGwsbGxj2bnYequa2ZLNosxsLGxse9hrzTxk4VI7k0ws0YYNjY29tnsvcUjB6+HBBvybWxsbOz/nD0rGLuChLY9tLRBwsbGxr6A3baN2gK2ssRtJPxhK4KNjY19EDv6J34U5c5C33y7Uje8sLGxsQ9l56Fse7wmx8yenmxssLGxsW9gr7eWVmLa5Nu2LTo2Njb2oez11vyuNlOyBWp/KmxsbOwb2PlxmbxU5CVtZSb5JgQbGxv7BvasNT8bOWYWIWBjY2Pfyc6LyizcnTWP2oGNjY19JztvKs2i1tmC5sEwNjY2Nvb6I9sClhygzJtKxafY2NjYF7Db9v2uMGDWJGpbXdjY2Ng3sPOGfvvg9YbUhh8GGxsb+zL27AGzplJe3tp3sLGxsW9jt8cu2xK4fih/JfrFxsbGPpXdjvXWz+xwfBs5fChg2NjY2Aexh8WgPNYzK415kICNjY2Nvatovce0C5QvR/TN2NjY2Bew2xZSUn5mAcCuRhI2NjY2dh4htAWsDQzau36xgGFjY2Mfx55tS9pFbAMMbGxs7DvZyYZhNt12cWcx8IcFxcbGxj6anTdr2vKTl6Xkufk72NjY2Pew7xnY2NjY2NjY2NjYXzN+APVkFqjvUwF3AAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/设计模式/">设计模式</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=设计模式—MVC模式&url=http://langaobai.github.io/2018/05/17/设计模式-mvc模式/index.html&pic=http://langaobai.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=设计模式—MVC模式&url=http://langaobai.github.io/2018/05/17/设计模式-mvc模式/index.html&via=LanGaoBai" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://langaobai.github.io/2018/05/17/设计模式-mvc模式/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://langaobai.github.io/2018/05/17/设计模式-mvc模式/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h3 id="MVC-模式"><a href="#MVC-模式" class="headerlink" title="MVC 模式"></a>MVC 模式</h3><p>MVC 模式代表 Model-View-Controller（模型-视图-控制器） 模式。这种模式用于应用程序的分层开发。</p>
+<ul>
+<li><strong>Model（模型）</strong> - 模型代表一个存取数据的对象或 JAVA POJO。它也可以带有逻辑，在数据变化时更新控制器。</li>
+<li><strong>View（视图）</strong> - 视图代表模型包含的数据的可视化。</li>
+<li><strong>Controller（控制器）</strong> - 控制器作用于模型和视图上。它控制数据流向模型对象，并在数据变化时更新视图。它使视图与模型分离开。</li>
+</ul>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/08/1200px-ModelViewControllerDiagram2.svg_.png" alt="img"></p>
+<h4 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h4><p>我们将创建一个作为模型的 <em>Student</em> 对象。<em>StudentView</em> 是一个把学生详细信息输出到控制台的视图类，<em>StudentController</em> 是负责存储数据到 <em>Student</em> 对象中的控制器类，并相应地更新视图 <em>StudentView</em>。</p>
+<p><em>MVCPatternDemo</em>，我们的演示类使用 <em>StudentController</em> 来演示 MVC 模式的用法。</p>
+<img class="kroki" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSI0NTJweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjEwOTNweDtoZWlnaHQ6NDUycHg7YmFja2dyb3VuZDojRkZGRkZGOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTA5MyA0NTIiIHdpZHRoPSIxMDkzcHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTIyIiB4PSI0NzguNSIgeT0iMjIuOTk1MSI+6K6+6K6h5qih5byPLW12Y+aooeW8jzwvdGV4dD48IS0tY2xhc3MgU3R1ZGVudC0tPjxnIGlkPSJlbGVtX1N0dWRlbnQiPjxyZWN0IGNvZGVMaW5lPSIzIiBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjE0NS43ODEzIiBpZD0iU3R1ZGVudCIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMjE3IiB4PSI3IiB5PSIyOTkuMjk2OSIvPjxlbGxpcHNlIGN4PSI4My43NSIgY3k9IjMxNS4yOTY5IiBmaWxsPSIjQUREMUIyIiByeD0iMTEiIHJ5PSIxMSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjA7Ii8+PHBhdGggZD0iTTg2LjcxODgsMzIwLjkzNzUgUTg2LjE0MDYsMzIxLjIzNDQgODUuNSwzMjEuMzc1IFE4NC44NTk0LDMyMS41MzEzIDg0LjE1NjMsMzIxLjUzMTMgUTgxLjY1NjMsMzIxLjUzMTMgODAuMzI4MSwzMTkuODkwNiBRNzkuMDE1NiwzMTguMjM0NCA3OS4wMTU2LDMxNS4xMDk0IFE3OS4wMTU2LDMxMS45ODQ0IDgwLjMyODEsMzEwLjMyODEgUTgxLjY1NjMsMzA4LjY3MTkgODQuMTU2MywzMDguNjcxOSBRODQuODU5NCwzMDguNjcxOSA4NS41LDMwOC44MjgxIFE4Ni4xNTYzLDMwOC45ODQ0IDg2LjcxODgsMzA5LjI4MTMgTDg2LjcxODgsMzEyIFE4Ni4wOTM4LDMxMS40MjE5IDg1LjUsMzExLjE1NjMgUTg0LjkwNjMsMzEwLjg3NSA4NC4yODEzLDMxMC44NzUgUTgyLjkzNzUsMzEwLjg3NSA4Mi4yNSwzMTEuOTUzMSBRODEuNTYyNSwzMTMuMDE1NiA4MS41NjI1LDMxNS4xMDk0IFE4MS41NjI1LDMxNy4yMDMxIDgyLjI1LDMxOC4yODEzIFE4Mi45Mzc1LDMxOS4zNDM4IDg0LjI4MTMsMzE5LjM0MzggUTg0LjkwNjMsMzE5LjM0MzggODUuNSwzMTkuMDc4MSBRODYuMDkzOCwzMTguNzk2OSA4Ni43MTg4LDMxOC4yMTg4IEw4Ni43MTg4LDMyMC45Mzc1IFogIiBmaWxsPSIjMDAwMDAwIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNTUiIHg9IjEwNC4yNSIgeT0iMzIwLjE0MzYiPlN0dWRlbnQ8L3RleHQ+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB4MT0iOCIgeDI9IjIyMyIgeTE9IjMzMS4yOTY5IiB5Mj0iMzMxLjI5NjkiLz48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjYiIHN0eWxlPSJzdHJva2U6I0M4MjkzMDtzdHJva2Utd2lkdGg6MS4wOyIgd2lkdGg9IjYiIHg9IjE1IiB5PSIzNDEuOTQ1MyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijg4IiB4PSIyNyIgeT0iMzQ4LjI5MiI+U3RyaW5nIHJvbGxObzs8L3RleHQ+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSI2IiBzdHlsZT0ic3Ryb2tlOiNDODI5MzA7c3Ryb2tlLXdpZHRoOjEuMDsiIHdpZHRoPSI2IiB4PSIxNSIgeT0iMzU4LjI0MjIiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4OCIgeD0iMjciIHk9IjM2NC41ODg5Ij5TdHJpbmcgbmFtZTs8L3RleHQ+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB4MT0iOCIgeDI9IjIyMyIgeTE9IjM3MS44OTA2IiB5Mj0iMzcxLjg5MDYiLz48ZWxsaXBzZSBjeD0iMTgiIGN5PSIzODUuNTM5MSIgZmlsbD0iIzg0QkU4NCIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjEiIHg9IjI3IiB5PSIzODguODg1NyI+U3RyaW5nIGdldFJvbGxObygpPC90ZXh0PjxlbGxpcHNlIGN4PSIxOCIgY3k9IjQwMS44MzU5IiBmaWxsPSIjODRCRTg0IiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE5MSIgeD0iMjciIHk9IjQwNS4xODI2Ij52b2lkIHNldFJvbGxObyhTdHJpbmcgcm9sbE5vKTwvdGV4dD48ZWxsaXBzZSBjeD0iMTgiIGN5PSI0MTguMTMyOCIgZmlsbD0iIzg0QkU4NCIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMTciIHg9IjI3IiB5PSI0MjEuNDc5NSI+U3RyaW5nIGdldE5hbWUoKTwvdGV4dD48ZWxsaXBzZSBjeD0iMTgiIGN5PSI0MzQuNDI5NyIgZmlsbD0iIzg0QkU4NCIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxODciIHg9IjI3IiB5PSI0MzcuNzc2NCI+dm9pZCBzZXROYW1lKFN0cmluZyBuYW1lKTwvdGV4dD48L2c+PCEtLWNsYXNzIFN0dWRlbnRWaWV3LS0+PGcgaWQ9ImVsZW1fU3R1ZGVudFZpZXciPjxyZWN0IGNvZGVMaW5lPSIxMiIgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSI2NC4yOTY5IiBpZD0iU3R1ZGVudFZpZXciIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQ4OSIgeD0iMjU5IiB5PSIzNDAuMjk2OSIvPjxlbGxpcHNlIGN4PSI0NTUuNzUiIGN5PSIzNTYuMjk2OSIgZmlsbD0iI0FERDFCMiIgcng9IjExIiByeT0iMTEiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MS4wOyIvPjxwYXRoIGQ9Ik00NTguNzE4OCwzNjEuOTM3NSBRNDU4LjE0MDYsMzYyLjIzNDQgNDU3LjUsMzYyLjM3NSBRNDU2Ljg1OTQsMzYyLjUzMTMgNDU2LjE1NjMsMzYyLjUzMTMgUTQ1My42NTYzLDM2Mi41MzEzIDQ1Mi4zMjgxLDM2MC44OTA2IFE0NTEuMDE1NiwzNTkuMjM0NCA0NTEuMDE1NiwzNTYuMTA5NCBRNDUxLjAxNTYsMzUyLjk4NDQgNDUyLjMyODEsMzUxLjMyODEgUTQ1My42NTYzLDM0OS42NzE5IDQ1Ni4xNTYzLDM0OS42NzE5IFE0NTYuODU5NCwzNDkuNjcxOSA0NTcuNSwzNDkuODI4MSBRNDU4LjE1NjMsMzQ5Ljk4NDQgNDU4LjcxODgsMzUwLjI4MTMgTDQ1OC43MTg4LDM1MyBRNDU4LjA5MzgsMzUyLjQyMTkgNDU3LjUsMzUyLjE1NjMgUTQ1Ni45MDYzLDM1MS44NzUgNDU2LjI4MTMsMzUxLjg3NSBRNDU0LjkzNzUsMzUxLjg3NSA0NTQuMjUsMzUyLjk1MzEgUTQ1My41NjI1LDM1NC4wMTU2IDQ1My41NjI1LDM1Ni4xMDk0IFE0NTMuNTYyNSwzNTguMjAzMSA0NTQuMjUsMzU5LjI4MTMgUTQ1NC45Mzc1LDM2MC4zNDM4IDQ1Ni4yODEzLDM2MC4zNDM4IFE0NTYuOTA2MywzNjAuMzQzOCA0NTcuNSwzNjAuMDc4MSBRNDU4LjA5MzgsMzU5Ljc5NjkgNDU4LjcxODgsMzU5LjIxODggTDQ1OC43MTg4LDM2MS45Mzc1IFogIiBmaWxsPSIjMDAwMDAwIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODciIHg9IjQ3Ni4yNSIgeT0iMzYxLjE0MzYiPlN0dWRlbnRWaWV3PC90ZXh0PjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgeDE9IjI2MCIgeDI9Ijc0NyIgeTE9IjM3Mi4yOTY5IiB5Mj0iMzcyLjI5NjkiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHgxPSIyNjAiIHgyPSI3NDciIHkxPSIzODAuMjk2OSIgeTI9IjM4MC4yOTY5Ii8+PGVsbGlwc2UgY3g9IjI3MCIgY3k9IjM5My45NDUzIiBmaWxsPSIjODRCRTg0IiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQ2MyIgeD0iMjc5IiB5PSIzOTcuMjkyIj52b2lkIHByaW50U3R1ZGVudERldGFpbHMoU3RyaW5nIHN0dWRlbnROYW1lLCBTdHJpbmcgc3R1ZGVudFJvbGxObyk8L3RleHQ+PC9nPjwhLS1jbGFzcyBTdHVkZW50Q29udHJvbGxlci0tPjxnIGlkPSJlbGVtX1N0dWRlbnRDb250cm9sbGVyIj48cmVjdCBjb2RlTGluZT0iMTYiIGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMTc4LjM3NSIgaWQ9IlN0dWRlbnRDb250cm9sbGVyIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIzODkiIHg9IjMwOSIgeT0iNDQuMjk2OSIvPjxlbGxpcHNlIGN4PSI0MzguMjUiIGN5PSI2MC4yOTY5IiBmaWxsPSIjQUREMUIyIiByeD0iMTEiIHJ5PSIxMSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjA7Ii8+PHBhdGggZD0iTTQ0MS4yMTg4LDY1LjkzNzUgUTQ0MC42NDA2LDY2LjIzNDQgNDQwLDY2LjM3NSBRNDM5LjM1OTQsNjYuNTMxMyA0MzguNjU2Myw2Ni41MzEzIFE0MzYuMTU2Myw2Ni41MzEzIDQzNC44MjgxLDY0Ljg5MDYgUTQzMy41MTU2LDYzLjIzNDQgNDMzLjUxNTYsNjAuMTA5NCBRNDMzLjUxNTYsNTYuOTg0NCA0MzQuODI4MSw1NS4zMjgxIFE0MzYuMTU2Myw1My42NzE5IDQzOC42NTYzLDUzLjY3MTkgUTQzOS4zNTk0LDUzLjY3MTkgNDQwLDUzLjgyODEgUTQ0MC42NTYzLDUzLjk4NDQgNDQxLjIxODgsNTQuMjgxMyBMNDQxLjIxODgsNTcgUTQ0MC41OTM4LDU2LjQyMTkgNDQwLDU2LjE1NjMgUTQzOS40MDYzLDU1Ljg3NSA0MzguNzgxMyw1NS44NzUgUTQzNy40Mzc1LDU1Ljg3NSA0MzYuNzUsNTYuOTUzMSBRNDM2LjA2MjUsNTguMDE1NiA0MzYuMDYyNSw2MC4xMDk0IFE0MzYuMDYyNSw2Mi4yMDMxIDQzNi43NSw2My4yODEzIFE0MzcuNDM3NSw2NC4zNDM4IDQzOC43ODEzLDY0LjM0MzggUTQzOS40MDYzLDY0LjM0MzggNDQwLDY0LjA3ODEgUTQ0MC41OTM4LDYzLjc5NjkgNDQxLjIxODgsNjMuMjE4OCBMNDQxLjIxODgsNjUuOTM3NSBaICIgZmlsbD0iIzAwMDAwMCIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEyMiIgeD0iNDU4Ljc1IiB5PSI2NS4xNDM2Ij5TdHVkZW50Q29udHJvbGxlcjwvdGV4dD48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHgxPSIzMTAiIHgyPSI2OTciIHkxPSI3Ni4yOTY5IiB5Mj0iNzYuMjk2OSIvPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNiIgc3R5bGU9InN0cm9rZTojQzgyOTMwO3N0cm9rZS13aWR0aDoxLjA7IiB3aWR0aD0iNiIgeD0iMzE3IiB5PSI4Ni45NDUzIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTA3IiB4PSIzMjkiIHk9IjkzLjI5MiI+U3R1ZGVudCBtb2RlbDs8L3RleHQ+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSI2IiBzdHlsZT0ic3Ryb2tlOiNDODI5MzA7c3Ryb2tlLXdpZHRoOjEuMDsiIHdpZHRoPSI2IiB4PSIzMTciIHk9IjEwMy4yNDIyIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTI2IiB4PSIzMjkiIHk9IjEwOS41ODg5Ij5TdHVkZW50VmlldyB2aWV3OzwvdGV4dD48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHgxPSIzMTAiIHgyPSI2OTciIHkxPSIxMTYuODkwNiIgeTI9IjExNi44OTA2Ii8+PGVsbGlwc2UgY3g9IjMyMCIgY3k9IjEzMC41MzkxIiBmaWxsPSIjODRCRTg0IiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjM2MyIgeD0iMzI5IiB5PSIxMzMuODg1NyI+U3R1ZGVudENvbnRyb2xsZXIoU3R1ZGVudCBtb2RlbCwgU3R1ZGVudFZpZXcgdmlldyk8L3RleHQ+PGVsbGlwc2UgY3g9IjMyMCIgY3k9IjE0Ni44MzU5IiBmaWxsPSIjODRCRTg0IiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI0MiIgeD0iMzI5IiB5PSIxNTAuMTgyNiI+dm9pZCBzZXRTdHVkZW50TmFtZShTdHJpbmcgbmFtZSk8L3RleHQ+PGVsbGlwc2UgY3g9IjMyMCIgY3k9IjE2My4xMzI4IiBmaWxsPSIjODRCRTg0IiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE3MiIgeD0iMzI5IiB5PSIxNjYuNDc5NSI+U3RyaW5nIGdldFN0dWRlbnROYW1lKCk8L3RleHQ+PGVsbGlwc2UgY3g9IjMyMCIgY3k9IjE3OS40Mjk3IiBmaWxsPSIjODRCRTg0IiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI0NiIgeD0iMzI5IiB5PSIxODIuNzc2NCI+dm9pZCBzZXRTdHVkZW50Um9sbE5vKFN0cmluZyByb2xsTm8pPC90ZXh0PjxlbGxpcHNlIGN4PSIzMjAiIGN5PSIxOTUuNzI2NiIgZmlsbD0iIzg0QkU4NCIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNzYiIHg9IjMyOSIgeT0iMTk5LjA3MzIiPlN0cmluZyBnZXRTdHVkZW50Um9sbE5vKCk8L3RleHQ+PGVsbGlwc2UgY3g9IjMyMCIgY3k9IjIxMi4wMjM0IiBmaWxsPSIjODRCRTg0IiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEyMyIgeD0iMzI5IiB5PSIyMTUuMzcwMSI+dm9pZCB1cGRhdGVWaWV3KCk8L3RleHQ+PC9nPjwhLS1jbGFzcyBNVkNQYXR0ZXJuRGVtby0tPjxnIGlkPSJlbGVtX01WQ1BhdHRlcm5EZW1vIj48cmVjdCBjb2RlTGluZT0iMjgiIGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iODAuNTkzOCIgaWQ9Ik1WQ1BhdHRlcm5EZW1vIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIzMDMiIHg9Ijc4MyIgeT0iMzMxLjc5NjkiLz48ZWxsaXBzZSBjeD0iODY4Ljc1IiBjeT0iMzQ3Ljc5NjkiIGZpbGw9IiNBREQxQjIiIHJ4PSIxMSIgcnk9IjExIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48cGF0aCBkPSJNODcxLjcxODgsMzUzLjQzNzUgUTg3MS4xNDA2LDM1My43MzQ0IDg3MC41LDM1My44NzUgUTg2OS44NTk0LDM1NC4wMzEzIDg2OS4xNTYzLDM1NC4wMzEzIFE4NjYuNjU2MywzNTQuMDMxMyA4NjUuMzI4MSwzNTIuMzkwNiBRODY0LjAxNTYsMzUwLjczNDQgODY0LjAxNTYsMzQ3LjYwOTQgUTg2NC4wMTU2LDM0NC40ODQ0IDg2NS4zMjgxLDM0Mi44MjgxIFE4NjYuNjU2MywzNDEuMTcxOSA4NjkuMTU2MywzNDEuMTcxOSBRODY5Ljg1OTQsMzQxLjE3MTkgODcwLjUsMzQxLjMyODEgUTg3MS4xNTYzLDM0MS40ODQ0IDg3MS43MTg4LDM0MS43ODEzIEw4NzEuNzE4OCwzNDQuNSBRODcxLjA5MzgsMzQzLjkyMTkgODcwLjUsMzQzLjY1NjMgUTg2OS45MDYzLDM0My4zNzUgODY5LjI4MTMsMzQzLjM3NSBRODY3LjkzNzUsMzQzLjM3NSA4NjcuMjUsMzQ0LjQ1MzEgUTg2Ni41NjI1LDM0NS41MTU2IDg2Ni41NjI1LDM0Ny42MDk0IFE4NjYuNTYyNSwzNDkuNzAzMSA4NjcuMjUsMzUwLjc4MTMgUTg2Ny45Mzc1LDM1MS44NDM4IDg2OS4yODEzLDM1MS44NDM4IFE4NjkuOTA2MywzNTEuODQzOCA4NzAuNSwzNTEuNTc4MSBRODcxLjA5MzgsMzUxLjI5NjkgODcxLjcxODgsMzUwLjcxODggTDg3MS43MTg4LDM1My40Mzc1IFogIiBmaWxsPSIjMDAwMDAwIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTIzIiB4PSI4ODkuMjUiIHk9IjM1Mi42NDM2Ij5NVkNQYXR0ZXJuRGVtbzwvdGV4dD48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHgxPSI3ODQiIHgyPSIxMDg1IiB5MT0iMzYzLjc5NjkiIHkyPSIzNjMuNzk2OSIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgeDE9Ijc4NCIgeDI9IjEwODUiIHkxPSIzNzEuNzk2OSIgeTI9IjM3MS43OTY5Ii8+PGVsbGlwc2UgY3g9Ijc5NCIgY3k9IjM4NS40NDUzIiBmaWxsPSIjODRCRTg0IiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHQtZGVjb3JhdGlvbj0idW5kZXJsaW5lIiB0ZXh0TGVuZ3RoPSIxNTkiIHg9IjgwMyIgeT0iMzg4Ljc5MiI+dm9pZCBtYWluKFN0cmluZ1tdIGFyZ3MpPC90ZXh0PjxyZWN0IGZpbGw9IiNGMjRENUMiIGhlaWdodD0iNiIgc3R5bGU9InN0cm9rZTojQzgyOTMwO3N0cm9rZS13aWR0aDoxLjA7IiB3aWR0aD0iNiIgeD0iNzkxIiB5PSIzOTguNzQyMiIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHQtZGVjb3JhdGlvbj0idW5kZXJsaW5lIiB0ZXh0TGVuZ3RoPSIyNzciIHg9IjgwMyIgeT0iNDA1LjA4ODkiPlN0dWRlbnQgcmV0cmlldmVTdHVkZW50RnJvbURhdGFiYXNlKCk8L3RleHQ+PC9nPjwhLS1saW5rIFN0dWRlbnRDb250cm9sbGVyIHRvIFN0dWRlbnQtLT48ZyBpZD0ibGlua19TdHVkZW50Q29udHJvbGxlcl9TdHVkZW50Ij48cGF0aCBjb2RlTGluZT0iMzMiIGQ9Ik0zNTguNzUsMjIyLjcxNjkgQzMxNi4xOSwyNDguNzA2OSAyNzAuMjQsMjc2Ljc3NjkgMjI5Ljg3LDMwMS40MzY5ICIgZmlsbD0ibm9uZSIgaWQ9IlN0dWRlbnRDb250cm9sbGVyLXRvLVN0dWRlbnQiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MS4wO3N0cm9rZS1kYXNoYXJyYXk6Ny4wLDcuMDsiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjIyNS43NSwzMDMuOTQ2OSwyMzUuNTE3NiwzMDIuNjg0MSwyMzAuMDIxLDMwMS4zNDcxLDIzMS4zNTgsMjk1Ljg1MDYsMjI1Ljc1LDMwMy45NDY5IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5MSIgeD0iMzEwLjUiIHk9IjI2NS4zNjM4Ij7kvp3otZbkvb/nlKggdXNlIGE8L3RleHQ+PC9nPjwhLS1saW5rIFN0dWRlbnRDb250cm9sbGVyIHRvIFN0dWRlbnRWaWV3LS0+PGcgaWQ9ImxpbmtfU3R1ZGVudENvbnRyb2xsZXJfU3R1ZGVudFZpZXciPjxwYXRoIGNvZGVMaW5lPSIzNCIgZD0iTTUwMy41LDIyMi41NDY5IEM1MDMuNSwyNjEuMDA2OSA1MDMuNSwzMDQuMDE2OSA1MDMuNSwzMzMuODU2OSAiIGZpbGw9Im5vbmUiIGlkPSJTdHVkZW50Q29udHJvbGxlci10by1TdHVkZW50VmlldyIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjA7c3Ryb2tlLWRhc2hhcnJheTo3LjAsNy4wOyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iNTAzLjUsMzM4LjUwNjksNTA3LjUsMzI5LjUwNjksNTAzLjUsMzMzLjUwNjksNDk5LjUsMzI5LjUwNjksNTAzLjUsMzM4LjUwNjkiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MS4wOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjkxIiB4PSI1MDQuNSIgeT0iMjY1LjM2MzgiPuS+nei1luS9v+eUqCB1c2UgYTwvdGV4dD48L2c+PCEtLXJldmVyc2UgbGluayBTdHVkZW50Q29udHJvbGxlciB0byBNVkNQYXR0ZXJuRGVtby0tPjxnIGlkPSJsaW5rX1N0dWRlbnRDb250cm9sbGVyX01WQ1BhdHRlcm5EZW1vIj48cGF0aCBjb2RlTGluZT0iMzUiIGQ9Ik02NjkuODgsMjI1Ljc4NjkgQzczNi4zNiwyNjIuMzM2OSA4MDkuNDEsMzAyLjUxNjkgODYxLjg5LDMzMS4zNjY5ICIgZmlsbD0ibm9uZSIgaWQ9IlN0dWRlbnRDb250cm9sbGVyLWJhY2t0by1NVkNQYXR0ZXJuRGVtbyIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjA7c3Ryb2tlLWRhc2hhcnJheTo3LjAsNy4wOyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iNjY1LjYyLDIyMy40NDY5LDY3MS41NzUzLDIzMS4yOTEyLDY3MC4wMDAyLDIyNS44NTgxLDY3NS40MzMzLDIyNC4yODMsNjY1LjYyLDIyMy40NDY5IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5MSIgeD0iNzQ1LjUiIHk9IjI2NS4zNjM4Ij7kvp3otZbkvb/nlKggdXNlIGE8L3RleHQ+PC9nPjwhLS1TUkM9W1pMNm5KaUNtNER0cDVKU3NlaXE3S0NKSVllcUFLVEc1Q1BaYUw1YkF1aWctWEE3Z0R4MFdEZVBrZFJnbkdWY1AwbHFDZDNYa3dnR1dDYlpua3RsRnh6eFRTOGVIVGtsRFJodHlNWXFfdG52eElId1FGeXlCT3dPS1oyY0JDMk1PVW0zR3FyVjlxb2I4NFNTWnFOVW1iMkxPOFlTTWNJOVRidXFUN3FtWDVwbTJqT1NURFRqSmFxVFFpS0tqbU9DZFROdEhDM2xYLTYwQ0x4SVB4Z1FnRTRIWUY1UE1HWGNxS0VzMlluY0pWYWotODU4Z0JBRWlLcDRYOUlCMmtFeldmUFRTN25nc3lwTEtFV3d6c3NCd1JXM1pzaDZKR3BFem14eFo0YVV0eThrQ05VSTFLM1FCNjY1WEtvLWZfa2d5QllVM0FxUTRDWHJZOGtuNnZlZU95TjFYSDFCNnF5aDF4SHFtRUxNLW9NX1ZQakVIZ0JpbW4tZi04S0tvUENKa2NJaGNxdS1zcm5DNHZ2UC1ranN5eDV3VmoteVZ0cXlobzFHMi12akdwRktfcWJhR0Q0T3pubEQtMDAwMF0tLT48L2c+PC9zdmc+">
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> String rollNo<span class="token punctuation">;</span>
+   <span class="token keyword">private</span> String name<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> String <span class="token function">getRollNo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> rollNo<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setRollNo</span><span class="token punctuation">(</span>String rollNo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>rollNo <span class="token operator">=</span> rollNo<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> String <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> name<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setName</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StudentView</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">printStudentDetails</span><span class="token punctuation">(</span>String studentName<span class="token punctuation">,</span> String studentRollNo<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Student: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Name: "</span> <span class="token operator">+</span> studentName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Roll No: "</span> <span class="token operator">+</span> studentRollNo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StudentController</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> Student model<span class="token punctuation">;</span>
+   <span class="token keyword">private</span> StudentView view<span class="token punctuation">;</span>
+
+   <span class="token keyword">public</span> <span class="token function">StudentController</span><span class="token punctuation">(</span>Student model<span class="token punctuation">,</span> StudentView view<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>model <span class="token operator">=</span> model<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>view <span class="token operator">=</span> view<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setStudentName</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      model<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>    
+   <span class="token punctuation">}</span>
+
+   <span class="token keyword">public</span> String <span class="token function">getStudentName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> model<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+   <span class="token punctuation">}</span>
+
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setStudentRollNo</span><span class="token punctuation">(</span>String rollNo<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      model<span class="token punctuation">.</span><span class="token function">setRollNo</span><span class="token punctuation">(</span>rollNo<span class="token punctuation">)</span><span class="token punctuation">;</span>      
+   <span class="token punctuation">}</span>
+
+   <span class="token keyword">public</span> String <span class="token function">getStudentRollNo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> model<span class="token punctuation">.</span><span class="token function">getRollNo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     
+   <span class="token punctuation">}</span>
+
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">updateView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>           
+      view<span class="token punctuation">.</span><span class="token function">printStudentDetails</span><span class="token punctuation">(</span>model<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> model<span class="token punctuation">.</span><span class="token function">getRollNo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MVCPatternDemo</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token comment" spellcheck="true">//从数据库获取学生记录</span>
+      Student model  <span class="token operator">=</span> <span class="token function">retrieveStudentFromDatabase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment" spellcheck="true">//创建一个视图：把学生详细信息输出到控制台</span>
+      StudentView view <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StudentView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      StudentController controller <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StudentController</span><span class="token punctuation">(</span>model<span class="token punctuation">,</span> view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      controller<span class="token punctuation">.</span><span class="token function">updateView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment" spellcheck="true">//更新模型数据</span>
+      controller<span class="token punctuation">.</span><span class="token function">setStudentName</span><span class="token punctuation">(</span><span class="token string">"John"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      controller<span class="token punctuation">.</span><span class="token function">updateView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+
+   <span class="token keyword">private</span> <span class="token keyword">static</span> Student <span class="token function">retrieveStudentFromDatabase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      Student student <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      student<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">"Robert"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      student<span class="token punctuation">.</span><span class="token function">setRollNo</span><span class="token punctuation">(</span><span class="token string">"10"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> student<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//输出结果</span>
+Student<span class="token operator">:</span> 
+Name<span class="token operator">:</span> Robert
+Roll No<span class="token operator">:</span> <span class="token number">10</span>
+Student<span class="token operator">:</span> 
+Name<span class="token operator">:</span> John
+Roll No<span class="token operator">:</span> <span class="token number">10</span>
+</code></pre>
+
+        
+    
+
+    
+</div>
+
+                
+
+                <!-- appreciate -->
+                
+                    <!-- appreciate page -->
+<div class="page-reward">
+    <a href="javascript:;" class="page-reward-btn tooltip-top">
+        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+                赞
+            </span>
+            <span class="tooltip-content">
+                <span class="tooltip-text">
+                    <span class="tooltip-inner">
+                        <p class="reward-p">
+                            <i class="fa fa-quote-left"></i>
+                            欢迎留言^.^
+                            <i class="fa fa-quote-right"></i>
+                        </p>
+                        <div class="reward-box">
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/Alipay.png">
+                                <span class="reward-type">支付宝</span>
+                            </div>
+
+                            <div class="reward-box-item">
+                                <img class="reward-img" src="/img/appreciate/WeChatPay.png">
+                                <span class="reward-type">微信</span>
+                            </div>
+
+                        </div>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </a>
+</div>
+                
+
+
+                
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://langaobai.github.io/2018/05/17/设计模式-mvc模式/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://langaobai.github.io/2018/05/17/设计模式-mvc模式/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//langaobai.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/05/17/设计模式-服务定位器模式/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/05/17/设计模式-模板模式/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="LanGaoBai's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        langaobai@Gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: langaobai@gmail.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/08/">八月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/04/">四月 2022<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/01/">一月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">五月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/01/">一月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/12/">十二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">36</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/API/">API<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/API/Swagger/">Swagger<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/">CCF<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/">算法<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/数据结构/">数据结构<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/前端/">前端<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/">Kubernetes<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/docker/微服务/">微服务<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Linux/">Linux<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MAVEN/">MAVEN<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/爬虫/">爬虫<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Terminal/">Terminal<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/UML/">UML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/homebrew/">homebrew<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux/">linux<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/node/">node<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vim/">vim<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/想法/">想法<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/单元测试/">单元测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/">命令行<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/window/">window<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/快捷键/">快捷键<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/傅里叶变换/">傅里叶变换<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/">深度学习<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/机器学习/">机器学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/设计模式/">设计模式<span class="sidebar_archives-count">34</span></a></li><li><a class="sidebar_archives-link" href="/categories/转载文章/">转载文章<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/gallery" title="走廊">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                走廊
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="时间桥">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时间桥
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">cloud</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">74</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+    <a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
+
+-->
+
+<!-- Feedback -->
+<!--
+
+    <a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.feedback
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+    </a>
+
+-->
+
+<!-- About Theme -->
+<!--
+
+    <a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+             sidebar.about_theme
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+    </a>
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/langaobai" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/lan-gao-bai" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>墨鸦
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//langaobai.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+    
+</html>

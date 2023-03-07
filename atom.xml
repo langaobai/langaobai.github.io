@@ -50,7 +50,7 @@
     <link href="http://langaobai.github.io/2022/04/11/Linux-grep%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/"/>
     <id>http://langaobai.github.io/2022/04/11/Linux-grep命令详解/</id>
     <published>2022-04-11T06:44:00.000Z</published>
-    <updated>2022-04-11T06:48:46.748Z</updated>
+    <updated>2023-03-07T03:22:51.611Z</updated>
     
     <summary type="html">
     
@@ -66,10 +66,10 @@
     
     </summary>
     
-      <category term="linux" scheme="http://langaobai.github.io/categories/linux/"/>
+      <category term="Linux" scheme="http://langaobai.github.io/categories/Linux/"/>
     
     
-      <category term="linux" scheme="http://langaobai.github.io/tags/linux/"/>
+      <category term="Linux" scheme="http://langaobai.github.io/tags/Linux/"/>
     
       <category term="grep" scheme="http://langaobai.github.io/tags/grep/"/>
     
@@ -197,6 +197,42 @@
       <category term="前端" scheme="http://langaobai.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="HTML" scheme="http://langaobai.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fzf模糊搜索神器的常用命令</title>
+    <link href="http://langaobai.github.io/2020/04/15/fzf%E6%A8%A1%E7%B3%8A%E6%90%9C%E7%B4%A2%E7%A5%9E%E5%99%A8%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://langaobai.github.io/2020/04/15/fzf模糊搜索神器的常用命令/</id>
+    <published>2020-04-15T01:23:00.000Z</published>
+    <updated>2023-03-07T05:37:30.922Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;fzf是一个通用的命令行模糊查找器, 通过输入模糊的关键词就可以定位文件或文件夹。结合其他工具(比如rg)可以完成非常多的工作，在工作中可以大幅提高你的工作效率。&lt;/p&gt;
+&lt;p&gt;fzf可以用于文件、命令历史记录、进程、主机名、书签、git提交等。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="Terminal" scheme="http://langaobai.github.io/categories/Terminal/"/>
+    
+      <category term="Linux" scheme="http://langaobai.github.io/categories/Terminal/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://langaobai.github.io/tags/Linux/"/>
+    
+      <category term="模糊搜索" scheme="http://langaobai.github.io/tags/%E6%A8%A1%E7%B3%8A%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="Terminal" scheme="http://langaobai.github.io/tags/Terminal/"/>
+    
+      <category term="Command Line" scheme="http://langaobai.github.io/tags/Command-Line/"/>
     
   </entry>
   
@@ -405,9 +441,9 @@
     
       <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -475,9 +511,9 @@
     
       <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -542,9 +578,9 @@
     
       <category term="算法" scheme="http://langaobai.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="机器学习" scheme="http://langaobai.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="深度学习" scheme="http://langaobai.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -606,39 +642,6 @@
       <category term="Python" scheme="http://langaobai.github.io/tags/Python/"/>
     
       <category term="爬虫" scheme="http://langaobai.github.io/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一些常用命令行</title>
-    <link href="http://langaobai.github.io/2018/11/19/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    <id>http://langaobai.github.io/2018/11/19/一些常用命令行/</id>
-    <published>2018-11-19T01:39:00.000Z</published>
-    <updated>2020-04-18T04:20:47.089Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;经常遇到一些头疼的小问题，而本人对于网络这块的常识有些薄弱，没法了，只能遇到一个问题，查一下，但架不住同类型的问题总是遇到；&lt;/p&gt;
-&lt;p&gt;归纳起来还是对于命令行的问题集中得多一些，当前主要是集中在
-        
-      
-    
-    </summary>
-    
-      <category term="命令行" scheme="http://langaobai.github.io/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    
-      <category term="window" scheme="http://langaobai.github.io/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/window/"/>
-    
-    
-      <category term="命令行" scheme="http://langaobai.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    
-      <category term="cmd" scheme="http://langaobai.github.io/tags/cmd/"/>
-    
-      <category term="window" scheme="http://langaobai.github.io/tags/window/"/>
     
   </entry>
   

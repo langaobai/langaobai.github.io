@@ -46,7 +46,7 @@
     
     <title>
         
-            fzf模糊搜索神器的常用命令 | 
+            Linux的一些小认识 | 
         
         墨鸦
     </title>
@@ -57,7 +57,7 @@
 
     <meta name="format-detection" content="telephone=no">
     <meta name="description" itemprop="description" content>
-    <meta name="keywords" content=",Linux,模糊搜索,Terminal,Command Line">
+    <meta name="keywords" content=",Linux,cmd,permissions,authorized">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -225,7 +225,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="墨鸦">
-    <meta name="msapplication-starturl" content="http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/">
+    <meta name="msapplication-starturl" content="http://langaobai.github.io/2020/03/07/Linux的一些小认识/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="墨鸦">
@@ -244,16 +244,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/">
+    <meta property="og:url" content="http://langaobai.github.io/2020/03/07/Linux的一些小认识/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="fzf模糊搜索神器的常用命令 | 墨鸦">
+    <meta property="og:title" content="Linux的一些小认识 | 墨鸦">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content>
-    <meta property="og:article:tag" content="Linux"> <meta property="og:article:tag" content="模糊搜索"> <meta property="og:article:tag" content="Terminal"> <meta property="og:article:tag" content="Command Line"> 
+    <meta property="og:article:tag" content="Linux"> <meta property="og:article:tag" content="cmd"> <meta property="og:article:tag" content="permissions"> <meta property="og:article:tag" content="authorized"> 
 
     
-        <meta property="article:published_time" content="Fri Apr 15 2022 09:23:00 GMT+0800">
-        <meta property="article:modified_time" content="Fri Apr 15 2022 09:25:54 GMT+0800">
+        <meta property="article:published_time" content="Sat Mar 07 2020 11:16:15 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 07 2023 11:16:45 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -261,7 +261,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/index.html">
+        <link rel="canonical" href="http://langaobai.github.io/2020/03/07/Linux的一些小认识/index.html">
     
 
     <!-- Structured-data for SEO -->
@@ -273,10 +273,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/index.html",
-    "headline": "fzf模糊搜索神器的常用命令",
-    "datePublished": "Fri Apr 15 2022 09:23:00 GMT+0800",
-    "dateModified": "Fri Apr 15 2022 09:25:54 GMT+0800",
+    "mainEntityOfPage": "http://langaobai.github.io/2020/03/07/Linux的一些小认识/index.html",
+    "headline": "Linux的一些小认识",
+    "datePublished": "Sat Mar 07 2020 11:16:15 GMT+0800",
+    "dateModified": "Tue Mar 07 2023 11:16:45 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "LanGaoBai",
@@ -294,7 +294,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",Linux,模糊搜索,Terminal,Command Line",
+    "keywords": ",Linux,cmd,permissions,authorized",
     "description": "",
 }
 </script>
@@ -378,6 +378,15 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于权限小命令"><span class="post-toc-number">1.</span> <span class="post-toc-text">关于权限小命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#权限操作"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">权限操作</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#修改文件权限"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">修改文件权限</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#修改目录权限"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">修改目录权限</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#常见权限"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">常见权限</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#术语全称"><span class="post-toc-number">2.</span> <span class="post-toc-text">术语全称</span></a></li></ol>
+    </ul>
+    
 
 
 
@@ -407,7 +416,7 @@
         
     
             <p class="article-headline-p">
-                fzf模糊搜索神器的常用命令
+                Linux的一些小认识
             </p>
         </div>
 
@@ -426,7 +435,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>LanGaoBai</strong>
-        <span>4月 15, 2022</span>
+        <span>3月 07, 2020</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -448,7 +457,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAADhklEQVR42u3awW7cMAwE0P3/n26vBdK4M6S03RbPpwBxbOn5MCHF1w/XL9cLAQ4cOHDgwIEDBw4cH8zxiq8/PPTLPa/19fyur3fOnowDBw4cOG5wtFtt7/nut8lmnjn268SBAwcOHPc4ngMsCbMkFKPw++aNCWi+Fxw4cODA8ZkcLdPz4tpAxYEDBw4c/xPHvlX3/ISk+bjZCw4cOHDguM2RNNTyllweh/nP7Z3Xe6U4cODAgWM90PD5P791vgMHDhw4cHzhaK98JG629HYl7V/95jk4cODAgeMox+boKCm08juTRmH7xoQMBw4cOHCc5XgOsLbxl9zZHjhtPltEjAMHDhw4jnI8L3E2TLAvtPKysP2Q0f8dOHDgwIHjMsd+TCEvvc5yJ/vCgQMHDhxnOdpXthGYDF6398+i99sV4sCBAweOCxxtfM6ibjY2kTQN8yITBw4cOHC8h6MtrjbRWy83Hm44fAqHAwcOHDgOceRFVxuxs0IraTuuPgMOHDhw4DjKsTkEmg3MtR+jjfP8g+HAgQMHjr/F0R4gDUupcoRiNpZxIGhx4MCBA8eohNu0Aq/EYTlOV3wkHDhw4MBxlCMfX2hjLNlkO9aQR3WxLxw4cODAcYEjD85Z7M1iu6WfHX3hwIEDB46zHEmxtGkCbhp/s6DNPyoOHDhw4LjBMSx7FgdL+UJnx05t6YgDBw4cOG5w7FuE7fBc/vz2yKpeAw4cOHDguMaxj8YZzSnivOGIAwcOHDhuc7RHR/tQzMvCnGw4hIEDBw4cOI5ytCMIs+Zd8q5ZWO65ceDAgQPHDY4okEZRmhdjbYOvHbzDgQMHDhzv4ZgNtLVDcrO/mrUO6wE7HDhw4MBxjSMJ2mQReXzm7ci2PCv2hQMHDhw4rnHcppnFdkvcNiVx4MCBA8c9jna84FRwttCzA7Dh/x04cODAgWNds7TNuCTYZkMPs+ZjPRKBAwcOHDiOcuwX1DYB8yidBWfChAMHDhw47nHMIqoNy2Qzp46y6qfhwIEDB44LHPlm2iZdjj4r+fKgXR074cCBAweOEUfyiLZkyhe6f9ds/Thw4MCB41/h2ITiZjCiPhjDgQMHDhwfydE2/vIWXr6q5JPgwIEDB453cmwacG3czgYj2udE/yLgwIEDB44LHPtjobzo2sRkPuJQHFzhwIEDB46jHC4cOHDgwIEDBw4cOHB82PUTt4alTvLvCJUAAAAASUVORK5CYII=">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC10lEQVR42u3aSXYiMRAFQO5/aXwAGvr/VLW7kEIrnmtAIRbpHB7PI9cDGxsbGxsbGxsb+5bsR7z+8KKXq6+f3z37+W2vT717c75nbGxs7L3ZyYaSp97d+e6A8jdfsGdsbGzsA9ift5iEpZaRf9fKPdjY2NjYeeDJn0pSi+QosbGxsbGvDWDtmz/fn1zFxsbGxp4B8iPI70nKUv+tloaNjY19e3beNL3P51/tb2NjY2PfmN2uNknI27rJ56WdY2NjY2/KzgND26Zt04ac3e4TGxsb+wT2rJTTNmtnDYBkV9GPhI2Njb0pez1I5M/mQa5tCQ+LStjY2NgbsfNgsDI02Yacz08lf8fGxsY+jd0GofZqW6jKE6SoFYGNjY29Kbsd0MkTibZhMEt4ksITNjY29t7s2VfOePkhzhKVelIJGxsbe1N2W6CfHcesZTsLqNjY2Nh7s9tRm7a9moPbxCZvFWBjY2PvzZ6Vh9pCf96KeJZrKW5jY2Njb8S+qkkwS1GKIFSOY2JjY2OfwM4B/7rA1Aa2usGMjY2NvSk7KRLlbYP1ZGNl+PIvPwA2Njb2puy21ZqX6dureSBMwhU2Njb2OeyctBK06pH30Rp2RbCxsbG/nN2W5vNhnZVByZVkqa6lYWNjY385Oy/iz0pFeSFpVrTKExJsbGzsXdltAyD6p38U0tqWcH1A2NjY2Fuz85JQfn/7htl+irQHGxsb+xh2PqwzLNPH97dh9bKZU2xsbOyvZbejjbMjW0lUlkIjNjY29qbsdq2EsaSFnB9TfSc2Njb2pux2tLENVHnAyxOVNrBhY2Njn8CejcUkx3FVu7ctJ2FjY2OfyW6DR7659SbxbGFjY2Nj5/e0Qzbtka2kLtjY2NjY16YfeSKUHG7RhMDGxsY+gN2mECuwtoWQpy51AMPGxsbegp0XaPICUxuW2j0kV7GxsbFPYJ+zsLGxsbGxsbGxsW+zfgA8HrnMsQ6IrQAAAABJRU5ErkJggg==">
     
 </ul>
 
@@ -462,7 +471,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/Command-Line/">Command Line</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Linux/">Linux</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Terminal/">Terminal</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/模糊搜索/">模糊搜索</a>
+        <a class="post_tag-link" href="/tags/Linux/">Linux</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/authorized/">authorized</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/cmd/">cmd</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/permissions/">permissions</a>
     </ul>
     
 
@@ -490,7 +499,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=fzf模糊搜索神器的常用命令&url=http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/index.html&pic=http://langaobai.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Linux的一些小认识&url=http://langaobai.github.io/2020/03/07/Linux的一些小认识/index.html&pic=http://langaobai.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -499,7 +508,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=fzf模糊搜索神器的常用命令&url=http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/index.html&via=LanGaoBai" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Linux的一些小认识&url=http://langaobai.github.io/2020/03/07/Linux的一些小认识/index.html&via=LanGaoBai" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -508,7 +517,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://langaobai.github.io/2020/03/07/Linux的一些小认识/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -517,7 +526,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://langaobai.github.io/2020/03/07/Linux的一些小认识/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -542,7 +551,279 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h3 id="关于权限小命令"><a href="#关于权限小命令" class="headerlink" title="关于权限小命令"></a>关于权限小命令</h3><p>chown <code>change owner</code> 用来更改某个目录或文件的用户名和用户组</p>
+<p>chmod <code>change mode</code> 用来更改某个目录或文件的访问权限</p>
+<p>通过<code>ll</code>命令查看目录下文件</p>
+<pre class=" language-shell"><code class="language-shell">-rw-------. 1 root root 1289 6月   1 2017 anaconda-ks.cfg
+-rw-r--r--. 1 root root  786 6月   8 2017 app_account.sql
+drwxr-xr-x. 8 root root 4096 2月  10 2018 homestead_server
+-rw-r--r--. 1 root root 7995 6月   1 2017 install.log
+-rw-r--r--. 1 root root 3384 6月   1 2017 install.log.syslog
+-rw-r--r--. 1 root root    0 8月  20 12:37 mysqlaccess.log
+-rw-r--r--. 1 root root   55 8月  24 17:25 test.txt
+</code></pre>
+<p>查看文件信息通常会使用到<code>ll</code>，该命令对文件使用后会输出7列信息，每列分表代表的含义为：<code>类型1</code>、<code>权限1</code>、<code>链接2</code>、<code>属主3</code>、<code>属组4</code>、<code>大小5</code>、<code>时间6</code>、<code>文件名7</code>。</p>
+<p>第一列</p>
+<ul>
+<li>第一位标识文件类型</li>
+<li><code>.</code> 标识普通占位符</li>
+<li><code>+</code> 标识附加组权限<br>第二列</li>
+<li>文件链接，相当于Windows上的快捷键方式个数；</li>
+</ul>
+<p>主要看最前面一列,我把<code>drwxr-xr-x</code>拿出来说</p>
+<pre class=" language-shell"><code class="language-shell">d:目录 1 位
+rwx:　可读、可写、可执行   2-4位
+r-x:　可读、可执行        5-7位
+r-x： 可读、可执行        8-10位
+</code></pre>
+<p>可见一共有十位。<code>-[rw-][r--][r--]</code>.其中第一个[-]代表的是类型，<strong>其中第一位为d代表目录，每三位代表一个权限位</strong></p>
+<pre class=" language-text"><code class="language-text">2-4  位代表所有者拥有的权限
+5-7  位代表群组拥有的权限
+8-10位代表其他人拥有的权限
+</code></pre>
+<p>第三和第四列两个root ,分别代表用户名和用户组；</p>
+<pre class=" language-shell"><code class="language-shell">useradd yu_test        //添加用户yu_test
+chown yu_test test.txt //改变文件用户名权限
+-rw-r--r--. 1 yu_test root   55 8月  24 17:25 test.txt
+</code></pre>
+<p>十进制表示</p>
+<pre class=" language-shell"><code class="language-shell">r read w write x 
+r ： 100 4 
+w ： 010 2
+x ： 001 1
+- ： 000 0
+</code></pre>
+<p>将rwx看成是二进制的数，有用1表示，没有用0表示，那么 [rwx] [r-x] [r–]就可以表示成：<code>111 101 100</code>,将其转换成为一个十进制数就是：<code>754</code>。</p>
+<table>
+<thead>
+<tr>
+<th>rwx 权限</th>
+<th>对目录的作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>读权限（r）</strong></td>
+<td>表示具有读取目录结构列表的权限，也就是说，可以看到目录中有哪些文件和子目录。一旦对目录拥有 r 权限，就可以在此目录下执行 ls 命令，查看目录中的内容。</td>
+</tr>
+<tr>
+<td><strong>写权限（w）</strong></td>
+<td>对于目录来说，w 权限是最高权限。对目录拥有 w 权限，表示可以对目录做以下操作：<br> -   在此目录中建立新的文件或子目录；<br> -   删除已存在的文件和目录（无论子文件或子目录的权限是怎样的）；<br> -   对已存在的文件或目录做更名操作；<br> -   移动此目录下的文件和目录的位置。<br> 一旦对目录拥有 w 权限，就可以在目录下执行 touch、rm、cp、mv 等命令。 <br></td>
+</tr>
+<tr>
+<td><strong>执行权限（x）</strong></td>
+<td>目录是不能直接运行的，对目录赋予 x 权限，代表用户可以进入目录，也就是说，赋予 x 权限的用户或群组可以使用 cd 命令。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="权限操作"><a href="#权限操作" class="headerlink" title="权限操作"></a>权限操作</h4><pre class=" language-diff"><code class="language-diff"><span class="token inserted">+ 表示添加权限</span>
+<span class="token deleted">- 表示删除权限</span>
+= 重置权限
+</code></pre>
+<h4 id="修改文件权限"><a href="#修改文件权限" class="headerlink" title="修改文件权限"></a>修改文件权限</h4><pre class=" language-shell"><code class="language-shell">u：代表文件所有者(user)
+g: 代表所有者所在的群组(group)
+o：代表其他人，但不是u和g(other)
+a：a和一起指定ugo效果一样(all)
+</code></pre>
+<pre class=" language-shell"><code class="language-shell">chmod o+w test.txt ：表示给其他人授予写test.txt这个文件的权限
+chmod go-rw test.txt : 表示群组和其他人删除对test.txt文件的读写权限
+chmod ugo+r test.txt：所有人皆可读取
+chmod a+r text.txt:所有人皆可读取
+chmod ug+w,o-w text.txt:设为该档案拥有者，与其所属同一个群体者可写入，但其他以外的人则不可写入
+chmod u+x test.txt: 创建者拥有执行权限 
+chmod -R a+r ./www/ ：将www下的所有档案与子目录皆设为任何人可读取
+chmod a-x test.txt :收回所有用户的对test.txt的执行权限
+chmod 777 test.txt: 所有人可读，写，执行
+</code></pre>
+<h4 id="修改目录权限"><a href="#修改目录权限" class="headerlink" title="修改目录权限"></a>修改目录权限</h4><pre class=" language-shell"><code class="language-shell">chmod 700　　 /opt/elasticsearch  #修改目录权限
+chmod -R 744 /opt/elasticsearch 　#修改目目录以下所有的权限   
+-R             # 以递归方式更改所有的文件及子目录
+</code></pre>
+<p> chown 修改用户组  修改 test.txt 目录所属用户为 root，用户组为 root</p>
+<pre class=" language-shell"><code class="language-shell">chown -R root:root test.txt   
+-rw-r--r--. 1 root root   55 8月  24 17:25 test.txt
+</code></pre>
+<h4 id="常见权限"><a href="#常见权限" class="headerlink" title="常见权限"></a>常见权限</h4><pre class=" language-shell"><code class="language-shell">-rw------- (600) 只有所有者才有读和写的权限。
+-rw-r--r-- (644) 只有所有者才有读和写的权限，群组和其他人只有读的权限。
+-rw-rw-rw- (666) 每个人都有读写的权限
+-rwx------ (700) 只有所有者才有读，写和执行的权限。
+-rwx--x--x (711) 只有所有者才有读，写和执行的权限，群组和其他人只有执行的权限。
+-rwxr-xr-x (755) 只有所有者才有读，写，执行的权限，群组和其他人只有读和执行的权限。
+-rwxrwxrwx (777) 每个人都有读，写和执行的权限
+</code></pre>
+<p>实践 在用Elasticsearch的时候是少不了给添加用户授权</p>
+<pre class=" language-shell"><code class="language-shell">chmod 400 test.txt        #修改text.txt为可读文件
+vi text.txt               #执行该命令后，该文件就无法进行写入操作 提示下面信息
+-- INSERT -- W10: Warning: Changing a readonly file
+chmod 777 text.txt 
+-rwxrwxrwx. 1 root root   55 8月  24 17:25 test.txt
+chmod rwxr--r-- test.txt   #异常，不能使用该命令来修改权限
+</code></pre>
+<h3 id="术语全称"><a href="#术语全称" class="headerlink" title="术语全称"></a>术语全称</h3><pre class=" language-shell"><code class="language-shell">bin = BINaries （binary)  
+/dev = devices  
+/etc = ETCetera etcetera附加的人, 附加物, 以及其它, 等等  
+/lib = LIBrary  
+/proc = PROCesses  
+/sbin = Superuser BINaries  
+/tmp = TeMPorary  
+/usr = Unix Shared Resources  
+/var = VARiable ?  
+FIFO = First In, First Out  
+GRUB = GRand Unified Bootloader  
+IFS = Internal Field Seperators  
+LILO = LInux LOader  
+MySQL = My是最初作者女儿的名字，SQL = Structured Query Language  
+PHP = Personal Home Page Tools = PHP Hypertext Preprocessor  
+PS = Prompt String  
+Perl = "Pratical Extraction and Report Language" = "Pathologically Eclectic Rubbish Lister"  
+Python 得名于电视剧Monty Python's Flying Circus  
+Tcl = Tool Command Language  
+Tk = ToolKit  
+VT = Video Terminal  
+YaST = Yet Another Setup Tool  
+apache = "a patchy" server  
+apt = Advanced Packaging Tool  
+ar = archiver  
+as = assembler  
+awk = "Aho Weiberger and Kernighan" 三个作者的姓的第一个字母  
+bash = Bourne Again SHell 记一个shell足已  
+bc = Basic (Better) Calculator 不是在这儿看到，也许我一辈子也不会接触，文本模式很多东西还是很方便的  
+bg = BackGround  
+biff = 作者Heidi Stettner在U.C.Berkely养的一条狗,喜欢对邮递员汪汪叫。  
+
+cal = CALendar calendar日历, 历法  
+cat = CATenate 连接, 使连续  
+cd = Change Directory  
+chgrp = CHange GRouP  
+chmod = CHange MODe  
+chown = CHange OWNer  
+chsh = CHange SHell  
+cmp = compare  
+cobra = Common Object Request Broker Architecture  
+comm = common  
+cp = CoPy  
+cpio = CoPy In and Out  
+cpp = C Pre Processor  
+cron = Chronos 希腊文时间  
+cups = Common Unix Printing System  
+cvs = Current Version System  
+daemon = Disk And Execution MONitor 这个词应该出现在计算机之前吧，挺有人缘的。反正是缩写，怎么说都有理  
+dc = Desk Calculator  
+dd = Disk Dump  
+df = Disk Free  
+diff = DIFFerence  
+dmesg = diagnostic message  
+du = Disk Usage  
+ed = editor  
+egrep = Extended GREP  
+elf = Extensible Linking Format  
+elm = ELectronic Mail  
+emacs = Editor MACroS  
+eval = EVALuate  
+ex = EXtended  
+exec = EXECute  
+fd = file descriptors  
+fg = ForeGround  
+fgrep = Fixed GREP  
+Fish = the Friendly Interactive SHell  
+fmt = format  
+fsck = File System ChecK  
+fstab = FileSystem TABle  
+fvwm = F*** Virtual Window Manager  
+gawk = GNU AWK  
+gpg = GNU Privacy Guard  
+groff = GNU troff  
+hal = Hardware Abstraction Layer  
+joe = Joe's Own Editor  
+ksh = Korn SHell  
+lame = Lame Ain't an MP3 Encoder  
+lex = LEXical analyser  
+lisp = LISt Processing = Lots of Irritating Superfluous Parentheses  
+ln = LiNk  
+lpr = Line PRint  
+ls = list  
+lsof = LiSt Open Files  
+m4 = Macro processor Version 4  
+man = MANual pages 之前曾困惑过一段时间，被人笑话：多看man，少看woman  
+mawk = Mike Brennan's AWK  
+mc = Midnight Commander  
+MIME = Multipurpose Internet Mail Extensions  
+mkfs = MaKe FileSystem  
+mknod = MaKe NODe  
+motd = Message of The Day  
+mozilla = MOsaic GodZILLa  
+mtab = Mount TABle  
+mv = MoVe  
+nano = Nano's ANOther editor  
+nawk = New AWK  
+nl = Number of Lines  
+nm = names  
+nohup = No HangUP  
+nroff = New ROFF  
+od = Octal Dump  
+passwd = PASSWorD  
+pg = pager  
+pico = PIne's message COmposition editor  
+pine = "Program for Internet News & Email" = "Pine is not Elm"  
+ping = Packet InterNet Groper  
+pirntcap = PRINTer CAPability  
+popd = POP Directory  
+pr = pre  
+printf = PRINT Formatted  
+ps = Processes Status  
+pty = pseudo tty  
+pushd = PUSH Directory  
+pwd = Print Working Directory  
+rc = runcom = run command, rc还是plan9的shell  
+rev = REVerse  
+rm = ReMove  
+rn = Read News  
+roff = RunOFF  
+rpm = RPM Package Manager = RedHat Package Manager  
+rsh, rlogin, rvim中的r = Remote  
+rxvt = ouR XVT  
+seamoneky = 我  
+sed = Stream EDitor  
+seq = SEQuence  
+shar = SHell ARchive  
+slrn = S-Lang rn  
+ssh = Secure SHell  
+ssl = Secure Sockets Layer  
+stty = Set TTY  
+su = Substitute User 或 Switch User（前者较常见）  
+sudo = superuser / substitue user do 在ubuntu下更倾向于superuser，因为它代表了root权限  
+svn = SubVersioN  
+tar = Tape ARchive  
+tcsh = TENEX C shell  
+tee = T (T形水管接口)  
+telnet = TEminaL over Network  
+termcap = terminal capability  
+terminfo = terminal information  
+tex = τέχνη的缩写，希腊文art  
+tr = traslate  
+troff = Typesetter new ROFF  
+tsort = Topological SORT  
+tty = TeleTypewriter 电传打字机？没用过。不知道与ubuntu的text界面是怎么联系起来的。  
+twm = Tom's Window Manager  
+tz = TimeZone  
+udev = Userspace DEV  
+ulimit = User's LIMIT  
+umask = User's MASK  
+uniq = UNIQue  
+vi = VIsual = Very Inconvenient 后面的那个是别人附会的吧，不方便为什么会有那么多人用。不过像我等初学者确实用不惯，vim 稍微好一点。  
+vim = Vi IMproved  
+wall = write all  
+wc = Word Count  
+wine = WINE Is Not an Emulator 太搞了，和GNU's Not Unix有得一拼  
+xargs = eXtended ARGuments  
+xdm = X Display Manager  
+xlfd = X Logical Font Description  
+xmms = X Multimedia System  
+xrdb = X Resources DataBase  
+xwd = X Window Dump  
+yacc = yet another compiler compiler
+</code></pre>
+
         
     
 
@@ -601,8 +882,8 @@
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://langaobai.github.io/2020/03/07/Linux的一些小认识/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://langaobai.github.io/2020/03/07/Linux的一些小认识/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 <script type="text/ls-javascript" id="disqus-thread-script">
@@ -632,7 +913,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2022/08/29/请停下“计数器”思维/" id="post_nav-newer" class="prev-content">
+        <a href="/2020/04/02/npm包管理常用命令/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -646,7 +927,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2022/04/11/Linux-grep命令详解/" id="post_nav-older" class="next-content">
+        <a href="/2020/02/24/Swagger常用注解/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -738,7 +1019,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2022/08/">八月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/04/">四月 2022<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/01/">一月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">五月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/01/">一月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/12/">十二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">36</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2022/08/">八月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/04/">四月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/01/">一月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">五月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/03/">三月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/01/">一月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/12/">十二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">36</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -756,7 +1037,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/API/">API<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/API/Swagger/">Swagger<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/">CCF<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/">算法<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/数据结构/">数据结构<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/前端/">前端<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/">Kubernetes<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/docker/微服务/">微服务<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Linux/">Linux<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MAVEN/">MAVEN<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/爬虫/">爬虫<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Terminal/">Terminal<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/UML/">UML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/homebrew/">homebrew<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux/">linux<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/node/">node<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vim/">vim<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/想法/">想法<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/单元测试/">单元测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/">命令行<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/window/">window<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/快捷键/">快捷键<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/傅里叶变换/">傅里叶变换<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/">深度学习<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/机器学习/">机器学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/设计模式/">设计模式<span class="sidebar_archives-count">34</span></a></li><li><a class="sidebar_archives-link" href="/categories/转载文章/">转载文章<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/API/">API<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/API/Swagger/">Swagger<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/">CCF<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/">算法<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/CCF/算法/数据结构/">数据结构<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/前端/">前端<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/">Kubernetes<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Kubernetes/docker/微服务/">微服务<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Linux/">Linux<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/MAVEN/">MAVEN<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MODBUS/">MODBUS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MongDB/">MongDB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Oracle/">Oracle<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/爬虫/">爬虫<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/UML/">UML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/docker/">docker<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/homebrew/">homebrew<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux/">linux<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/node/">node<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vim/">vim<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/">书籍<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/想法/">想法<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/">管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/书籍/管理/笔记/">笔记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/单元测试/">单元测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/">命令行<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/命令行/window/">window<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/快捷键/">快捷键<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据格式/">数据格式<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/测试/">测试<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/书籍/">书籍<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/">算法<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/傅里叶变换/">傅里叶变换<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/">深度学习<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/算法/深度学习/机器学习/">机器学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/设计模式/">设计模式<span class="sidebar_archives-count">34</span></a></li><li><a class="sidebar_archives-link" href="/categories/转载文章/">转载文章<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         

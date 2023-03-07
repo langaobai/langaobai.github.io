@@ -1,11 +1,11 @@
 http://langaobai.github.io/2022/08/29/请停下“计数器”思维/
-http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/
 http://langaobai.github.io/2022/04/11/Linux-grep命令详解/
 http://langaobai.github.io/2022/04/06/Kubernetes常用命令整理/
 http://langaobai.github.io/2022/01/07/VIM使用系列：寄存器与复制粘贴缓冲区/
 http://langaobai.github.io/2020/06/18/文本处理命令AWK/
 http://langaobai.github.io/2020/05/04/Emmet笔记/
 http://langaobai.github.io/2020/04/02/npm包管理常用命令/
+http://langaobai.github.io/2020/03/07/Linux的一些小认识/
 http://langaobai.github.io/2020/02/24/Swagger常用注解/
 http://langaobai.github.io/2020/01/16/HomeBrew常用命令集/
 http://langaobai.github.io/2019/12/12/AXURE快捷操作/

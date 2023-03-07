@@ -46,30 +46,6 @@
   </entry>
   
   <entry>
-    <title>fzf模糊搜索神器的常用命令</title>
-    <link href="http://langaobai.github.io/2022/04/15/fzf%E6%A8%A1%E7%B3%8A%E6%90%9C%E7%B4%A2%E7%A5%9E%E5%99%A8%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://langaobai.github.io/2022/04/15/fzf模糊搜索神器的常用命令/</id>
-    <published>2022-04-15T01:23:00.000Z</published>
-    <updated>2022-04-15T01:25:54.659Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Terminal" scheme="http://langaobai.github.io/categories/Terminal/"/>
-    
-    
-      <category term="Linux" scheme="http://langaobai.github.io/tags/Linux/"/>
-    
-      <category term="模糊搜索" scheme="http://langaobai.github.io/tags/%E6%A8%A1%E7%B3%8A%E6%90%9C%E7%B4%A2/"/>
-    
-      <category term="Terminal" scheme="http://langaobai.github.io/tags/Terminal/"/>
-    
-      <category term="Command Line" scheme="http://langaobai.github.io/tags/Command-Line/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Linux-grep命令详解</title>
     <link href="http://langaobai.github.io/2022/04/11/Linux-grep%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/"/>
     <id>http://langaobai.github.io/2022/04/11/Linux-grep命令详解/</id>
@@ -249,6 +225,38 @@
       <category term="node" scheme="http://langaobai.github.io/tags/node/"/>
     
       <category term="npm" scheme="http://langaobai.github.io/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux的一些小认识</title>
+    <link href="http://langaobai.github.io/2020/03/07/Linux%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E8%AE%A4%E8%AF%86/"/>
+    <id>http://langaobai.github.io/2020/03/07/Linux的一些小认识/</id>
+    <published>2020-03-07T03:16:15.000Z</published>
+    <updated>2023-03-07T03:16:45.220Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;关于权限小命令&quot;&gt;&lt;a href=&quot;#关于权限小命令&quot; class=&quot;headerlink&quot; title=&quot;关于权限小命令&quot;&gt;&lt;/a&gt;关于权限小命令&lt;/h3&gt;&lt;p&gt;chown &lt;code&gt;change owner&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://langaobai.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://langaobai.github.io/tags/Linux/"/>
+    
+      <category term="cmd" scheme="http://langaobai.github.io/tags/cmd/"/>
+    
+      <category term="permissions" scheme="http://langaobai.github.io/tags/permissions/"/>
+    
+      <category term="authorized" scheme="http://langaobai.github.io/tags/authorized/"/>
     
   </entry>
   
